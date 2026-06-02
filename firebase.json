@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "canalvet",
     "public": ".",
     "ignore": [
       "firebase.json",
@@ -19,7 +18,7 @@
       {
         "source": "**/*.@(js|css)",
         "headers": [
-          { "key": "Cache-Control", "value": "max-age=86400" }
+          { "key": "Cache-Control", "value": "max-age=300" }
         ]
       }
     ]
