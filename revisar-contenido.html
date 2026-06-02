@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canal Veterinario — Revisión de contenido</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f0ff; color: #1e1a2e; }
+
+    header {
+      background: linear-gradient(135deg, #4a0082, #7c3aed);
+      color: white; padding: 1.5rem 2rem;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    header h1 { font-size: 1.4rem; }
+    header p  { font-size: .88rem; opacity: .8; margin-top: .2rem; }
+    .stats { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .stat { background: rgba(255,255,255,.15); border-radius: 8px; padding: .5rem 1rem; text-align: center; }
+    .stat strong { display: block; font-size: 1.4rem; }
+    .stat span   { font-size: .75rem; opacity: .8; }
+
+    .toolbar {
+      background: white; border-bottom: 1px solid #e5daf7;
+      padding: .75rem 2rem; display: flex; gap: .75rem; flex-wrap: wrap; align-items: center;
+      position: sticky; top: 0; z-index: 50;
+    }
+    .toolbar label { font-size: .85rem; font-weight: 600; color: #5b21b6; }
+    select, input[type=text] {
+      padding: .4rem .75rem; border: 1.5px solid #c4b5fd;
+      border-radius: 6px; font-size: .85rem; background: white;
+    }
+    .badge-confirmar-count {
+      background: #dc2626; color: white; border-radius: 50px;
+      padding: .2rem .7rem; font-size: .78rem; font-weight: 700;
+    }
+
+    main { padding: 1.5rem 2rem; max-width: 1400px; margin: 0 auto; }
+
+    .group-header {
+      background: white; border-left: 5px solid #7c3aed;
+      border-radius: 8px; padding: .7rem 1rem;
+      margin: 1.5rem 0 .75rem;
+      font-size: .95rem; font-weight: 700; color: #4a0082;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .group-count { background: #ede9fe; color: #5b21b6; border-radius: 50px; padding: .15rem .55rem; font-size: .75rem; }
+
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,.06); margin-bottom: .5rem; }
+    thead th { background: #5b21b6; color: white; padding: .6rem .9rem; font-size: .78rem; text-align: left; white-space: nowrap; }
+    tbody tr { border-bottom: 1px solid #f0ebff; transition: background .1s; }
+    tbody tr:hover { background: #faf7ff; }
+    tbody tr.confirmar { background: #fff8f0; }
+    tbody tr.confirmar:hover { background: #fff2e0; }
+    td { padding: .6rem .9rem; font-size: .84rem; vertical-align: top; }
+    td.id { color: #9ca3af; font-size: .75rem; width: 40px; }
+    td.titulo { max-width: 380px; }
+    td.disertante { color: #5b21b6; font-weight: 600; white-space: nowrap; }
+    td.subcat { font-size: .75rem; }
+    .tag-confirmar {
+      background: #fed7aa; color: #9a3412;
+      border-radius: 4px; padding: .1rem .4rem;
+      font-size: .7rem; font-weight: 700; white-space: nowrap;
+    }
+    .tag-ok {
+      background: #d1fae5; color: #065f46;
+      border-radius: 4px; padding: .1rem .4rem;
+      font-size: .7rem; font-weight: 700;
+    }
+    .tag-fecha {
+      background: #e0e7ff; color: #3730a3;
+      border-radius: 4px; padding: .1rem .4rem;
+      font-size: .7rem; font-weight: 600;
+    }
+    .hidden { display: none !important; }
+
+    footer { text-align: center; padding: 2rem; font-size: .82rem; color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🐾 Canal Veterinario — Revisión de contenido</h1>
+    <p>Revisá los títulos marcados en naranja antes de publicar el sitio</p>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="toolbar">
+  <label>Categoría:</label>
+  <select id="filtro-cat" onchange="aplicarFiltros()">
+    <option value="">Todas</option>
+    <option value="pequeños-animales">Pequeños animales</option>
+    <option value="bovinos">Bovinos</option>
+    <option value="equinos">Equinos</option>
+    <option value="no-convencionales">No convencionales</option>
+  </select>
+
+  <label>Subcategoría:</label>
+  <select id="filtro-subcat" onchange="aplicarFiltros()">
+    <option value="">Todas</option>
+  </select>
+
+  <label>
+    <input type="checkbox" id="solo-confirmar" onchange="aplicarFiltros()" />
+    Solo pendientes de confirmación
+    <span class="badge-confirmar-count" id="badge-confirmar">0</span>
+  </label>
+
+  <label style="margin-left:auto;">Buscar:</label>
+  <input type="text" id="busqueda" placeholder="título o disertante..." oninput="aplicarFiltros()" style="width:220px" />
+</div>
+
+<main id="main-content"></main>
+
+<footer id="footer-total"></footer>
+
+<!-- Data -->
+<script src="data.js"></script>
+<script>
+function formatFecha(iso) {
+  if (!iso) return "";
+  const [y,m,d] = iso.split("-");
+  const ms = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+  return `${parseInt(d)} ${ms[parseInt(m)-1]}. ${y}`;
+}
+
+// Construye grupos: { "pequeños-animales > Neurología": [...] }
+function buildGroups(data) {
+  const g = {};
+  for (const r of data) {
+    const key = `${r.categoria}|||${r.subcategoria || "—"}`;
+    if (!g[key]) g[key] = [];
+    g[key].push(r);
+  }
+  return g;
+}
+
+const catLabel = {
+  "pequeños-animales": "🐾 Pequeños animales",
+  "bovinos":           "🐄 Bovinos",
+  "equinos":           "🐴 Equinos",
+  "no-convencionales": "🦜 No convencionales",
+};
+const catOrder = ["pequeños-animales","bovinos","equinos","no-convencionales"];
+
+function renderAll(data) {
+  const grupos = buildGroups(data);
+  const main = document.getElementById("main-content");
+  main.innerHTML = "";
+
+  // Ordenar por categoría luego subcategoría
+  const keys = Object.keys(grupos).sort((a,b) => {
+    const [ca, sa] = a.split("|||");
+    const [cb, sb] = b.split("|||");
+    const io = catOrder.indexOf(ca) - catOrder.indexOf(cb);
+    if (io !== 0) return io;
+    return sa.localeCompare(sb, "es");
+  });
+
+  let totalMostrado = 0;
+  for (const key of keys) {
+    const [cat, subcat] = key.split("|||");
+    const items = grupos[key];
+    totalMostrado += items.length;
+
+    const gh = document.createElement("div");
+    gh.className = "group-header";
+    gh.innerHTML = `${catLabel[cat] || cat} <span style="opacity:.4">›</span> ${subcat} <span class="group-count">${items.length}</span>`;
+    main.appendChild(gh);
+
+    const table = document.createElement("table");
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Disertante</th>
+          <th>Subcategoría</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${items.map((r,i) => {
+          const esConf = r.titulo.includes("confirmar");
+          const fecha = formatFecha(r.fecha);
+          return `<tr class="${esConf ? 'confirmar' : ''}">
+            <td class="id">${i+1}</td>
+            <td class="id">${r.id}</td>
+            <td class="titulo">${r.titulo}</td>
+            <td class="disertante">${r.disertante}</td>
+            <td class="subcat">${r.subcategoria || "—"}</td>
+            <td>${fecha ? `<span class="tag-fecha">${fecha}</span>` : "<span style='color:#ccc;font-size:.75rem'>—</span>"}</td>
+            <td>${esConf ? '<span class="tag-confirmar">⚠ confirmar</span>' : '<span class="tag-ok">✓ ok</span>'}</td>
+          </tr>`;
+        }).join("")}
+      </tbody>`;
+    main.appendChild(table);
+  }
+
+  document.getElementById("footer-total").textContent =
+    `Mostrando ${totalMostrado} de ${GRABACIONES.length} grabaciones`;
+}
+
+// Llenar select de subcategorías
+function fillSubcats() {
+  const sc = [...new Set(GRABACIONES.map(r => r.subcategoria).filter(Boolean))].sort((a,b) => a.localeCompare(b,"es"));
+  const sel = document.getElementById("filtro-subcat");
+  sc.forEach(s => { const o = document.createElement("option"); o.value = s; o.textContent = s; sel.appendChild(o); });
+}
+
+function aplicarFiltros() {
+  const cat    = document.getElementById("filtro-cat").value;
+  const subcat = document.getElementById("filtro-subcat").value;
+  const soloC  = document.getElementById("solo-confirmar").checked;
+  const q      = document.getElementById("busqueda").value.toLowerCase();
+
+  const filtrado = GRABACIONES.filter(r => {
+    if (cat    && r.categoria    !== cat)    return false;
+    if (subcat && r.subcategoria !== subcat) return false;
+    if (soloC  && !r.titulo.includes("confirmar")) return false;
+    if (q && !r.titulo.toLowerCase().includes(q) && !r.disertante.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  renderAll(filtrado);
+}
+
+// Stats header
+function renderStats() {
+  const total   = GRABACIONES.length;
+  const conf    = GRABACIONES.filter(r => r.titulo.includes("confirmar")).length;
+  const cats    = {};
+  GRABACIONES.forEach(r => { cats[r.categoria] = (cats[r.categoria]||0)+1; });
+  const st = document.getElementById("stats");
+  st.innerHTML = `
+    <div class="stat"><strong>${total}</strong><span>Grabaciones</span></div>
+    <div class="stat"><strong style="color:#fca5a5">${conf}</strong><span>A confirmar</span></div>
+    ${catOrder.map(c => cats[c] ? `<div class="stat"><strong>${cats[c]}</strong><span>${catLabel[c].split(" ").slice(1).join(" ")}</span></div>` : "").join("")}
+  `;
+  document.getElementById("badge-confirmar").textContent = conf;
+}
+
+// Init
+fillSubcats();
+renderStats();
+renderAll(GRABACIONES);
+</script>
+</body>
+</html>

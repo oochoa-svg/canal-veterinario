@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Canal Veterinario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--primary:#7c3aed;--bg:#0d0620;--card:#1c0e3a;--border:rgba(124,58,237,.3);--text:#f1ecff;--muted:#a78bfa}
+    body{font-family:'League Spartan',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:2rem 1rem}
+
+    header{text-align:center;margin-bottom:2rem}
+    header h1{font-size:2rem;font-weight:900;background:linear-gradient(135deg,#fff,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    header p{color:var(--muted);font-size:.9rem;margin-top:.3rem}
+
+    .container{max-width:680px;margin:0 auto}
+
+    /* PASO SELECTOR */
+    .tipo-btns{display:flex;gap:1rem;margin-bottom:1.5rem}
+    .tipo-btn{flex:1;padding:1rem;border-radius:12px;border:2px solid var(--border);background:var(--card);color:var(--muted);font-family:'League Spartan',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;text-align:center;transition:all .15s}
+    .tipo-btn:hover{border-color:var(--primary);color:#d8b4fe}
+    .tipo-btn.active{background:var(--primary);color:white;border-color:var(--primary)}
+
+    /* FORM */
+    .form-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.75rem}
+    .form-row{margin-bottom:1.1rem}
+    .form-row label{display:block;font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem}
+    .form-row input,
+    .form-row select,
+    .form-row textarea{
+      width:100%;background:rgba(255,255,255,.05);
+      border:1.5px solid var(--border);border-radius:8px;
+      color:var(--text);font-family:'League Spartan',sans-serif;font-size:.92rem;
+      padding:.6rem .85rem;outline:none;transition:border .15s;
+    }
+    .form-row input:focus,.form-row select:focus,.form-row textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(124,58,237,.2)}
+    .form-row textarea{resize:vertical;min-height:80px}
+    .form-row select option{background:#1c0e3a}
+    .form-2col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+    .required-mark{color:#f87171;margin-left:2px}
+
+    .help{font-size:.75rem;color:var(--muted);margin-top:.3rem}
+
+    .btn-generar{
+      width:100%;padding:.85rem;margin-top:1.2rem;
+      background:var(--primary);color:white;border:none;border-radius:50px;
+      font-family:'League Spartan',sans-serif;font-size:1rem;font-weight:800;
+      cursor:pointer;letter-spacing:.02em;transition:background .15s;
+    }
+    .btn-generar:hover{background:#5b21b6}
+
+    /* OUTPUT */
+    .output-section{margin-top:2rem;display:none}
+    .output-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem}
+    .output-header h3{font-size:1rem;font-weight:700;color:#c4b5fd}
+    .btn-copy{
+      background:rgba(124,58,237,.25);color:#c4b5fd;border:1px solid rgba(124,58,237,.4);
+      border-radius:50px;padding:.35rem 1rem;font-family:'League Spartan',sans-serif;
+      font-size:.78rem;font-weight:700;cursor:pointer;transition:all .15s;
+    }
+    .btn-copy:hover{background:var(--primary);color:white}
+    .output-box{
+      background:#080214;border:1px solid var(--border);border-radius:10px;
+      padding:1.1rem;font-family:monospace;font-size:.8rem;
+      color:#c4b5fd;white-space:pre;overflow-x:auto;line-height:1.6;
+    }
+    .output-instruccion{
+      background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.25);
+      border-radius:8px;padding:.9rem 1rem;margin-top:1rem;
+      font-size:.85rem;line-height:1.6;
+    }
+    .output-instruccion strong{color:#fbbf24}
+
+    .toast{
+      position:fixed;bottom:2rem;right:2rem;
+      background:#22c55e;color:white;
+      border-radius:50px;padding:.6rem 1.2rem;
+      font-size:.85rem;font-weight:700;
+      opacity:0;transition:opacity .3s;pointer-events:none;
+    }
+    .toast.show{opacity:1}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🐾 Cargador de Charlas</h1>
+  <p>Canal Veterinario — Generador de contenido para data.js</p>
+</header>
+
+<div class="container">
+
+  <!-- Selector de tipo -->
+  <div class="tipo-btns">
+    <button class="tipo-btn active" onclick="setTipo('proxima')" id="btn-proxima">🗓️ Próxima charla en vivo</button>
+    <button class="tipo-btn" onclick="setTipo('grabacion')" id="btn-grabacion">🎬 Mover a grabaciones</button>
+  </div>
+
+  <!-- Formulario -->
+  <div class="form-card">
+    <div class="form-row">
+      <label>Título de la charla <span class="required-mark">*</span></label>
+      <input type="text" id="f-titulo" placeholder="Ej: Manejo del dolor postquirúrgico en caninos" />
+    </div>
+
+    <div class="form-row">
+      <label>Disertante <span class="required-mark">*</span></label>
+      <input type="text" id="f-disertante" placeholder="Ej: Dra. Carolina Vecino" />
+    </div>
+
+    <div class="form-2col">
+      <div class="form-row">
+        <label>Categoría <span class="required-mark">*</span></label>
+        <select id="f-categoria" onchange="actualizarSubcats()">
+          <option value="">— Elegir —</option>
+          <option value="pequeños-animales">🐾 Pequeños animales</option>
+          <option value="bovinos">🐄 Bovinos</option>
+          <option value="equinos">🐴 Equinos</option>
+          <option value="no-convencionales">🦜 No convencionales</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Subcategoría</label>
+        <input type="text" id="f-subcat" list="subcats-list" placeholder="Ej: Neurología" />
+        <datalist id="subcats-list"></datalist>
+      </div>
+    </div>
+
+    <div class="form-2col" id="row-fecha-hora">
+      <div class="form-row">
+        <label>Fecha <span class="required-mark">*</span></label>
+        <input type="date" id="f-fecha" />
+      </div>
+      <div class="form-row" id="row-hora">
+        <label>Hora</label>
+        <input type="time" id="f-hora" placeholder="20:00" />
+      </div>
+    </div>
+
+    <div class="form-row" id="row-duracion" style="display:none">
+      <label>Duración (solo grabaciones)</label>
+      <input type="text" id="f-duracion" placeholder="Ej: 1h 45min" />
+    </div>
+
+    <div class="form-row">
+      <label>Descripción breve</label>
+      <textarea id="f-descripcion" placeholder="Una o dos oraciones sobre el contenido de la charla (opcional)"></textarea>
+    </div>
+
+    <div class="form-row">
+      <label>URL de imagen / flyer</label>
+      <input type="url" id="f-imagen" placeholder="https://... (opcional, dejar vacío si no tenés)" />
+      <div class="help">Pegá la URL de la imagen del flyer si la tenés. Si no, se muestra un ícono automático.</div>
+    </div>
+
+    <div class="form-row" id="row-id">
+      <label>Número ID <span class="required-mark">*</span></label>
+      <input type="number" id="f-id" placeholder="Ej: 136" min="1" />
+      <div class="help">Usá el próximo número disponible. El último cargado fue el 135.</div>
+    </div>
+
+    <button class="btn-generar" onclick="generar()">⚡ Generar código</button>
+  </div>
+
+  <!-- Output -->
+  <div class="output-section" id="output-section">
+    <div class="output-header">
+      <h3>📋 Código generado — listo para copiar</h3>
+      <button class="btn-copy" onclick="copiar()">Copiar todo</button>
+    </div>
+    <div class="output-box" id="output-box"></div>
+    <div class="output-instruccion" id="output-instruccion"></div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast">✓ Copiado al portapapeles</div>
+
+<script src="data.js"></script>
+<script>
+let tipoActual = "proxima";
+
+const subcatsPorCat = {
+  "pequeños-animales": ["Neurología","Oftalmología","Cardiología","Urinario / Nefrología","Endocrinología","Laboratorio / Diagnóstico","Clínica general / Emergencias","Enfermedades infecciosas","Oncología / Dermatología","Nutrición clínica","Farmacología / Anestesia / Analgesia","Ortopedia / Rehabilitación","Imagenología","Cirugía","Infectología"],
+  "bovinos": ["Clínica / Emergencias / Manejo sanitario","Reproducción / Obstetricia","Producción / Manejo del rodeo","Metabolismo / Nutrición / Fisiopatología"],
+  "equinos": ["Anatomía / Biomecánica / Aparato locomotor","Diagnóstico por imágenes","Anestesia / Sedación / Farmacología","Rehabilitación / Deporte / Terapias","Terapias complementarias","Vías aéreas / Endoscopía / Laringe","Reproducción","Oftalmología","Odontología"],
+  "no-convencionales": ["Reptiles","Aves / Psitácinos","Conejos y roedores","Hurones","Erizos","Exóticos / Fauna silvestre"],
+};
+
+function setTipo(tipo) {
+  tipoActual = tipo;
+  document.getElementById("btn-proxima").classList.toggle("active", tipo === "proxima");
+  document.getElementById("btn-grabacion").classList.toggle("active", tipo === "grabacion");
+  document.getElementById("row-hora").style.display      = tipo === "proxima"   ? "" : "none";
+  document.getElementById("row-duracion").style.display = tipo === "grabacion" ? "" : "none";
+  document.getElementById("output-section").style.display = "none";
+}
+
+function actualizarSubcats() {
+  const cat = document.getElementById("f-categoria").value;
+  const dl  = document.getElementById("subcats-list");
+  dl.innerHTML = (subcatsPorCat[cat] || []).map(s => `<option value="${s}">`).join("");
+}
+
+// Sugerir próximo ID basado en data.js
+function proximoId() {
+  if (typeof GRABACIONES !== "undefined" && typeof PROXIMAS_CHARLAS !== "undefined") {
+    const todos = [...GRABACIONES, ...PROXIMAS_CHARLAS];
+    const maxId = todos.reduce((m, r) => Math.max(m, r.id || 0), 0);
+    return maxId + 1;
+  }
+  return 136;
+}
+window.addEventListener("load", () => {
+  document.getElementById("f-id").placeholder = `Ej: ${proximoId()} (siguiente disponible)`;
+  document.getElementById("f-id").value = proximoId();
+});
+
+function generar() {
+  const titulo   = document.getElementById("f-titulo").value.trim();
+  const disert   = document.getElementById("f-disertante").value.trim();
+  const cat      = document.getElementById("f-categoria").value;
+  const subcat   = document.getElementById("f-subcat").value.trim();
+  const fecha    = document.getElementById("f-fecha").value;
+  const hora     = document.getElementById("f-hora").value;
+  const desc     = document.getElementById("f-descripcion").value.trim();
+  const imagen   = document.getElementById("f-imagen").value.trim();
+  const duracion = document.getElementById("f-duracion").value.trim();
+  const id       = parseInt(document.getElementById("f-id").value) || proximoId();
+
+  if (!titulo)  { alert("Completá el título"); return; }
+  if (!disert)  { alert("Completá el disertante"); return; }
+  if (!cat)     { alert("Elegí una categoría"); return; }
+  if (!fecha)   { alert("Ingresá la fecha"); return; }
+
+  let codigo;
+  if (tipoActual === "proxima") {
+    codigo = `  {
+    id: ${id},
+    titulo: "${esc(titulo)}",
+    disertante: "${esc(disert)}",
+    fecha: "${fecha}",
+    hora: "${hora || "20:00"}",
+    categoria: "${cat}",
+    subcategoria: "${esc(subcat)}",
+    descripcion: "${esc(desc)}",
+    imagen: "${esc(imagen)}",
+    estado: "proximo",
+  },`;
+  } else {
+    codigo = `  {
+    id: ${id},
+    titulo: "${esc(titulo)}",
+    disertante: "${esc(disert)}",
+    fecha: "${fecha}",
+    categoria: "${cat}",
+    subcategoria: "${esc(subcat)}",
+    descripcion: "${esc(desc)}",
+    imagen: "${esc(imagen)}",
+    duracion: "${esc(duracion)}",
+  },`;
+  }
+
+  const instruccion = tipoActual === "proxima"
+    ? `<strong>¿Dónde pegarlo?</strong><br>
+En <code>data.js</code>, dentro del array <strong>PROXIMAS_CHARLAS</strong>, antes del corchete de cierre <code>]</code>.<br><br>
+<strong>Cuando la charla se dé</strong>, quitalo de PROXIMAS_CHARLAS y pegalo en GRABACIONES (cambiando el <em>estado</em> por <em>duracion</em>). Podés usar el botón "🎬 Mover a grabaciones" para generar el bloque de grabación.`
+    : `<strong>¿Dónde pegarlo?</strong><br>
+En <code>data.js</code>, dentro del array <strong>GRABACIONES</strong>, al inicio (o cerca de las charlas del mismo mes), antes del corchete de cierre <code>]</code>.<br><br>
+<strong>No te olvides de eliminar la entrada correspondiente de PROXIMAS_CHARLAS.</strong>`;
+
+  document.getElementById("output-box").textContent = codigo;
+  document.getElementById("output-instruccion").innerHTML = instruccion;
+  document.getElementById("output-section").style.display = "";
+  document.getElementById("output-section").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function esc(s) { return (s||"").replace(/\\/g,"\\\\").replace(/"/g,'\\"'); }
+
+function copiar() {
+  const text = document.getElementById("output-box").textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const t = document.getElementById("toast");
+    t.classList.add("show");
+    setTimeout(() => t.classList.remove("show"), 2000);
+  });
+}
+</script>
+</body>
+</html>
