@@ -9,14 +9,14 @@ const SITE_CONFIG = {
   instagram: "https://instagram.com/canalveterinario",
 
   // ── WhatsApp para consultas (poné tu número con código de país, sin + ni espacios) ──
-  whatsapp: "5491100000000",       // ← CAMBIAR por tu número real
+  whatsapp: "5491131761770",       // ← CAMBIAR por tu número real
   whatsappMensaje: "Hola! Quiero más información sobre las suscripciones del Canal Veterinario",
 
   // ── Formulario de inscripción (Google Forms) ──
   formulario: "https://docs.google.com/forms/d/e/1FAIpQLSdskfP8fwAPF4qaEzPiKmUcLxFOW3OGJj9jpbEEEoGMqHl-Mw/viewform",
 
   // ── Cada cuántos segundos reaparece el cartel de suscripción (0 = desactivado) ──
-  popupCadaSegundos: 45,
+  popupCadaSegundos: 200,
 };
 
 // ============================================================
