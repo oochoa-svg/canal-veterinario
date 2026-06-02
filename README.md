@@ -5,20 +5,13 @@ Live: **https://canalvet.web.app**
 
 ---
 
-## ✨ Cómo actualizar el sitio (lo más importante)
+## ✨ Cómo actualizar el sitio (no necesitás Cloud Shell)
 
-**No necesitás Cloud Shell, ni Firebase CLI, ni comandos.** El sitio se publica solo.
+1. Editás **`data.js`** (en GitHub.com → ícono lápiz ✏️ → "Commit changes").
+2. GitHub Actions publica el sitio **solo en 1-2 minutos**.
+3. Listo.
 
-1. Editás el archivo **`data.js`** (en GitHub.com → ícono del lápiz ✏️ → editás → "Commit changes").
-2. GitHub Actions detecta el cambio y **publica el sitio solo en 1-2 minutos**.
-3. Listo. Entrás a canalvet.web.app y ya está actualizado.
-
-> ⚠️ **Nunca toques `.github/workflows/deploy.yml`.** Ese archivo es el que dispara el
-> deploy automático y es sensible a los espacios/indentación. Si se rompe, el sitio
-> deja de publicarse y hay que arreglarlo a mano.
-
-`data.js` es **el único archivo** que necesitás tocar para el día a día. Adentro tiene
-instrucciones comentadas arriba de todo.
+> ⚠️ **Nunca toques `.github/workflows/deploy.yml`.** Es sensible a la indentación.
 
 ---
 
@@ -30,16 +23,15 @@ En el array `PROXIMAS_CHARLAS` agregá:
 {
   titulo: "Nombre de la charla",
   disertante: "Nombre Apellido",
-  fecha: "2026-07-15",            // YYYY-MM-DD (o "" para no mostrar fecha)
+  fecha: "2026-07-15",            // YYYY-MM-DD (o "" para no mostrar)
   dia: "Lunes 15 de julio",
   hora: "",
-  categoria: "pequeños-animales",
+  categoria: "pequeños-animales", // pequeños-animales | bovinos | equinos | no-convencionales
 },
 ```
 
 ### Pasar una charla dada a grabaciones
-Borrala de `PROXIMAS_CHARLAS` y agregala en `GRABACIONES` con un `id` nuevo
-(el próximo libre es **143**):
+Borrala de `PROXIMAS_CHARLAS` y agregala en `GRABACIONES` con `id` nuevo (próximo libre: **143**):
 ```js
 {
   id: 143,
@@ -55,7 +47,7 @@ Borrala de `PROXIMAS_CHARLAS` y agregala en `GRABACIONES` con un `id` nuevo
 ```
 
 ### Cambiar WhatsApp, sponsor, links, etc.
-Todo está en `SITE_CONFIG`, arriba de todo en `data.js`.
+Todo está en `SITE_CONFIG`, al principio de `data.js`.
 
 ### Categorías disponibles
 | id | Nombre |
@@ -64,8 +56,6 @@ Todo está en `SITE_CONFIG`, arriba de todo en `data.js`.
 | `bovinos` | Bovinos |
 | `equinos` | Equinos |
 | `no-convencionales` | No convencionales |
-
-Para agregar una categoría nueva, editá el array `CATEGORIAS` (al final de `data.js`).
 
 ---
 
@@ -82,16 +72,13 @@ Para agregar una categoría nueva, editá el array `CATEGORIAS` (al final de `da
 
 ---
 
-## Cómo funciona el deploy (para entender, no hace falta tocar nada)
+## Cómo funciona el deploy
 
 ```
-Editás data.js en GitHub  →  push a main  →  GitHub Actions corre  →  Firebase publica
-                                                                         ↓
-                                                              canalvet.web.app actualizado
+Editás data.js en GitHub → push a main → GitHub Actions → Firebase publica
+                                                           ↓
+                                                canalvet.web.app actualizado
 ```
 
-El proyecto de Firebase es `canal-veterinario-live`. La credencial está guardada como
-secret `FIREBASE_SERVICE_ACCOUNT` en GitHub (Settings → Secrets → Actions). Ya está
-configurada, no hay que volver a tocarla.
-
-Para montar un proyecto NUEVO igual a este desde cero, mirá **`GUIA-NUEVO-PROYECTO.md`**.
+Proyecto Firebase: `canal-veterinario-live`. Secret ya configurado: `FIREBASE_SERVICE_ACCOUNT`.
+Para montar un proyecto nuevo igual, mirá `GUIA-NUEVO-PROYECTO.md`.
