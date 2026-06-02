@@ -1,28 +1,27 @@
 {
-    "hosting": {
-          "public": ".",
-          "ignore": [
-                  "firebase.json",
-                  ".firebaserc",
-                  ".github/**",
-                  "README.md",
-                  ".gitignore",
-                  "node_modules/**",
-                  ".git/**"
-          ],
-          "rewrites": [
-                  {
-                            "source": "**",
-                            "destination": "/index.html"
-                  }
-          ],
-          "headers": [
-                  {
-                            "source": "**/*.@(js|css)",
-                            "headers": [
-                                        { "key": "Cache-Control", "value": "max-age=86400" }
-                            ]
-                  }
-          ]
-    }
+  "hosting": {
+    "site": "canalvet",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".github/**",
+      "README.md",
+      "GUIA-NUEVO-PROYECTO.md",
+      ".gitignore",
+      "node_modules/**",
+      ".git/**"
+    ],
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          { "key": "Cache-Control", "value": "max-age=86400" }
+        ]
+      }
+    ]
+  }
 }
