@@ -1,5 +1,48 @@
 // ============================================================
-// ARCHIVO DE CONTENIDO - Editá acá para actualizar el sitio
+// ARCHIVO DE CONTENIDO — Editá acá para actualizar el sitio
+// ============================================================
+//
+// ┌──────────────────────────────────────────────────────────┐
+// │  CÓMO ACTUALIZAR EL SITIO (no necesitás Cloud Shell)      │
+// │                                                          │
+// │  1. Editá este archivo (en GitHub.com, ícono lápiz)      │
+// │  2. Abajo de todo: "Commit changes"                      │
+// │  3. El sitio se publica SOLO en 1-2 minutos              │
+// │     (lo hace GitHub Actions -> Firebase, automático)     │
+// │                                                          │
+// │  NUNCA edites .github/workflows/deploy.yml               │
+// │  Ese archivo dispara el deploy y es sensible a los       │
+// │  espacios. Si se rompe, el sitio deja de publicarse.     │
+// └──────────────────────────────────────────────────────────┘
+//
+// ── AGREGAR UNA PRÓXIMA CHARLA EN VIVO ──────────────────────
+//   Buscá el array PROXIMAS_CHARLAS y agregá un bloque:
+//     {
+//       titulo: "Nombre de la charla",
+//       disertante: "Nombre Apellido",
+//       fecha: "2026-07-15",            // YYYY-MM-DD (o "" si no querés mostrarla)
+//       dia: "Lunes 15 de julio",       // texto libre
+//       hora: "",
+//       categoria: "pequeños-animales", // pequeños-animales | bovinos | equinos | no-convencionales
+//     },
+//
+// ── PASAR UNA CHARLA YA DADA A "GRABACIONES" ────────────────
+//   Borrala de PROXIMAS_CHARLAS y agregala en GRABACIONES con
+//   un id nuevo (el próximo libre es el 143):
+//     {
+//       id: 143,
+//       titulo: "Nombre de la charla",
+//       disertante: "Nombre Apellido",
+//       fecha: "",
+//       categoria: "pequeños-animales",
+//       subcategoria: "Neurología",      // opcional
+//       descripcion: "",
+//       imagen: "",
+//       duracion: "",
+//     },
+//
+// ── CAMBIAR DATOS GENERALES (WhatsApp, sponsor, etc.) ───────
+//   Todo está acá abajo en SITE_CONFIG.
 // ============================================================
 
 const SITE_CONFIG = {
