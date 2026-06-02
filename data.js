@@ -5,11 +5,11 @@
 const SITE_CONFIG = {
   nombre: "Canal Veterinario",
   subtitulo: "Capacitación veterinaria profesional",
-  telegramLink: "https://t.me/tu_canal_aqui",
+  telegramLink: "https://t.me/CANALVETCURSOS",
   instagram: "https://instagram.com/canalveterinario",
 
   // ── WhatsApp para consultas (poné tu número con código de país, sin + ni espacios) ──
-  whatsapp: "5491131761770",       // ← CAMBIAR por tu número real
+  whatsapp: "5491131761770",
   whatsappMensaje: "Hola! Quiero más información sobre las suscripciones del Canal Veterinario",
 
   // ── Formulario de inscripción (Google Forms) ──
@@ -17,6 +17,18 @@ const SITE_CONFIG = {
 
   // ── Cada cuántos segundos reaparece el cartel de suscripción (0 = desactivado) ──
   popupCadaSegundos: 200,
+
+  // ── Sponsor (banner fijo) ──
+  sponsorNombre: "Laboratorio Buenos Aires — LBsAs",
+  sponsorSlogan: "Diagnóstico Veterinario",
+  sponsorTel: "011 4573-3731",
+  sponsorWA: "5491159540359",
+  sponsorDir: "Av. De los Constituyentes 4884, CABA",
+  sponsorEmail: "laboratoriobuenosaires@hotmail.com",
+
+  // ── Contacto para nuevos sponsors y colaboradores ──
+  contactoSponsor: "5491131761770",
+  contactoColaborador: "5491131761770",
 };
 
 // ============================================================
@@ -1675,6 +1687,146 @@ const GRABACIONES = [
     fecha: "",
     categoria: "no-convencionales",
     subcategoria: "Aves",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+
+  // ──────────────────────────────────────────────
+  // ABRIL 2026
+  // ──────────────────────────────────────────────
+  {
+    id: 131,
+    titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 2",
+    disertante: "Fernando Grippaldi",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "Nutrición y metabolismo",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 132,
+    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía normal — Parte 2",
+    disertante: "Sabrina Vega",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "Diagnóstico por imágenes",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 133,
+    titulo: "Manejo del rodeo de cría: Charla desde la experiencia a campo",
+    disertante: "Paula Lorena Sosa Kardel",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "Reproducción",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 134,
+    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía patológica — Parte 3",
+    disertante: "Sabrina Vega",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "Diagnóstico por imágenes",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 135,
+    titulo: "Parvovirus en caninos y felinos: interpretación y diagnóstico",
+    disertante: "Darío Malacari",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Enfermedades infecciosas",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 136,
+    titulo: "Displasia de codo: diagnóstico y abordaje clínico",
+    disertante: "Jonathan Bolaños",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Cirugía / Traumatología",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 137,
+    titulo: "PIF: claves prácticas en diagnóstico y tratamiento para el veterinario clínico",
+    disertante: "Gabriela Despuys",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Enfermedades infecciosas",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+
+  // ──────────────────────────────────────────────
+  // MAYO 2026
+  // ──────────────────────────────────────────────
+  {
+    id: 138,
+    titulo: "Hipotiroidismo — Parte 1",
+    disertante: "Carolina Vecino",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Endocrinología",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 139,
+    titulo: "Linfoma canino: puntos clave",
+    disertante: "Fernanda Ferreira",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Oncología",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 140,
+    titulo: "Principios del manejo transfusional en felinos",
+    disertante: "Celeste Maistruarena",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Clínica general / Emergencias",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 141,
+    titulo: "Principales enfermedades metabólicas carenciales en bovinos en la región central de Argentina",
+    disertante: "Germán Cantón",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "Nutrición y metabolismo",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 142,
+    titulo: "El ABC del virus en la diarrea viral bovina",
+    disertante: "Darío Malacari",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "Enfermedades infecciosas",
     descripcion: "",
     imagen: "",
     duracion: "",

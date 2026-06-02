@@ -371,10 +371,25 @@ function iniciarPopup() {
   }, seg * 1000);
 }
 
+function renderBanners() {
+  const c = SITE_CONFIG;
+  const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  const href = (id, url) => { const el = document.getElementById(id); if (el) el.href = url; };
+
+  set("sponsor-nombre", c.sponsorNombre || "");
+  set("sponsor-slogan", c.sponsorSlogan || "");
+  set("sponsor-wa-txt", c.sponsorTel || "");
+  set("sponsor-dir", c.sponsorDir || "");
+  href("sponsor-wa-link", `https://wa.me/${c.sponsorWA}`);
+  href("banner-sponsor-wa", `https://wa.me/${c.contactoSponsor}?text=${encodeURIComponent("Hola! Me interesa ser sponsor del Canal Veterinario")}`);
+  href("banner-collab-wa", `https://wa.me/${c.contactoColaborador}?text=${encodeURIComponent("Hola! Me gustaría dar una charla en el Canal Veterinario")}`);
+}
+
 // ── Init ─────────────────────────────────────────────────────
 renderStats();
 renderCategorias();
 renderContenido();
 renderPlanes();
 renderModalBtns();
+renderBanners();
 iniciarPopup();
