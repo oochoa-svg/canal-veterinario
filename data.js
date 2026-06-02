@@ -61,7 +61,56 @@ const PLANES = [
 // PRÓXIMAS CHARLAS EN VIVO
 // ============================================================
 
-const PROXIMAS_CHARLAS = [];
+const PROXIMAS_CHARLAS = [
+  {
+    titulo: "Hipotiroidismo — Parte 2",
+    disertante: "Carolina Vecino",
+    fecha: "2026-06-08",
+    dia: "Lunes 8 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
+  {
+    titulo: "Gingivoestomatitis crónica felina y Calicivirus — Tratamientos Parte 2",
+    disertante: "Natalia Luka",
+    fecha: "2026-06-15",
+    dia: "Lunes 15 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
+  {
+    titulo: "Histopatología veterinaria: el puente entre la clínica y el diagnóstico definitivo",
+    disertante: "Matías Caverzan",
+    fecha: "2026-06-17",
+    dia: "Miércoles 17 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
+  {
+    titulo: "Neurología",
+    disertante: "Matías D'Elia",
+    fecha: "2026-06-22",
+    dia: "Lunes 22 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
+  {
+    titulo: "Técnica quirúrgica aséptica: Asepsia y antisepsia",
+    disertante: "Georgina Soledad Castro",
+    fecha: "2026-06-24",
+    dia: "Miércoles 24 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
+  {
+    titulo: "Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución",
+    disertante: "Damián Barón",
+    fecha: "2026-06-29",
+    dia: "Lunes 29 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
+];
 
 // ============================================================
 // GRABACIONES DISPONIBLES — Charlas ya realizadas
