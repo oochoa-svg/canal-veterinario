@@ -185,7 +185,7 @@ function cardGrabacion(g, q) {
         ${g.fecha ? `<span class="card-date">📅 ${formatFecha(g.fecha)}</span>` : ""}
         ${g.duracion ? `<span class="card-duration">⏱ ${g.duracion}</span>` : ""}
       </div>
-      <a href="${SITE_CONFIG.telegramLink}" target="_blank" class="btn-card">Ver grabación →</a>
+      <a href="${SITE_CONFIG.formulario}" target="_blank" class="btn-card">Ver grabación →</a>
     </div>
   </div>`;
 }
