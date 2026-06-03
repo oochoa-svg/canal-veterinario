@@ -221,7 +221,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -232,7 +232,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -243,7 +243,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -254,7 +254,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -265,7 +265,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -276,7 +276,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -287,7 +287,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -298,7 +298,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
