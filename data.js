@@ -28,7 +28,7 @@
 //
 // ── PASAR UNA CHARLA YA DADA A "GRABACIONES" ────────────────
 //   Borrala de PROXIMAS_CHARLAS y agregala en GRABACIONES con
-//   un id nuevo (el próximo libre es el 148):
+//   un id nuevo (el próximo libre es el 151):
 //     {
 //       id: 143,
 //       titulo: "Nombre de la charla",
@@ -959,7 +959,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 66,
-    titulo: "Aspectos radiográficos de los patrones en equinos: miembros anteriores",
+    titulo: "Repaso anatómico de las estructuras músculo-tendinosas más importantes en equino",
     disertante: "Dr. Carlos Blanco",
     fecha: "",
     categoria: "equinos",
@@ -970,7 +970,7 @@ const GRABACIONES = [
   },
   {
     id: 67,
-    titulo: "Aparato de sostén y biomecánica del equino",
+    titulo: "Aparato de sostén y fibroelástico del equino",
     disertante: "Dr. Carlos Blanco",
     fecha: "",
     categoria: "equinos",
@@ -981,7 +981,7 @@ const GRABACIONES = [
   },
   {
     id: 68,
-    titulo: "Anatomía e imagen del aparato locomotor: diagnóstico por imágenes. Parte 1",
+    titulo: "Anatomía del aparato locomotor y neurovascular transrectal. Parte 1",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -992,7 +992,7 @@ const GRABACIONES = [
   },
   {
     id: 69,
-    titulo: "Regiones del sistema musculoesquelético: diagnóstico y tratamiento. Parte 2",
+    titulo: "Anatomía del aparato locomotor y neurovascular transrectal. Parte 2",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -1003,7 +1003,7 @@ const GRABACIONES = [
   },
   {
     id: 70,
-    titulo: "Análisis del pie para uso veterinario y herraje. Parte 1",
+    titulo: "Anatomía y biomecánica del aparato locomotor en equinos. Parte 1",
     disertante: "Vet. Verónica Riveros",
     fecha: "",
     categoria: "equinos",
@@ -1025,7 +1025,7 @@ const GRABACIONES = [
   },
   {
     id: 72,
-    titulo: "Diagnóstico por imágenes: signos radiológicos y ultrasonográficos en la región del pie",
+    titulo: "Región cervical del equino: anatomía, biomecánica, síndrome cérvico-torácico braquial y complejo de malformación cervical equina. Parte 1",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -1036,7 +1036,7 @@ const GRABACIONES = [
   },
   {
     id: 73,
-    titulo: "Plan de monitoreo de actividad en reproducción equina",
+    titulo: "Región cervical del equino: anatomía, biomecánica, síndrome cérvico-torácico braquial y complejo de malformación cervical equina. Parte 2",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -1077,8 +1077,8 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 76,
-    titulo: "Farmacología para analgesia, sedación y anestesia en equinos",
-    disertante: "Vet. José Adrián Iranzo",
+    titulo: "Fármacos para sedación, analgesia y anestesia en equinos. Parte 1",
+    disertante: "Med. Vet. Rocío Paola Álvarez",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anestesia / Sedación / Farmacología",
@@ -1088,7 +1088,7 @@ const GRABACIONES = [
   },
   {
     id: 77,
-    titulo: "Sedación para procedimientos, analgesia y sedación en equinos: ¿qué usamos?",
+    titulo: "Fármacos para sedación, analgesia y anestesia en equinos. Parte 2",
     disertante: "Med. Vet. Rocío Paola Álvarez",
     fecha: "",
     categoria: "equinos",
@@ -1103,7 +1103,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 78,
-    titulo: "Fisioterapia en el equino deportivo. Parte 1",
+    titulo: "Introducción a las corrientes eléctricas en equinos. Parte 1",
     disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
@@ -1114,7 +1114,7 @@ const GRABACIONES = [
   },
   {
     id: 79,
-    titulo: "Fisioterapia en el equino deportivo. Parte 2",
+    titulo: "Introducción a las corrientes eléctricas en equinos. Parte 2",
     disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
@@ -1125,7 +1125,7 @@ const GRABACIONES = [
   },
   {
     id: 80,
-    titulo: "Fisioterapia en equinos. Parte 3",
+    titulo: "Fisioterapia en el equino deportivo. Parte 1",
     disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
@@ -1136,7 +1136,7 @@ const GRABACIONES = [
   },
   {
     id: 81,
-    titulo: "Nombrando de las clasificaciones y opciones equinas",
+    titulo: "Iluminando las claudicaciones oscuras. Parte 1",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -1147,7 +1147,7 @@ const GRABACIONES = [
   },
   {
     id: 82,
-    titulo: "Sumando de las clasificaciones. Opciones equinas. Parte 2",
+    titulo: "Iluminando las claudicaciones oscuras. Parte 2",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -1199,7 +1199,7 @@ const GRABACIONES = [
   },
   {
     id: 86,
-    titulo: "Endoscopía de las vías aéreas superiores: abordaje por endoscopía",
+    titulo: "Resolución diagnóstica por endoscopía de vías aéreas",
     disertante: "Mv. Esp. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
@@ -1843,6 +1843,42 @@ const GRABACIONES = [
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Comportamiento / Etología",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  // ──────────────────────────────────────────────
+  // EQUINOS — ENTRADAS ADICIONALES
+  // ──────────────────────────────────────────────
+  {
+    id: 148,
+    titulo: "Anatomía aplicada de la laringe, faringe y bolsas guturales en equino",
+    disertante: "Dr. Carlos Blanco",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "Vías aéreas / Endoscopía / Laringe",
+    descripcion: "",
+    imagen: "img/carlos-blanco.png",
+    duracion: "",
+  },
+  {
+    id: 149,
+    titulo: "Síndrome Bursitis Luxación Tendino Calcáneo",
+    disertante: "Vet. José Adrián Iranzo",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 150,
+    titulo: "Sedación en pie para equinos: ¿qué sabemos y qué podemos usar?",
+    disertante: "Med. Vet. Rocío Paola Álvarez",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "Anestesia / Sedación / Farmacología",
     descripcion: "",
     imagen: "",
     duracion: "",
