@@ -640,7 +640,7 @@ const GRABACIONES = [
   {
     id: 40,
     titulo: "Farmacología: protocolos anestésicos",
-    disertante: "Vet. Esp. Eduardo Iguarta",
+    disertante: "Vet. Esp. Eduardo Esjaita",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -651,7 +651,7 @@ const GRABACIONES = [
   {
     id: 41,
     titulo: "¿Cómo mejorar la calidad del sueño anestésico en animales?",
-    disertante: "Vet. Esp. Eduardo Iguarta",
+    disertante: "Vet. Esp. Eduardo Esjaita",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -913,7 +913,7 @@ const GRABACIONES = [
   {
     id: 63,
     titulo: "Aproximación a la cirugía gastrointestinal",
-    disertante: "Vet. Leonardo Indriago",
+    disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Cirugía",
@@ -924,7 +924,7 @@ const GRABACIONES = [
   {
     id: 64,
     titulo: "Introducción a la cirugía de tejido blando de tórax y extremidades",
-    disertante: "Vet. Leonardo Indriago",
+    disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Cirugía",
@@ -1182,8 +1182,8 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 85,
-    titulo: "Endoscopía de las vías aéreas: problemas en las vías aéreas",
-    disertante: "MV. Julián Albanes López",
+    titulo: "Endoscopia como herramienta diagnóstica en equinos con diferentes problemas en las vías aéreas",
+    disertante: "Mv. Esp. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
@@ -1194,7 +1194,7 @@ const GRABACIONES = [
   {
     id: 86,
     titulo: "Endoscopía de las vías aéreas superiores: abordaje por endoscopía",
-    disertante: "MV. Julián Albanes López",
+    disertante: "Mv. Esp. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
