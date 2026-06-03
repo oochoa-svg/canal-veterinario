@@ -123,6 +123,7 @@ const PROXIMAS_CHARLAS = [
     fecha: "2026-06-08",
     dia: "Lunes 8 de junio",
     hora: "",
+    imagen: "",
     categoria: "pequeños-animales",
   },
   {
@@ -131,6 +132,7 @@ const PROXIMAS_CHARLAS = [
     fecha: "2026-06-15",
     dia: "Lunes 15 de junio",
     hora: "",
+    imagen: "img/natalia-luka.jpg",
     categoria: "pequeños-animales",
   },
   {
@@ -139,6 +141,7 @@ const PROXIMAS_CHARLAS = [
     fecha: "2026-06-17",
     dia: "Miércoles 17 de junio",
     hora: "",
+    imagen: "",
     categoria: "pequeños-animales",
   },
   {
@@ -147,6 +150,7 @@ const PROXIMAS_CHARLAS = [
     fecha: "2026-06-22",
     dia: "Lunes 22 de junio",
     hora: "",
+    imagen: "",
     categoria: "equinos",
   },
   {
@@ -155,6 +159,7 @@ const PROXIMAS_CHARLAS = [
     fecha: "2026-06-24",
     dia: "Miércoles 24 de junio",
     hora: "",
+    imagen: "img/georgina-castro.jpg",
     categoria: "pequeños-animales",
   },
   {
@@ -163,6 +168,7 @@ const PROXIMAS_CHARLAS = [
     fecha: "2026-06-29",
     dia: "Lunes 29 de junio",
     hora: "",
+    imagen: "img/damian-baron.jpg",
     categoria: "pequeños-animales",
   },
 ];
