@@ -28,7 +28,7 @@
 //
 // ── PASAR UNA CHARLA YA DADA A "GRABACIONES" ────────────────
 //   Borrala de PROXIMAS_CHARLAS y agregala en GRABACIONES con
-//   un id nuevo (el próximo libre es el 143):
+//   un id nuevo (el próximo libre es el 145):
 //     {
 //       id: 143,
 //       titulo: "Nombre de la charla",
@@ -304,7 +304,7 @@ const GRABACIONES = [
   {
     id: 12,
     titulo: "Enfermedades de la retina",
-    disertante: "Vet. Fabián Moreno",
+    disertante: "Vet. Fabio Arturo Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
@@ -356,7 +356,7 @@ const GRABACIONES = [
   {
     id: 16,
     titulo: "Emergencias: diagnóstico, tratamiento y urgencias",
-    disertante: "Vet. Fabián Moreno",
+    disertante: "Vet. Fabio Arturo Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
@@ -367,7 +367,7 @@ const GRABACIONES = [
   {
     id: 17,
     titulo: "Emergencias: manejando al paciente felino crítico. Parte 2",
-    disertante: "Vet. Fabián Moreno",
+    disertante: "Vet. Fabio Arturo Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
@@ -555,7 +555,7 @@ const GRABACIONES = [
   {
     id: 33,
     titulo: "Enfermedad renal del felino",
-    disertante: "Vet. Fabián Moreno",
+    disertante: "Vet. Fabio Arturo Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
@@ -640,7 +640,7 @@ const GRABACIONES = [
   {
     id: 40,
     titulo: "Farmacología: protocolos anestésicos",
-    disertante: "Vet. Esp. Eduardo Esjaita",
+    disertante: "Mv. Esp. Eduarda Esjaita",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -651,7 +651,7 @@ const GRABACIONES = [
   {
     id: 41,
     titulo: "¿Cómo mejorar la calidad del sueño anestésico en animales?",
-    disertante: "Vet. Esp. Eduardo Esjaita",
+    disertante: "Mv. Esp. Eduarda Esjaita",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -662,7 +662,7 @@ const GRABACIONES = [
   {
     id: 42,
     titulo: "Manejo del paciente diabético. Parte 1",
-    disertante: "Vet. Carolina V. Vecino",
+    disertante: "Dra. Carolina Vecino",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -673,7 +673,7 @@ const GRABACIONES = [
   {
     id: 43,
     titulo: "Manejo del paciente diabético. Parte 2",
-    disertante: "Vet. Carolina V. Vecino",
+    disertante: "Dra. Carolina Vecino",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -802,7 +802,7 @@ const GRABACIONES = [
   {
     id: 54,
     titulo: "Cetoacidosis diabética",
-    disertante: "Vet. Carolina Vecino",
+    disertante: "Dra. Carolina Vecino",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Endocrinología",
@@ -813,7 +813,7 @@ const GRABACIONES = [
   {
     id: 55,
     titulo: "Enfermedad de Addison",
-    disertante: "Vet. Carolina Vecino",
+    disertante: "Dra. Carolina Vecino",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Endocrinología",
@@ -854,7 +854,7 @@ const GRABACIONES = [
   {
     id: 58,
     titulo: "Ecografía de la Cavidad abdominal para los que empiezan. Primera parte",
-    disertante: "Esp. Sabrina Vega",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Imagenología",
@@ -865,7 +865,7 @@ const GRABACIONES = [
   {
     id: 59,
     titulo: "Ecografía como método diagnóstico en pacientes con vómito y diarrea. Parte 1",
-    disertante: "Esp. Sabrina Vega",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Imagenología",
@@ -876,7 +876,7 @@ const GRABACIONES = [
   {
     id: 60,
     titulo: "Ecografía como método diagnóstico en pacientes con vómito y diarrea. Parte 2",
-    disertante: "Esp. Sabrina Vega",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Imagenología",
@@ -887,7 +887,7 @@ const GRABACIONES = [
   {
     id: 61,
     titulo: "Ultrasonografía diagnóstica en felinos con clínica",
-    disertante: "Esp. Sabrina Vega",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Imagenología",
@@ -976,7 +976,7 @@ const GRABACIONES = [
   {
     id: 68,
     titulo: "Anatomía e imagen del aparato locomotor: diagnóstico por imágenes. Parte 1",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
@@ -987,7 +987,7 @@ const GRABACIONES = [
   {
     id: 69,
     titulo: "Regiones del sistema musculoesquelético: diagnóstico y tratamiento. Parte 2",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
@@ -1020,7 +1020,7 @@ const GRABACIONES = [
   {
     id: 72,
     titulo: "Diagnóstico por imágenes: signos radiológicos y ultrasonográficos en la región del pie",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
@@ -1031,7 +1031,7 @@ const GRABACIONES = [
   {
     id: 73,
     titulo: "Plan de monitoreo de actividad en reproducción equina",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
@@ -1072,7 +1072,7 @@ const GRABACIONES = [
   {
     id: 76,
     titulo: "Farmacología para analgesia, sedación y anestesia en equinos",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anestesia / Sedación / Farmacología",
@@ -1131,7 +1131,7 @@ const GRABACIONES = [
   {
     id: 81,
     titulo: "Nombrando de las clasificaciones y opciones equinas",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
@@ -1142,7 +1142,7 @@ const GRABACIONES = [
   {
     id: 82,
     titulo: "Sumando de las clasificaciones. Opciones equinas. Parte 2",
-    disertante: "MV. José Adrián Iranzo",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
@@ -1324,7 +1324,7 @@ const GRABACIONES = [
   {
     id: 96,
     titulo: "Atención del parto con patología",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
@@ -1346,7 +1346,7 @@ const GRABACIONES = [
   {
     id: 98,
     titulo: "Manejo de la actividad en reproducción bovina",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
@@ -1368,7 +1368,7 @@ const GRABACIONES = [
   {
     id: 100,
     titulo: "Enfermedades uterinas, manejo del endometrio y descarga vaginal",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
@@ -1497,7 +1497,7 @@ const GRABACIONES = [
   {
     id: 111,
     titulo: "Manejo en la ganadería. Parte 1",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1508,7 +1508,7 @@ const GRABACIONES = [
   {
     id: 112,
     titulo: "Manejo en la ganadería. Parte 2",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1519,7 +1519,7 @@ const GRABACIONES = [
   {
     id: 113,
     titulo: "Corrección integral del rodeo de cría, tambero y ganadería",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1530,7 +1530,7 @@ const GRABACIONES = [
   {
     id: 114,
     titulo: "Manejo de la regulación del seguimiento comunal de la ganadería y plan maestro",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1567,7 +1567,7 @@ const GRABACIONES = [
   {
     id: 117,
     titulo: "Fisiopatología de la vaca en el período periparto",
-    disertante: "MV. Lucio Campora",
+    disertante: "Mv. Lucio Campora",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Metabolismo / Nutrición / Fisiopatología",
@@ -1741,7 +1741,7 @@ const GRABACIONES = [
   {
     id: 131,
     titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 2",
-    disertante: "Fernando Grippaldi",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
@@ -1752,7 +1752,7 @@ const GRABACIONES = [
   {
     id: 132,
     titulo: "Ultrasonografía de la región ventral del cuello: Ecografía normal — Parte 2",
-    disertante: "Sabrina Vega",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
@@ -1774,7 +1774,7 @@ const GRABACIONES = [
   {
     id: 134,
     titulo: "Ultrasonografía de la región ventral del cuello: Ecografía patológica — Parte 3",
-    disertante: "Sabrina Vega",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
@@ -1817,45 +1817,12 @@ const GRABACIONES = [
   },
 
   // ──────────────────────────────────────────────
-  // MAYO 2026
+  // FEBRERO 2026
   // ──────────────────────────────────────────────
   {
-    id: 138,
-    titulo: "Hipotiroidismo — Parte 1",
-    disertante: "Carolina Vecino",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Endocrinología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 139,
-    titulo: "Linfoma canino: puntos clave",
-    disertante: "Fernanda Ferreira",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Oncología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 140,
-    titulo: "Principios del manejo transfusional en felinos",
-    disertante: "Celeste Maistruarena",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Clínica general / Emergencias",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 141,
-    titulo: "Principales enfermedades metabólicas carenciales en bovinos en la región central de Argentina",
-    disertante: "Germán Cantón",
+    id: 143,
+    titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 1",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
@@ -1864,12 +1831,12 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 142,
-    titulo: "El ABC del virus en la diarrea viral bovina",
-    disertante: "Darío Malacari",
+    id: 144,
+    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía normal — Parte 1",
+    disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Enfermedades infecciosas",
+    categoria: "equinos",
+    subcategoria: "Diagnóstico por imágenes",
     descripcion: "",
     imagen: "",
     duracion: "",
@@ -1919,9 +1886,9 @@ const CATEGORIAS = [
 // ============================================================
 // RESUMEN DE GRABACIONES POR CATEGORÍA
 // ============================================================
-// Pequeños animales:  ids 1–65 + 101–104  = 69 grabaciones
-// Equinos:            ids 66–91            = 26 grabaciones
-// Bovinos:            ids 92–100 + 105–117 = 26 grabaciones
-// No convencionales:  ids 118–130          = 13 grabaciones
-// TOTAL:                                  = 130 grabaciones
+// Pequeños animales:  ids 1–65 + 101–104 + 135–137  = 72 grabaciones
+// Equinos:            ids 66–91 + 132 + 134 + 144    = 29 grabaciones
+// Bovinos:            ids 92–100 + 105–117 + 131 + 133 + 141–143 = 30 grabaciones
+// No convencionales:  ids 118–130                    = 13 grabaciones
+// TOTAL:                                             = 139 grabaciones
 // ============================================================
