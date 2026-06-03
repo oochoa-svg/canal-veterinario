@@ -361,7 +361,7 @@ const GRABACIONES = [
   {
     id: 15,
     titulo: "Emergencias: cómo manejar pacientes críticos felinos",
-    disertante: "Vet. Juan Pablo Sena",
+    disertante: "Vet. Juan Pablo Reina",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
@@ -1099,7 +1099,7 @@ const GRABACIONES = [
   {
     id: 77,
     titulo: "Sedación para procedimientos, analgesia y sedación en equinos: ¿qué usamos?",
-    disertante: "Dra. Melisa Nastorcha-Gómez",
+    disertante: "Med. Vet. Rocío Paola Álvarez",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anestesia / Sedación / Farmacología",
@@ -1221,7 +1221,7 @@ const GRABACIONES = [
   {
     id: 87,
     titulo: "Endoscopía de las vías aéreas superiores en equinos",
-    disertante: "MV. Tamas Moreno",
+    disertante: "Mv. Esp. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
@@ -1232,7 +1232,7 @@ const GRABACIONES = [
   {
     id: 88,
     titulo: "Endoscopía Gástrica en equinos",
-    disertante: "MV. Tamas Moreno",
+    disertante: "Mv. Esp. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
