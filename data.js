@@ -330,7 +330,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/alejandro-etchecopaz.jpg",
     duracion: "",
   },
   {
@@ -341,7 +341,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/alejandro-etchecopaz.jpg",
     duracion: "",
   },
 
@@ -839,7 +839,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oncología / Dermatología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/matias-caverzan.jpg",
     duracion: "",
   },
   {
@@ -850,7 +850,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oncología / Dermatología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/matias-caverzan.jpg",
     duracion: "",
   },
 
@@ -1009,7 +1009,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/veronica-riveros.jpg",
     duracion: "",
   },
   {
@@ -1020,7 +1020,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/veronica-riveros.jpg",
     duracion: "",
   },
   {
@@ -1057,7 +1057,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
     descripcion: "",
-    imagen: "",
+    imagen: "img/valeria-arpon.jpg",
     duracion: "",
   },
   {
@@ -1068,7 +1068,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
     descripcion: "",
-    imagen: "",
+    imagen: "img/valeria-arpon.jpg",
     duracion: "",
   },
 
@@ -1083,7 +1083,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anestesia / Sedación / Farmacología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/rocio-alvarez.png",
     duracion: "",
   },
   {
@@ -1094,7 +1094,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anestesia / Sedación / Farmacología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/rocio-alvarez.png",
     duracion: "",
   },
 
@@ -1257,7 +1257,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/gustavo-zapata.jpg",
     duracion: "",
   },
 
@@ -1383,7 +1383,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oncología",
     descripcion: "Clasificación, diagnóstico citológico/histológico, estadificación y opciones terapéuticas actuales.",
-    imagen: "",
+    imagen: "img/fernanda-ferreira.jpg",
     duracion: "",
   },
   {
@@ -1405,7 +1405,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
     descripcion: "Diagnóstico y manejo de las principales carencias minerales y vitamínicas en rodeos de la región central de Argentina.",
-    imagen: "",
+    imagen: "img/german-canton.jpg",
     duracion: "",
   },
   {
@@ -1741,7 +1741,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Reproducción",
     descripcion: "",
-    imagen: "",
+    imagen: "img/paula-sosa-kardel.jpg",
     duracion: "",
   },
   {
@@ -1822,7 +1822,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/eugenio-sosa.jpg",
     duracion: "",
   },
   {
@@ -1833,7 +1833,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Clínica / Emergencias / Manejo sanitario",
     descripcion: "",
-    imagen: "",
+    imagen: "img/eugenio-sosa.jpg",
     duracion: "",
   },
   {
@@ -1844,7 +1844,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Comportamiento / Etología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/marina-snitcofsky.jpg",
     duracion: "",
   },
   // ──────────────────────────────────────────────
@@ -1880,7 +1880,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anestesia / Sedación / Farmacología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/rocio-alvarez.png",
     duracion: "",
   },
 
