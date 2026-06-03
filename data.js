@@ -844,7 +844,7 @@ const GRABACIONES = [
   {
     id: 56,
     titulo: "Melanoma cutáneo: un desafío en la clínica",
-    disertante: "Vet. Cayetano Matas",
+    disertante: "Vet. Matías Caverzan",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Oncología / Dermatología",
@@ -854,8 +854,8 @@ const GRABACIONES = [
   },
   {
     id: 57,
-    titulo: "Diagnóstico de células escamosas: desde la histopatología a la clínica",
-    disertante: "Vet. Cayetano Matas",
+    titulo: "Carcinoma de células escamosas: desde la histopatología a la clínica",
+    disertante: "Vet. Matías Caverzan",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Oncología / Dermatología",
@@ -913,7 +913,7 @@ const GRABACIONES = [
   },
   {
     id: 62,
-    titulo: "ERRM — Neurodiagnóstico",
+    titulo: "Servicio de resonancia magnética",
     disertante: "Ramiro Vidal y Piero Lovecchio",
     fecha: "",
     categoria: "pequeños-animales",
@@ -1221,7 +1221,7 @@ const GRABACIONES = [
   {
     id: 87,
     titulo: "Endoscopía de las vías aéreas superiores en equinos",
-    disertante: "Mv. Esp. Ramón Andrés López",
+    disertante: "Vet. Fabio Arturo Moreno",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
@@ -1232,7 +1232,7 @@ const GRABACIONES = [
   {
     id: 88,
     titulo: "Endoscopía Gástrica en equinos",
-    disertante: "Mv. Esp. Ramón Andrés López",
+    disertante: "Vet. Fabio Arturo Moreno",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
