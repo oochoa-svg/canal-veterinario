@@ -184,7 +184,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Neurología",
     descripcion: "",
-    imagen: "img/matias-delia.png",
+    imagen: "img/matias-delia.jpg",
     duracion: "",
   },
   {
@@ -195,7 +195,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Neurología",
     descripcion: "",
-    imagen: "img/matias-delia.png",
+    imagen: "img/matias-delia.jpg",
     duracion: "",
   },
   {
@@ -206,7 +206,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Neurología",
     descripcion: "",
-    imagen: "img/matias-delia.png",
+    imagen: "img/matias-delia.jpg",
     duracion: "",
   },
 
@@ -383,7 +383,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
   {
@@ -475,7 +475,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
 
@@ -516,7 +516,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
     descripcion: "",
-    imagen: "img/viviana-ruidiaz.png",
+    imagen: "img/viviana-ruidiaz.jpg",
     duracion: "",
   },
   {
@@ -527,7 +527,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
     descripcion: "",
-    imagen: "img/viviana-ruidiaz.png",
+    imagen: "img/viviana-ruidiaz.jpg",
     duracion: "",
   },
   {
@@ -538,7 +538,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
     descripcion: "",
-    imagen: "img/viviana-ruidiaz.png",
+    imagen: "img/viviana-ruidiaz.jpg",
     duracion: "",
   },
   {
@@ -549,7 +549,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
   {
@@ -645,7 +645,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
     descripcion: "",
-    imagen: "img/eduardo-ejaita.png",
+    imagen: "img/eduarda-esjaita.jpg",
     duracion: "",
   },
   {
@@ -656,7 +656,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
     descripcion: "",
-    imagen: "img/eduardo-ejaita.png",
+    imagen: "img/eduarda-esjaita.jpg",
     duracion: "",
   },
   {
@@ -689,7 +689,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/ximena-doxandabarat.jpg",
     duracion: "",
   },
   {
@@ -700,7 +700,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/ximena-doxandabarat.jpg",
     duracion: "",
   },
 
@@ -770,7 +770,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jonathan-bolanos.jpg",
     duracion: "",
   },
   {
@@ -781,7 +781,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jonathan-bolanos.jpg",
     duracion: "",
   },
   {
@@ -944,7 +944,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Infectología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/ximena-doxandabarat.jpg",
     duracion: "",
   },
 
@@ -1355,7 +1355,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Medicina interna",
     descripcion: "Rol del Calicivirus en la gingivoestomatitis crónica felina: mecanismos inmunológicos y fisiopatología.",
-    imagen: "",
+    imagen: "img/natalia-luka.jpg",
     duracion: "",
   },
   {
@@ -1388,7 +1388,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Medicina de urgencias",
     descripcion: "Indicaciones, grupos sanguíneos felinos, técnica de transfusión y monitoreo de complicaciones.",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
   {
@@ -1410,7 +1410,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "Fundamentos virológicos de la DVB: agente, patogenia y estrategias de control.",
-    imagen: "",
+    imagen: "img/dario-malacari.jpg",
     duracion: "",
   },
 
@@ -1757,7 +1757,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/dario-malacari.jpg",
     duracion: "",
   },
   {
@@ -1768,7 +1768,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Cirugía / Traumatología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jonathan-bolanos.jpg",
     duracion: "",
   },
   {
@@ -1779,7 +1779,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/gabriela-despuys.jpg",
     duracion: "",
   },
 
