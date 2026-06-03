@@ -28,7 +28,7 @@
 //
 // ── PASAR UNA CHARLA YA DADA A "GRABACIONES" ────────────────
 //   Borrala de PROXIMAS_CHARLAS y agregala en GRABACIONES con
-//   un id nuevo (el próximo libre es el 145):
+//   un id nuevo (el próximo libre es el 148):
 //     {
 //       id: 143,
 //       titulo: "Nombre de la charla",
@@ -117,6 +117,14 @@ const PLANES = [
 // ============================================================
 
 const PROXIMAS_CHARLAS = [
+  {
+    titulo: "Manejo del paciente alérgico",
+    disertante: "Pablo Manzuc",
+    fecha: "2026-06-07",
+    dia: "Sábado 7 de junio",
+    hora: "",
+    categoria: "pequeños-animales",
+  },
   {
     titulo: "Aproximación al paciente felino crítico",
     disertante: "Celeste Maistruarena",
@@ -1301,17 +1309,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 93,
-    titulo: "Principales enfermedades en bovinos, atención clínica",
-    disertante: "MV. Pablo Enamoro",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Clínica / Emergencias / Manejo sanitario",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 94,
     titulo: "Principios generales en enfermedades en bovinos",
     disertante: "MV. Juan Duque",
@@ -1349,17 +1346,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 97,
-    titulo: "Plan de manejo y control de la actividad reproductiva bovina",
-    disertante: "MV. Darío Doza",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Reproducción / Obstetricia",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 98,
     titulo: "Manejo de la actividad en reproducción bovina",
     disertante: "Mv. Lucio Campora",
@@ -1368,17 +1354,6 @@ const GRABACIONES = [
     subcategoria: "Reproducción / Obstetricia",
     descripcion: "",
     imagen: "img/lucio-campora.png",
-    duracion: "",
-  },
-  {
-    id: 99,
-    titulo: "Tacto rectal y manejo reproductivo en bovinos",
-    disertante: "MV. Eudemo Doza",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Reproducción / Obstetricia",
-    descripcion: "",
-    imagen: "",
     duracion: "",
   },
   {
@@ -1469,7 +1444,7 @@ const GRABACIONES = [
   {
     id: 107,
     titulo: "Sanidad y producción en el feedlot. Parte 1",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1480,7 +1455,7 @@ const GRABACIONES = [
   {
     id: 108,
     titulo: "Sanidad y producción en el feedlot. Parte 2",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1491,7 +1466,7 @@ const GRABACIONES = [
   {
     id: 109,
     titulo: "Sanidad y producción en el feedlot. Parte 3",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1502,7 +1477,7 @@ const GRABACIONES = [
   {
     id: 110,
     titulo: "Cesárea precoz",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1557,7 +1532,7 @@ const GRABACIONES = [
   {
     id: 115,
     titulo: "Manejo táctico-dinámico. Parte 1",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1857,6 +1832,39 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
+  {
+    id: 145,
+    titulo: "Manejo reproductivo de un rodeo lechero y seguimiento de la vaca desde el preparto, parto y liberación a servicio",
+    disertante: "MV. Eugenio Sosa",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "Reproducción / Obstetricia",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 146,
+    titulo: "Atención de la ternera recién nacida y manejo en los primeros 60 días",
+    disertante: "MV. Eugenio Sosa",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "Clínica / Emergencias / Manejo sanitario",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 147,
+    titulo: "Manejo multimodal de la fobia a estruendos en caninos",
+    disertante: "Vet. Marina Snitcofsky",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Comportamiento / Etología",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
 
 ];
 
@@ -1902,9 +1910,9 @@ const CATEGORIAS = [
 // ============================================================
 // RESUMEN DE GRABACIONES POR CATEGORÍA
 // ============================================================
-// Pequeños animales:  ids 1–65 + 101–104 + 135–137  = 72 grabaciones
-// Equinos:            ids 66–91 + 132 + 134 + 144    = 29 grabaciones
-// Bovinos:            ids 92–100 + 105–117 + 131 + 133 + 141–143 = 30 grabaciones
-// No convencionales:  ids 118–130                    = 13 grabaciones
-// TOTAL:                                             = 139 grabaciones
+// Pequeños animales:  73 grabaciones
+// Equinos:            29 grabaciones
+// Bovinos:            24 grabaciones
+// No convencionales:  13 grabaciones
+// TOTAL:              139 grabaciones
 // ============================================================
