@@ -700,7 +700,7 @@ const GRABACIONES = [
   {
     id: 44,
     titulo: "Antibióticos en pequeños y felinos: generalidades y clasificación. Parte 1",
-    disertante: "Vet. Jimena Doukhanarat",
+    disertante: "Vet. Ximena Doxandabarat",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -711,7 +711,7 @@ const GRABACIONES = [
   {
     id: 45,
     titulo: "Antibióticos en pequeños y felinos: generalidades y clasificación. Parte 2",
-    disertante: "Vet. Jimena Doukhanarat",
+    disertante: "Vet. Ximena Doxandabarat",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -955,7 +955,7 @@ const GRABACIONES = [
   {
     id: 65,
     titulo: "Claves para el diagnóstico diferencial",
-    disertante: "Vet. Jimena Doukhanarat",
+    disertante: "Vet. Ximena Doxandabarat",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Infectología",
@@ -1061,8 +1061,8 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 74,
-    titulo: "Diagnóstico y clasificación patológica del pie equino. Parte 1",
-    disertante: "Dra. Ana Valeria Antún",
+    titulo: "Diagnóstico ecográfico de las patologías del pie equino. Parte 1",
+    disertante: "Vet. Valeria Arpon",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
@@ -1072,8 +1072,8 @@ const GRABACIONES = [
   },
   {
     id: 75,
-    titulo: "Diagnóstico y clasificación patológica del pie equino. Parte 2",
-    disertante: "Dra. Ana Valeria Antún",
+    titulo: "Diagnóstico ecográfico de las patologías del pie equino. Parte 2",
+    disertante: "Vet. Valeria Arpon",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
@@ -1247,7 +1247,7 @@ const GRABACIONES = [
   {
     id: 89,
     titulo: "Manejo reproductivo de la yegua",
-    disertante: "MV. Daniel Guzman",
+    disertante: "Mv. Esp. Juan Manuel Oliden",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Reproducción",
