@@ -1899,7 +1899,7 @@ const GRABACIONES = [
   },
   {
     id: 193,
-    titulo: "Servicio de resonancia — Enna Neurodiagnóstico",
+    titulo: "Introducción al servicio de resonancia — ENNA Neurodiagnóstico",
     disertante: "Ramiro Vidal y Piero Lovecchio",
     fecha: "",
     categoria: "pequeños-animales",
