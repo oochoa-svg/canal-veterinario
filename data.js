@@ -1987,7 +1987,7 @@ const GRABACIONES = [
   },
   {
     id: 177,
-    titulo: "Orina felina",
+    titulo: "Orina felina, un pequeño charco con pistas diagnósticas. Parte 1",
     disertante: "Esp. MV. Viviana H. Ruidiaz",
     fecha: "",
     categoria: "pequeños-animales",
