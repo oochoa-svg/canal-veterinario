@@ -2139,6 +2139,17 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
+  {
+    id: 215,
+    titulo: "Tres pacientes, una droga ¿mismo resultado?",
+    disertante: "MV. Rocío Paola Álvarez",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "anestesia",
+    descripcion: "",
+    imagen: "img/rocio-alvarez.png",
+    duracion: "",
+  },
 ];
 
 // ============================================================
