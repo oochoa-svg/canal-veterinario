@@ -72,6 +72,12 @@ const SITE_CONFIG = {
   // ── Contacto para nuevos sponsors y colaboradores ──
   contactoSponsor: "5491131761770",
   contactoColaborador: "5491131761770",
+
+  // ── Google Analytics 4 (gratis) ──
+  // Pegá acá tu código de medición y listo. Lo sacás gratis en analytics.google.com
+  // → Admin → Flujos de datos → tu sitio. Mientras esté vacío, no se carga nada.
+  // Ejemplo: "G-ABC1234XYZ"
+  analyticsId: "",
 };
 
 // ============================================================
