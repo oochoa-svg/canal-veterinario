@@ -1985,6 +1985,17 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
+  {
+    id: 199,
+    titulo: "Diagnóstico ecográfico de patologías de la región del nudo",
+    disertante: "Dra. Valeria Arpón",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "ecografía",
+    descripcion: "",
+    imagen: "img/valeria-arpon.jpg",
+    duracion: "",
+  },
 ];
 
 // ============================================================
