@@ -414,7 +414,7 @@ const GRABACIONES = [
   },
   {
     id: 23,
-    titulo: "Manejo del hemograma y sus aplicaciones prácticas (confirmar)",
+    titulo: "Coagulograma y recuento de plaquetas",
     disertante: "MV. Carlos A. Fernández",
     fecha: "",
     categoria: "pequeños-animales",
@@ -425,7 +425,7 @@ const GRABACIONES = [
   },
   {
     id: 24,
-    titulo: "Cómo y cuándo solicitar exámenes complementarios y sus condiciones prácticas (confirmar)",
+    titulo: "Pruebas de laboratorio para el diagnóstico de hiperadrenocorticismo. Parte 1",
     disertante: "MV. Carlos A. Fernández",
     fecha: "",
     categoria: "pequeños-animales",
@@ -891,7 +891,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 74,
-    titulo: "Diagnóstico y clasificación patológica del pie equino. Parte 1",
+    titulo: "Diagnóstico ecográfico de las patologías del pie equino. Parte 1",
     disertante: "Dra. Valeria Arpón",
     fecha: "",
     categoria: "equinos",
@@ -902,7 +902,7 @@ const GRABACIONES = [
   },
   {
     id: 75,
-    titulo: "Diagnóstico y clasificación patológica del pie equino. Parte 2",
+    titulo: "Diagnóstico ecográfico de las patologías del pie equino. Parte 2",
     disertante: "Dra. Valeria Arpón",
     fecha: "",
     categoria: "equinos",
@@ -943,8 +943,8 @@ const GRABACIONES = [
   },
   {
     id: 81,
-    titulo: "Nombrando de las clasificaciones y opciones equinas (confirmar)",
-    disertante: "MV. José Adrián Manzo",
+    titulo: "Iluminando las claudicaciones oscuras. Parte 1",
+    disertante: "MV. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
@@ -954,8 +954,8 @@ const GRABACIONES = [
   },
   {
     id: 82,
-    titulo: "Sumando de las clasificaciones. Opciones equinas. Parte 2 (confirmar)",
-    disertante: "MV. José Adrián Manzo",
+    titulo: "Iluminando las claudicaciones oscuras. Parte 2",
+    disertante: "MV. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
@@ -1745,7 +1745,7 @@ const GRABACIONES = [
   },
   {
     id: 175,
-    titulo: "Pruebas de laboratorio para el diagnóstico de hiperadrenocorticismo",
+    titulo: "Pruebas de laboratorio para el diagnóstico de hiperadrenocorticismo. Parte 2",
     disertante: "MV. Carlos A. Fernández",
     fecha: "",
     categoria: "pequeños-animales",
@@ -1777,17 +1777,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 178,
-    titulo: "Iluminando las claudicaciones oscuras. Parte 2",
-    disertante: "MV. José Adrián Iranzo",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "claudicaciones",
-    descripcion: "",
-    imagen: "img/jose-adrian-iranzo.jpg",
-    duracion: "",
-  },
-  {
     id: 179,
     titulo: "Ojo rojo como punto de partida de las enfermedades oftalmológicas",
     disertante: "Santiago Parrinello",
@@ -1796,17 +1785,6 @@ const GRABACIONES = [
     subcategoria: "oftalmología",
     descripcion: "",
     imagen: "img/parrinello.png",
-    duracion: "",
-  },
-  {
-    id: 180,
-    titulo: "Diagnóstico ecográfico de las patologías del pie equino. Parte 1",
-    disertante: "Dra. Valeria Arpón",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "ecografía",
-    descripcion: "",
-    imagen: "img/valeria-arpon.jpg",
     duracion: "",
   },
   {
