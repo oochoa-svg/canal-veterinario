@@ -31,10 +31,10 @@
 //   un id nuevo (el próximo libre es el 151):
 //     {
 //       id: 143,
-//       titulo: "Nombre de la charla",
-//       disertante: "Nombre Apellido",
+//       titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 1",
+//       disertante: "Med. Vet. Fernando Grippaldi",
 //       fecha: "",
-//       categoria: "pequeños-animales",
+//       categoria: "bovinos",
 //       subcategoria: "Neurología",      // opcional
 //       descripcion: "",
 //       imagen: "",
@@ -464,7 +464,7 @@ const GRABACIONES = [
   },
   {
     id: 25,
-    titulo: "Análisis de orina: fundamentos y aplicaciones",
+    titulo: "Leucemias inespecíficas",
     disertante: "MV. Soledad Varela",
     fecha: "",
     categoria: "pequeños-animales",
@@ -1872,6 +1872,39 @@ const GRABACIONES = [
     imagen: "img/rocio-alvarez.png",
     duracion: "",
   },
+  {
+    id: 151,
+    titulo: "Dermatofitosis: abordaje clínico y actualización terapéutica",
+    disertante: "Dr. Alejandro Etchecopaz",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Infectología / Micología",
+    descripcion: "",
+    imagen: "img/alejandro-etchecopaz.jpg",
+    duracion: "",
+  },
+  {
+    id: 152,
+    titulo: "Alteraciones de la vesícula biliar",
+    disertante: "Vet. Brenda Viñas",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Medicina Interna",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 153,
+    titulo: "¿Cómo y cuándo solicitar una ecografía de la región ventral del cuello?",
+    disertante: "Esp. Vet. Sabrina E. Vega",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "Imagenología / Ecografía",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  }
 
 ];
 
