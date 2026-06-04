@@ -259,7 +259,7 @@ const GRABACIONES = [
   },
   {
     id: 10,
-    titulo: "Importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
+    titulo: "Anatomía clínica del ojo. Parte 3: importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
