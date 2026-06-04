@@ -2,6 +2,19 @@
 let categoriaActiva   = "todas";
 let subcategoriaActiva = "todas";
 let queryBusqueda     = "";
+let ordenActivo       = "recientes"; // recientes | alfabetico | categoria
+
+// Quita acentos/ñ y pasa a minúsculas (para buscar "viñas" con "vinas")
+function normalizar(s) {
+  return (s || "").toString()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .toLowerCase().trim();
+}
+
+// IDs "nuevos": las últimas 12 charlas agregadas (mayores ids)
+const NUEVOS_IDS = (typeof GRABACIONES !== "undefined")
+  ? new Set([...GRABACIONES].map(g => g.id).sort((a,b)=>b-a).slice(0, 12))
+  : new Set();
 
 // ── Config ──────────────────────────────────────────────────
 document.title = SITE_CONFIG.nombre;
@@ -25,6 +38,13 @@ if (waFloat) waFloat.href = waURL;
 // Link al formulario
 const linkForm = document.getElementById("link-formulario");
 if (linkForm) linkForm.href = SITE_CONFIG.formulario;
+
+// Link "reportar error" (disclaimer del footer)
+const linkReportar = document.getElementById("footer-reportar");
+if (linkReportar) {
+  const numReporte = SITE_CONFIG.whatsapp || SITE_CONFIG.contactoColaborador;
+  linkReportar.href = `https://wa.me/${numReporte}?text=${encodeURIComponent("Hola! Encontré algo para corregir en el Canal Veterinario:")}`;
+}
 
 // ── Helpers ─────────────────────────────────────────────────
 function formatFecha(iso) {
@@ -59,6 +79,9 @@ function renderStats() {
     `<span class="stat-item">🎬 <strong>${GRABACIONES.length}</strong> grabaciones</span>`,
     PROXIMAS_CHARLAS.length
       ? `<span class="stat-sep"></span><span class="stat-item">🎙️ <strong>${PROXIMAS_CHARLAS.length}</strong> próximas</span>`
+      : "",
+    SITE_CONFIG.comunidad
+      ? `<span class="stat-sep"></span><span class="stat-item">👥 <strong>${SITE_CONFIG.comunidad}</strong> en la comunidad</span>`
       : "",
     `<span class="stat-sep"></span>`,
     ...CATEGORIAS.filter(c => c.id !== "todas" && porCat[c.id]).map(c =>
@@ -114,15 +137,147 @@ function renderSubcats() {
 
 // ── Búsqueda ─────────────────────────────────────────────────
 function buscar(q) {
-  queryBusqueda = q.toLowerCase().trim();
+  queryBusqueda = normalizar(q);
   const btn = document.getElementById("btn-clear");
   btn.style.display = q ? "flex" : "none";
   renderContenido();
 }
 
+function ordenar(criterio) {
+  ordenActivo = criterio;
+  document.querySelectorAll(".orden-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.orden === criterio)
+  );
+  renderContenido();
+}
+
+function aplicarOrden(lista) {
+  const arr = [...lista];
+  if (ordenActivo === "alfabetico") {
+    arr.sort((a,b) => a.titulo.localeCompare(b.titulo, "es"));
+  } else if (ordenActivo === "categoria") {
+    arr.sort((a,b) => (a.categoria||"").localeCompare(b.categoria||"", "es")
+                      || a.titulo.localeCompare(b.titulo, "es"));
+  } else { // recientes: por id descendente
+    arr.sort((a,b) => b.id - a.id);
+  }
+  return arr;
+}
+
+// Compartir una charla con un colega por WhatsApp
+function compartirCharla(titulo, disertante) {
+  const txt = `👋 ¡Hola! Te comparto esta charla del Canal Veterinario, te puede interesar:\n\n📺 "${titulo}"${disertante ? `\n👤 ${disertante}` : ""}\n\nMirá todas las charlas acá 👉 ${location.origin}`;
+  window.open(`https://wa.me/?text=${encodeURIComponent(txt)}`, "_blank");
+}
+
 function limpiarBusqueda() {
   document.getElementById("search-input").value = "";
   buscar("");
+}
+
+// ── Buscador flotante (overlay) ──────────────────────────────
+function contarResultados() {
+  const q = queryBusqueda;
+  const prox = PROXIMAS_CHARLAS.filter(c =>
+    (categoriaActiva === "todas" || c.categoria === categoriaActiva) &&
+    (!q || [c.titulo, c.disertante, c.subcategoria||""].join(" ").toLowerCase().includes(q))
+  ).length;
+  const grab = GRABACIONES.filter(g =>
+    (categoriaActiva === "todas" || g.categoria === categoriaActiva) &&
+    (subcategoriaActiva === "todas" || g.subcategoria === subcategoriaActiva) &&
+    (!q || [g.titulo, g.disertante, g.subcategoria||"", g.descripcion||""].join(" ").toLowerCase().includes(q))
+  ).length;
+  return prox + grab;
+}
+
+function renderOverlayCats() {
+  const counts = {};
+  GRABACIONES.forEach(g => { counts[g.categoria] = (counts[g.categoria]||0)+1; });
+  document.getElementById("search-overlay-cats").innerHTML = CATEGORIAS.map(cat => {
+    const n = cat.id === "todas" ? GRABACIONES.length : (counts[cat.id] || 0);
+    return `<button class="cat-btn${cat.id===categoriaActiva?' active':''}"
+      data-cat="${cat.id}" onclick="filtrarDesdeOverlay('${cat.id}')">
+      ${cat.icono} ${cat.nombre} <span class="cat-count">(${n})</span>
+    </button>`;
+  }).join("");
+}
+
+function actualizarOverlayCount() {
+  const n = contarResultados();
+  document.getElementById("search-overlay-count").textContent =
+    n === 0 ? "Sin resultados" : `${n} resultado${n===1?"":"s"}`;
+}
+
+function abrirBuscador() {
+  renderOverlayCats();
+  actualizarOverlayCount();
+  const ov = document.getElementById("search-overlay");
+  ov.classList.add("show");
+  const input = document.getElementById("search-overlay-input");
+  input.value = queryBusqueda;
+  setTimeout(() => input.focus(), 50);
+}
+
+function cerrarBuscador(verResultados) {
+  document.getElementById("search-overlay").classList.remove("show");
+  if (verResultados) {
+    document.querySelector(".search-section")?.scrollIntoView({ behavior:"smooth", block:"start" });
+  }
+}
+
+function buscarOverlay(q) {
+  // mantener sincronizado con el buscador principal
+  const main = document.getElementById("search-input");
+  if (main) { main.value = q; }
+  buscar(q);
+  actualizarOverlayCount();
+}
+
+function filtrarDesdeOverlay(catId) {
+  filtrar(catId);
+  renderOverlayCats();
+  actualizarOverlayCount();
+}
+
+// Cerrar overlay al clickear fuera o con Escape
+document.getElementById("search-overlay")?.addEventListener("click", e => {
+  if (e.target.id === "search-overlay") cerrarBuscador();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") cerrarBuscador();
+});
+
+// ── Publicidad full-screen (interstitial) ────────────────────
+let adTimer = null;
+function cerrarAd() {
+  const ov = document.getElementById("ad-overlay");
+  if (ov) ov.classList.remove("show");
+  if (adTimer) clearTimeout(adTimer);
+}
+
+function iniciarAd() {
+  const c = SITE_CONFIG;
+  if (!c.sponsorNombre) return;
+  // Mostrar una vez por sesión
+  if (sessionStorage.getItem("adShown")) return;
+
+  const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  set("ad-nombre", c.sponsorNombre);
+  set("ad-slogan", c.sponsorSlogan || "");
+  set("ad-dir", c.sponsorDir || "");
+  const cta = document.getElementById("ad-cta");
+  if (cta && c.sponsorWA) cta.href = `https://wa.me/${c.sponsorWA}`;
+
+  const segundos = c.adSegundos || 6;
+  setTimeout(() => {
+    const ov = document.getElementById("ad-overlay");
+    if (!ov) return;
+    ov.classList.add("show");
+    sessionStorage.setItem("adShown", "1");
+    const bar = document.getElementById("ad-progress-bar");
+    if (bar) { bar.style.animationDuration = segundos + "s"; bar.classList.add("run"); }
+    adTimer = setTimeout(cerrarAd, segundos * 1000);
+  }, 1200);
 }
 
 function highlight(text, q) {
@@ -138,7 +293,7 @@ function cardCharla(c, q) {
     : `<span class="badge-proximo">📅 Próxima</span>`;
 
   const img = c.imagen
-    ? `<img class="card-img" src="${c.imagen}" alt="${c.titulo}" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img class="card-img" src="${c.imagen}" alt="${c.titulo}" loading="lazy" onerror="this.outerHTML='<div class=\\'card-placeholder\\'>🎙️</div>'">`
     : `<div class="card-placeholder">🎙️</div>`;
 
   const titulo   = highlight(c.titulo,   q);
@@ -165,16 +320,20 @@ function cardCharla(c, q) {
 
 function cardGrabacion(g, q) {
   const img = g.imagen
-    ? `<img class="card-img" src="${g.imagen}" alt="${g.titulo}" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img class="card-img" src="${g.imagen}" alt="${g.titulo}" loading="lazy" onerror="this.outerHTML='<div class=\\'card-placeholder\\'>🎬</div>'">`
     : `<div class="card-placeholder">🎬</div>`;
 
   const titulo = highlight(g.titulo,    q);
   const disert = highlight(g.disertante, q);
+  const nuevoBadge = NUEVOS_IDS.has(g.id) ? `<span class="badge-nuevo">✨ Nuevo</span>` : "";
+  const tituloEsc = g.titulo.replace(/'/g,"\\'").replace(/"/g,"&quot;");
+  const disertEsc = (g.disertante||"").replace(/'/g,"\\'").replace(/"/g,"&quot;");
 
   return `<div class="card" data-cat="${g.categoria}">
     ${img}
     <div class="card-body">
       <div class="card-badges">
+        ${nuevoBadge}
         <span class="badge-cat">${nombreCategoria(g.categoria)}</span>
         ${g.subcategoria ? `<span class="badge-subcat">${g.subcategoria}</span>` : ""}
       </div>
@@ -184,6 +343,7 @@ function cardGrabacion(g, q) {
       <div class="card-meta">
         ${g.fecha ? `<span class="card-date">📅 ${formatFecha(g.fecha)}</span>` : ""}
         ${g.duracion ? `<span class="card-duration">⏱ ${g.duracion}</span>` : ""}
+        <button class="btn-compartir" title="Compartir con un colega" onclick="compartirCharla('${tituloEsc}','${disertEsc}')">📤 Compartir</button>
       </div>
       <a href="${SITE_CONFIG.formulario}" target="_blank" class="btn-card">Ver grabación →</a>
     </div>
@@ -198,22 +358,23 @@ function renderContenido() {
   const proxFilt = PROXIMAS_CHARLAS.filter(c => {
     if (categoriaActiva !== "todas" && c.categoria !== categoriaActiva) return false;
     if (q) {
-      const hay = [c.titulo, c.disertante, c.subcategoria||""].join(" ").toLowerCase();
+      const hay = normalizar([c.titulo, c.disertante, c.subcategoria||""].join(" "));
       if (!hay.includes(q)) return false;
     }
     return true;
   });
 
   // Filtrar grabaciones
-  const grabFilt = GRABACIONES.filter(g => {
+  let grabFilt = GRABACIONES.filter(g => {
     if (categoriaActiva !== "todas" && g.categoria !== categoriaActiva) return false;
     if (subcategoriaActiva !== "todas" && g.subcategoria !== subcategoriaActiva) return false;
     if (q) {
-      const hay = [g.titulo, g.disertante, g.subcategoria||"", g.descripcion||""].join(" ").toLowerCase();
+      const hay = normalizar([g.titulo, g.disertante, g.subcategoria||"", g.descripcion||""].join(" "));
       if (!hay.includes(q)) return false;
     }
     return true;
   });
+  grabFilt = aplicarOrden(grabFilt);
 
   // Badges de conteo
   document.getElementById("badge-charlas").textContent = proxFilt.length;
@@ -381,8 +542,29 @@ function renderBanners() {
   set("sponsor-wa-txt", c.sponsorTel || "");
   set("sponsor-dir", c.sponsorDir || "");
   href("sponsor-wa-link", `https://wa.me/${c.sponsorWA}`);
-  href("banner-sponsor-wa", `https://wa.me/${c.contactoSponsor}?text=${encodeURIComponent("Hola! Me interesa ser sponsor del Canal Veterinario")}`);
-  href("banner-collab-wa", `https://wa.me/${c.contactoColaborador}?text=${encodeURIComponent("Hola! Me gustaría dar una charla en el Canal Veterinario")}`);
+
+  // Banner rotativo: alterna entre "sumate como sponsor" y "dar una charla"
+  const mensajes = [
+    {
+      icono: "🤝",
+      texto: '¿Tu empresa quiere llegar a veterinarios? <strong>Sumate como sponsor</strong>',
+      link: `https://wa.me/${c.contactoSponsor}?text=${encodeURIComponent("Hola! Me interesa ser sponsor del Canal Veterinario")}`,
+    },
+    {
+      icono: "🎙️",
+      texto: '¿Querés dar una charla? <strong>Sumate como colaborador</strong>',
+      link: `https://wa.me/${c.contactoColaborador}?text=${encodeURIComponent("Hola! Me gustaría dar una charla en el Canal Veterinario")}`,
+    },
+  ];
+  let idx = 0;
+  function pintarJoin() {
+    const m = mensajes[idx];
+    set("join-icon", m.icono);
+    const t = document.getElementById("join-text"); if (t) t.innerHTML = m.texto;
+    href("join-wa", m.link);
+  }
+  pintarJoin();
+  setInterval(() => { idx = (idx + 1) % mensajes.length; pintarJoin(); }, 6000);
 }
 
 // ── Init ─────────────────────────────────────────────────────
@@ -393,3 +575,4 @@ renderPlanes();
 renderModalBtns();
 renderBanners();
 iniciarPopup();
+iniciarAd();
