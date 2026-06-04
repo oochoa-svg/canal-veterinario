@@ -2128,6 +2128,17 @@ const GRABACIONES = [
     imagen: "img/ximena-doxandabarat.jpg",
     duracion: "",
   },
+  {
+    id: 214,
+    titulo: "Merma tacto-Destete. Parte 2",
+    disertante: "Med. Vet. Fernando Grippaldi",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "reproducción",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
 ];
 
 // ============================================================
