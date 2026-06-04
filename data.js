@@ -547,7 +547,7 @@ const GRABACIONES = [
   },
   {
     id: 39,
-    titulo: "Insuficiencia pancreática exocrina",
+    titulo: "Manejo nutricional y farmacológico de la IPE (insuficiencia pancreática exocrina)",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
