@@ -31,8 +31,8 @@
 //   un id nuevo (el próximo libre es el 143):
 //     {
 //       id: 143,
-//       titulo: "Nombre de la charla",
-//       disertante: "Nombre Apellido",
+//       titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 1",
+//       disertante: "Fernando Grippaldi",
 //       fecha: "",
 //       categoria: "pequeños-animales",
 //       subcategoria: "Neurología",      // opcional
@@ -292,7 +292,7 @@ const GRABACIONES = [
   },
   {
     id: 11,
-    titulo: "Manejo clínico de las úlceras. Parte 2",
+    titulo: "Manejo clínico de las úlceras de córnea. Parte 2",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -2148,6 +2148,17 @@ const GRABACIONES = [
     subcategoria: "anestesia",
     descripcion: "",
     imagen: "img/rocio-alvarez.png",
+    duracion: "",
+  },
+  {
+    id: 216,
+    titulo: "Leucemias inespecíficas",
+    disertante: "MV. Soledad Varela",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "laboratorio",
+    descripcion: "",
+    imagen: "",
     duracion: "",
   },
 ];
