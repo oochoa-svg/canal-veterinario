@@ -177,17 +177,6 @@ const GRABACIONES = [
   // PEQUEÑOS ANIMALES — NEUROLOGÍA
   // ──────────────────────────────────────────────
   {
-    id: 1,
-    titulo: "El paciente neurológico en pequeños animales",
-    disertante: "Vet. Esp. Natalia Elia",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Neurología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 2,
     titulo: "Aproximación al paciente con crisis convulsivas. Parte 1",
     disertante: "Vet. Esp. Natalia Elia",
