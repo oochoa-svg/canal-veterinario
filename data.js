@@ -37,7 +37,7 @@
 //       categoria: "bovinos",
 //       subcategoria: "Neurología",      // opcional
 //       descripcion: "",
-//       imagen: "",
+//       imagen: "img/fernando-grippaldi.jpg",
 //       duracion: "",
 //     },
 //
@@ -435,7 +435,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/soledad-varela.jpg",
     duracion: "",
   },
   {
@@ -820,7 +820,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
   {
@@ -831,7 +831,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
   {
@@ -864,7 +864,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
 
@@ -931,7 +931,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
   {
@@ -942,7 +942,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
 
@@ -1198,7 +1198,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1209,7 +1209,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1220,7 +1220,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1231,7 +1231,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1264,7 +1264,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1286,7 +1286,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1486,7 +1486,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -1777,7 +1777,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "anatomía",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
   {
@@ -1788,7 +1788,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "anatomía",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jose-iranzo.jpg",
     duracion: "",
   },
   {
@@ -1876,7 +1876,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "neurología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/enna-neurodiagnostico.jpg",
     duracion: "",
   },
   {
@@ -1931,7 +1931,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "laboratorio",
     descripcion: "",
-    imagen: "",
+    imagen: "img/soledad-varela.jpg",
     duracion: "",
   },
   {
@@ -2074,7 +2074,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "reproducción",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -2107,7 +2107,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "reproducción",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fernando-grippaldi.jpg",
     duracion: "",
   },
   {
@@ -2129,7 +2129,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "laboratorio",
     descripcion: "",
-    imagen: "",
+    imagen: "img/soledad-varela.jpg",
     duracion: "",
   },
 ];
