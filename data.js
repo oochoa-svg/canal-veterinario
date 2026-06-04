@@ -237,7 +237,7 @@ const GRABACIONES = [
   },
   {
     id: 6,
-    titulo: "Avalúo clínico oftalmológico (confirmar)",
+    titulo: "Avalúo clínico oftalmológico",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -270,7 +270,7 @@ const GRABACIONES = [
   },
   {
     id: 9,
-    titulo: "Patologías de párpados de córnea (confirmar)",
+    titulo: "Patologías de párpados y de córnea",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -294,17 +294,6 @@ const GRABACIONES = [
     id: 11,
     titulo: "Manejo clínico de las úlceras. Parte 2",
     disertante: "Santiago Parrinello",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Oftalmología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 12,
-    titulo: "Enfermedades de la retina (confirmar)",
-    disertante: "Vet. Fabián Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
@@ -345,7 +334,7 @@ const GRABACIONES = [
   {
     id: 15,
     titulo: "Emergencias: cómo manejar pacientes críticos felinos (confirmar)",
-    disertante: "Vet. Juan Pablo Sena",
+    disertante: "MV. Juan Pablo Reina",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
@@ -376,19 +365,8 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 18,
-    titulo: "Manejo del paciente felino crítico (confirmar)",
-    disertante: "Vet. Celeste Maistruarena",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Clínica general / Emergencias",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 19,
-    titulo: "Triage en gatos",
+    titulo: "Triage en felinos",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -469,7 +447,7 @@ const GRABACIONES = [
   },
   {
     id: 26,
-    titulo: "Manejo de afecciones (confirmar)",
+    titulo: "Manejo de efusiones",
     disertante: "Vet. Celeste Maistruarena",
     fecha: "",
     categoria: "pequeños-animales",
@@ -484,7 +462,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 27,
-    titulo: "Cardiología: diagnóstico por imagen (confirmar)",
+    titulo: "Cardiopatías frecuentes del paciente canino geronte. La rutina cardiológica: cómo estudiamos al corazón en nuestra consulta diaria",
     disertante: "Vet. Nicolás Porta",
     fecha: "",
     categoria: "pequeños-animales",
@@ -523,39 +501,6 @@ const GRABACIONES = [
     id: 30,
     titulo: "Enfermedades del tracto urinario caudal del gato: ¿Cuál es el mayor desafío, diagnóstico o tratamiento? Segunda parte",
     disertante: "Esp. MV. Viviana H. Ruidiaz",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Urinario / Nefrología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 31,
-    titulo: "La falla renal aguda en el pequeño felino (confirmar)",
-    disertante: "Esp. MV. Viviana H. Ruidiaz",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Urinario / Nefrología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 32,
-    titulo: "Enfermedad renal crónica con estadificación (confirmar)",
-    disertante: "Vet. Celeste Maistruarena",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Urinario / Nefrología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 33,
-    titulo: "Enfermedad renal del felino (confirmar)",
-    disertante: "Vet. Fabián Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
@@ -638,28 +583,6 @@ const GRABACIONES = [
   // PEQUEÑOS ANIMALES — FARMACOLOGÍA / ANESTESIA / ANALGESIA
   // ──────────────────────────────────────────────
   {
-    id: 40,
-    titulo: "Farmacología: protocolos anestésicos (confirmar)",
-    disertante: "Vet. Esp. Eduardo Iguarta",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Farmacología / Anestesia / Analgesia",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 41,
-    titulo: "¿Cómo mejorar la calidad del sueño anestésico en animales? (confirmar)",
-    disertante: "Vet. Esp. Eduardo Iguarta",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Farmacología / Anestesia / Analgesia",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 42,
     titulo: "Manejo del paciente diabético. Parte 1",
     disertante: "Vet. Carolina V. Vecino",
@@ -683,8 +606,8 @@ const GRABACIONES = [
   },
   {
     id: 44,
-    titulo: "Antibióticos en pequeños y felinos: generalidades y clasificación. Parte 1",
-    disertante: "Vet. Jimena Doukhanarat",
+    titulo: "Antibióticos en pequeños animales y felinos: generalidades y clasificación. Parte 1",
+    disertante: "Vet. Ximena Doxandabarat",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -694,8 +617,8 @@ const GRABACIONES = [
   },
   {
     id: 45,
-    titulo: "Antibióticos en pequeños y felinos: generalidades y clasificación. Parte 2",
-    disertante: "Vet. Jimena Doukhanarat",
+    titulo: "Antibióticos en pequeños animales y felinos: generalidades y clasificación. Parte 2",
+    disertante: "Vet. Ximena Doxandabarat",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
@@ -720,7 +643,7 @@ const GRABACIONES = [
   },
   {
     id: 47,
-    titulo: "Rehabilitación de ligamento cruzado en perros. Parte 1",
+    titulo: "Rehabilitación de ligamento cruzado en caninos. Parte 1",
     disertante: "Vet. Flor de Prade",
     fecha: "",
     categoria: "pequeños-animales",
@@ -731,7 +654,7 @@ const GRABACIONES = [
   },
   {
     id: 48,
-    titulo: "Rehabilitación de ligamento cruzado en perros. Parte 2",
+    titulo: "Rehabilitación de ligamento cruzado en caninos. Parte 2",
     disertante: "Vet. Flor de Prade",
     fecha: "",
     categoria: "pequeños-animales",
@@ -742,41 +665,8 @@ const GRABACIONES = [
   },
   {
     id: 49,
-    titulo: "Rehabilitación de pequeños animales. Parte 3 (confirmar)",
+    titulo: "Rehabilitación en pequeños animales. Parte 3",
     disertante: "Vet. Flor de Prade",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Ortopedia / Rehabilitación",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 50,
-    titulo: "Terapias terapéuticas para animales de compañía (confirmar)",
-    disertante: "Vet. Flor de Prade",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Ortopedia / Rehabilitación",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 51,
-    titulo: "Clínica ortopédica: elecciones y criterios (confirmar)",
-    disertante: "Dr. Jonatan Bolaños",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Ortopedia / Rehabilitación",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 52,
-    titulo: "Lesiones articulares: abordaje, pronóstico y resolución en pequeños animales (confirmar)",
-    disertante: "Dr. Jonatan Bolaños",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
@@ -786,7 +676,7 @@ const GRABACIONES = [
   },
   {
     id: 53,
-    titulo: "Caninos ortopédicos (confirmar)",
+    titulo: "Carritos ortopédicos",
     disertante: "Vet. Flor de Prade",
     fecha: "",
     categoria: "pequeños-animales",
@@ -826,20 +716,9 @@ const GRABACIONES = [
   // PEQUEÑOS ANIMALES — ONCOLOGÍA / DERMATOLOGÍA
   // ──────────────────────────────────────────────
   {
-    id: 56,
-    titulo: "Melanoma cutáneo: un desafío en la clínica (confirmar)",
-    disertante: "Vet. Cayetano Matas",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Oncología / Dermatología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 57,
-    titulo: "Diagnóstico de células escamosas: desde la histopatología a la clínica (confirmar)",
-    disertante: "Vet. Cayetano Matas",
+    titulo: "Carcinoma de células escamosas: desde la histopatología a la clínica",
+    disertante: "MV. Matías Caverzan",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Oncología / Dermatología",
@@ -897,7 +776,7 @@ const GRABACIONES = [
   },
   {
     id: 62,
-    titulo: "ERRM — Neurodiagnóstico (confirmar)",
+    titulo: "ENNA Neurodiagnóstico",
     disertante: "Ramiro Vidal y Piero Lovecchio",
     fecha: "",
     categoria: "pequeños-animales",
@@ -936,35 +815,13 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   // PEQUEÑOS ANIMALES — INFECTOLOGÍA
   // ──────────────────────────────────────────────
-  {
-    id: 65,
-    titulo: "Claves para el diagnóstico diferencial (confirmar)",
-    disertante: "Vet. Jimena Doukhanarat",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Infectología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // EQUINOS — ANATOMÍA / BIOMECÁNICA / APARATO LOCOMOTOR
   // ──────────────────────────────────────────────
   {
     id: 66,
-    titulo: "Aspectos radiográficos de los patrones en equinos: miembros anteriores (confirmar)",
-    disertante: "Dr. Carlos Blanco",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 67,
-    titulo: "Aparato de sostén y biomecánica del equino (confirmar)",
+    titulo: "Aparato de sostén y sistema fibroelástico del equino",
     disertante: "Dr. Carlos Blanco",
     fecha: "",
     categoria: "equinos",
@@ -1028,17 +885,6 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
-  {
-    id: 73,
-    titulo: "Plan de monitoreo de actividad en reproducción equina (confirmar)",
-    disertante: "Vet. José Adrián Manzo",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // EQUINOS — DIAGNÓSTICO POR IMÁGENES
@@ -1069,28 +915,6 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   // EQUINOS — ANESTESIA / SEDACIÓN / FARMACOLOGÍA
   // ──────────────────────────────────────────────
-  {
-    id: 76,
-    titulo: "Farmacología para analgesia, sedación y anestesia en equinos (confirmar)",
-    disertante: "Vet. José Adrián Manzo",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "Anestesia / Sedación / Farmacología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 77,
-    titulo: "Sedación para procedimientos, analgesia y sedación en equinos: ¿qué usamos? (confirmar)",
-    disertante: "Dra. Melisa Nastorcha-Gómez",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "Anestesia / Sedación / Farmacología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // EQUINOS — REHABILITACIÓN / DEPORTE / TERAPIAS
@@ -1109,17 +933,6 @@ const GRABACIONES = [
   {
     id: 79,
     titulo: "Fisioterapia en el equino deportivo. Parte 2",
-    disertante: "MV. Florencia de Prade",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "Rehabilitación / Deporte / Terapias",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 80,
-    titulo: "Fisioterapia en equinos. Parte 3 (confirmar)",
     disertante: "MV. Florencia de Prade",
     fecha: "",
     categoria: "equinos",
@@ -1156,8 +969,8 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 83,
-    titulo: "Introducción a las terapias complementarias afines al equino (confirmar)",
-    disertante: "MV. Florencia de Prade",
+    titulo: "Introducción a las corrientes eléctricas en equinos. Parte 1",
+    disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Terapias complementarias",
@@ -1167,8 +980,8 @@ const GRABACIONES = [
   },
   {
     id: 84,
-    titulo: "Terapias complementarias en equinos. Parte 2 (confirmar)",
-    disertante: "MV. Florencia de Prade",
+    titulo: "Introducción a las corrientes eléctricas en equinos. Parte 2",
+    disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Terapias complementarias",
@@ -1182,8 +995,8 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 85,
-    titulo: "Endoscopía de las vías aéreas: problemas en las vías aéreas (confirmar)",
-    disertante: "MV. Julián Albanes López",
+    titulo: "Endoscopía como herramienta diagnóstica en equinos con diferentes problemas en las vías aéreas",
+    disertante: "MV. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
@@ -1193,8 +1006,8 @@ const GRABACIONES = [
   },
   {
     id: 86,
-    titulo: "Endoscopía de las vías aéreas superiores: abordaje por endoscopía (confirmar)",
-    disertante: "MV. Julián Albanes López",
+    titulo: "Resolución diagnóstica por endoscopía de vías aéreas superiores",
+    disertante: "MV. Ramón Andrés López",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
@@ -1275,7 +1088,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 92,
-    titulo: "Diagnóstico y tratamiento de diarreas en terneros (confirmar)",
+    titulo: "Diagnóstico y tratamiento de neumonías y diarreas en terneros",
     disertante: "MV. Juan Duque",
     fecha: "",
     categoria: "bovinos",
@@ -1297,7 +1110,7 @@ const GRABACIONES = [
   },
   {
     id: 94,
-    titulo: "Principios generales en enfermedades en bovinos (confirmar)",
+    titulo: "Principales enfermedades de la vaca post parto",
     disertante: "MV. Juan Duque",
     fecha: "",
     categoria: "bovinos",
@@ -1308,7 +1121,7 @@ const GRABACIONES = [
   },
   {
     id: 95,
-    titulo: "Enfermedades infecciosas de la hacienda bovina (confirmar)",
+    titulo: "Enfermedades infecciosas de interés en la reproducción bovina",
     disertante: "MV. Juan Duque",
     fecha: "",
     categoria: "bovinos",
@@ -1323,41 +1136,8 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 96,
-    titulo: "Atención del parto con patología (confirmar)",
+    titulo: "Atención del parto en producción bovina",
     disertante: "MV. Lucio Campura",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Reproducción / Obstetricia",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 97,
-    titulo: "Plan de manejo y control de la actividad reproductiva bovina (confirmar)",
-    disertante: "MV. Darío Doza",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Reproducción / Obstetricia",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 98,
-    titulo: "Manejo de la actividad en reproducción bovina (confirmar)",
-    disertante: "MV. Lucio Campura",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Reproducción / Obstetricia",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 99,
-    titulo: "Tacto rectal y manejo reproductivo en bovinos (confirmar)",
-    disertante: "MV. Eudemo Doza",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
@@ -1367,7 +1147,7 @@ const GRABACIONES = [
   },
   {
     id: 100,
-    titulo: "Enfermedades uterinas, manejo del endometrio y descarga vaginal (confirmar)",
+    titulo: "Enfermedades uterinas en bovinos lecheros: endometritis y descarga vaginal purulenta. Parte 2",
     disertante: "MV. Lucio Campura",
     fecha: "",
     categoria: "bovinos",
@@ -1485,8 +1265,8 @@ const GRABACIONES = [
   },
   {
     id: 110,
-    titulo: "Cesárea precoz (confirmar)",
-    disertante: "MV. Fernando Arrieta",
+    titulo: "Destete precoz",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1518,8 +1298,8 @@ const GRABACIONES = [
   },
   {
     id: 113,
-    titulo: "Corrección integral del rodeo de cría, tambero y ganadería (confirmar)",
-    disertante: "MV. Lucio Campura",
+    titulo: "Corrección mineral en vaca de cría. Sales que bajan la presión",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1618,7 +1398,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 121,
-    titulo: "Medicina en conejillos de oveja (confirmar)",
+    titulo: "Medicina de la comadreja overa",
     disertante: "MV. Nicolás Cohen",
     fecha: "",
     categoria: "no-convencionales",
@@ -1688,7 +1468,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 127,
-    titulo: "Medicina en erizo, Anestesia y cirugía (confirmar)",
+    titulo: "Medicina en erizo pigmeo africano. Anestesia y cirugía",
     disertante: "MV. Nicolás Cohen",
     fecha: "",
     categoria: "no-convencionales",
@@ -2097,7 +1877,7 @@ const GRABACIONES = [
   },
   {
     id: 187,
-    titulo: "Ictericia en gatos",
+    titulo: "Ictericia en felinos",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -2170,6 +1950,28 @@ const GRABACIONES = [
     subcategoria: "neurología",
     descripcion: "",
     imagen: "",
+    duracion: "",
+  },
+  {
+    id: 194,
+    titulo: "Enfermedades uterinas en bovinos lecheros: endometritis y descarga vaginal purulenta. Parte 1",
+    disertante: "Mv. Lucio Campora",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "reproducción",
+    descripcion: "",
+    imagen: "img/lucio-campora.png",
+    duracion: "",
+  },
+  {
+    id: 195,
+    titulo: "Homeostasis del calcio y fisiopatología de la hipocalcemia puerperal",
+    disertante: "Mv. Lucio Campora",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "medicina interna",
+    descripcion: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
 ];
