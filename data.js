@@ -2029,6 +2029,17 @@ const GRABACIONES = [
     imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
+  {
+    id: 204,
+    titulo: "Atención de la ternera recién nacida y manejo en los primeros 60 días",
+    disertante: "MV. Eugenio Sosa",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "manejo",
+    descripcion: "",
+    imagen: "img/eugenio-sosa.jpg",
+    duracion: "",
+  },
 ];
 
 // ============================================================
