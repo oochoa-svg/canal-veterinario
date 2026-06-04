@@ -790,17 +790,6 @@ const GRABACIONES = [
     imagen: "img/jonathan-bolanos.jpg",
     duracion: "",
   },
-  {
-    id: 53,
-    titulo: "Caninos ortopédicos",
-    disertante: "Vet. Florencia de Priede",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Ortopedia / Rehabilitación",
-    descripcion: "",
-    imagen: "img/florencia-de-priede.png",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // PEQUEÑOS ANIMALES — ENDOCRINOLOGÍA
@@ -903,7 +892,7 @@ const GRABACIONES = [
   },
   {
     id: 62,
-    titulo: "Neurodiagnóstico por resonancia magnética",
+    titulo: "Servicio de resonancia magnética",
     disertante: "Ramiro Vidal y Piero Lovecchio",
     fecha: "",
     categoria: "pequeños-animales",
