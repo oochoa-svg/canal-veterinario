@@ -2084,6 +2084,17 @@ const GRABACIONES = [
     imagen: "img/parrinello.png",
     duracion: "",
   },
+  {
+    id: 210,
+    titulo: "Nutrición en el síndrome senil",
+    disertante: "Vet. Brenda Viñas",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "nutrición",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
 ];
 
 // ============================================================
