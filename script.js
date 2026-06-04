@@ -2,6 +2,19 @@
 let categoriaActiva   = "todas";
 let subcategoriaActiva = "todas";
 let queryBusqueda     = "";
+let ordenActivo       = "recientes"; // recientes | alfabetico | categoria
+
+// Quita acentos/ñ y pasa a minúsculas (para buscar "viñas" con "vinas")
+function normalizar(s) {
+  return (s || "").toString()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .toLowerCase().trim();
+}
+
+// IDs "nuevos": las últimas 12 charlas agregadas (mayores ids)
+const NUEVOS_IDS = (typeof GRABACIONES !== "undefined")
+  ? new Set([...GRABACIONES].map(g => g.id).sort((a,b)=>b-a).slice(0, 12))
+  : new Set();
 
 // ── Config ──────────────────────────────────────────────────
 document.title = SITE_CONFIG.nombre;
@@ -121,10 +134,37 @@ function renderSubcats() {
 
 // ── Búsqueda ─────────────────────────────────────────────────
 function buscar(q) {
-  queryBusqueda = q.toLowerCase().trim();
+  queryBusqueda = normalizar(q);
   const btn = document.getElementById("btn-clear");
   btn.style.display = q ? "flex" : "none";
   renderContenido();
+}
+
+function ordenar(criterio) {
+  ordenActivo = criterio;
+  document.querySelectorAll(".orden-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.orden === criterio)
+  );
+  renderContenido();
+}
+
+function aplicarOrden(lista) {
+  const arr = [...lista];
+  if (ordenActivo === "alfabetico") {
+    arr.sort((a,b) => a.titulo.localeCompare(b.titulo, "es"));
+  } else if (ordenActivo === "categoria") {
+    arr.sort((a,b) => (a.categoria||"").localeCompare(b.categoria||"", "es")
+                      || a.titulo.localeCompare(b.titulo, "es"));
+  } else { // recientes: por id descendente
+    arr.sort((a,b) => b.id - a.id);
+  }
+  return arr;
+}
+
+// Compartir una charla por WhatsApp
+function compartirCharla(titulo, disertante) {
+  const txt = `📺 Te recomiendo esta charla del Canal Veterinario:\n\n"${titulo}"${disertante ? `\n👤 ${disertante}` : ""}\n\n${location.origin}`;
+  window.open(`https://wa.me/?text=${encodeURIComponent(txt)}`, "_blank");
 }
 
 function limpiarBusqueda() {
@@ -282,11 +322,15 @@ function cardGrabacion(g, q) {
 
   const titulo = highlight(g.titulo,    q);
   const disert = highlight(g.disertante, q);
+  const nuevoBadge = NUEVOS_IDS.has(g.id) ? `<span class="badge-nuevo">✨ Nuevo</span>` : "";
+  const tituloEsc = g.titulo.replace(/'/g,"\\'").replace(/"/g,"&quot;");
+  const disertEsc = (g.disertante||"").replace(/'/g,"\\'").replace(/"/g,"&quot;");
 
   return `<div class="card" data-cat="${g.categoria}">
     ${img}
     <div class="card-body">
       <div class="card-badges">
+        ${nuevoBadge}
         <span class="badge-cat">${nombreCategoria(g.categoria)}</span>
         ${g.subcategoria ? `<span class="badge-subcat">${g.subcategoria}</span>` : ""}
       </div>
@@ -296,6 +340,7 @@ function cardGrabacion(g, q) {
       <div class="card-meta">
         ${g.fecha ? `<span class="card-date">📅 ${formatFecha(g.fecha)}</span>` : ""}
         ${g.duracion ? `<span class="card-duration">⏱ ${g.duracion}</span>` : ""}
+        <button class="btn-compartir" title="Compartir por WhatsApp" onclick="compartirCharla('${tituloEsc}','${disertEsc}')">📤</button>
       </div>
       <a href="${SITE_CONFIG.formulario}" target="_blank" class="btn-card">Ver grabación →</a>
     </div>
@@ -310,22 +355,23 @@ function renderContenido() {
   const proxFilt = PROXIMAS_CHARLAS.filter(c => {
     if (categoriaActiva !== "todas" && c.categoria !== categoriaActiva) return false;
     if (q) {
-      const hay = [c.titulo, c.disertante, c.subcategoria||""].join(" ").toLowerCase();
+      const hay = normalizar([c.titulo, c.disertante, c.subcategoria||""].join(" "));
       if (!hay.includes(q)) return false;
     }
     return true;
   });
 
   // Filtrar grabaciones
-  const grabFilt = GRABACIONES.filter(g => {
+  let grabFilt = GRABACIONES.filter(g => {
     if (categoriaActiva !== "todas" && g.categoria !== categoriaActiva) return false;
     if (subcategoriaActiva !== "todas" && g.subcategoria !== subcategoriaActiva) return false;
     if (q) {
-      const hay = [g.titulo, g.disertante, g.subcategoria||"", g.descripcion||""].join(" ").toLowerCase();
+      const hay = normalizar([g.titulo, g.disertante, g.subcategoria||"", g.descripcion||""].join(" "));
       if (!hay.includes(q)) return false;
     }
     return true;
   });
+  grabFilt = aplicarOrden(grabFilt);
 
   // Badges de conteo
   document.getElementById("badge-charlas").textContent = proxFilt.length;
