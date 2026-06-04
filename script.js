@@ -153,7 +153,7 @@ function ordenar(criterio) {
 
 function aplicarOrden(lista) {
   const arr = [...lista];
-  if (ordenActivo === "alfabetico") {
+  if (ordenActivo === "alfabetico" || ordenActivo === "series") {
     arr.sort((a,b) => a.titulo.localeCompare(b.titulo, "es"));
   } else if (ordenActivo === "categoria") {
     arr.sort((a,b) => (a.categoria||"").localeCompare(b.categoria||"", "es")
@@ -162,6 +162,81 @@ function aplicarOrden(lista) {
     arr.sort((a,b) => b.id - a.id);
   }
   return arr;
+}
+
+// Detecta "Parte N" al final del título y devuelve { base, parte } o null
+function extraerSerie(titulo) {
+  const m = titulo.match(/^(.+?)[\s.—–\-]+[Pp]arte\s*(\d+)\s*$/);
+  if (m) return { base: m[1].trim(), parte: parseInt(m[2]) };
+  // también formato "(Parte N)" al final
+  const m2 = titulo.match(/^(.+?)\s*\([Pp]arte\s*(\d+)\)\s*$/);
+  if (m2) return { base: m2[1].trim(), parte: parseInt(m2[2]) };
+  return null;
+}
+
+// Agrupa charlas con "Parte N" bajo un objeto {_esSerie, charlas[]}
+function agruparSeries(lista) {
+  const result = [];
+  const seriesMap = {};
+  lista.forEach(g => {
+    const info = extraerSerie(g.titulo);
+    if (info) {
+      const key = normalizar(info.base) + "|" + normalizar(g.disertante || "");
+      if (!seriesMap[key]) {
+        seriesMap[key] = { charlas: [], placeholder: result.length };
+        result.push({ _serieKey: key });
+      }
+      seriesMap[key].charlas.push({ ...g, _parteNum: info.parte });
+    } else {
+      result.push(g);
+    }
+  });
+  return result.map(item => {
+    if (item._serieKey) {
+      const s = seriesMap[item._serieKey];
+      s.charlas.sort((a,b) => a._parteNum - b._parteNum);
+      return { _esSerie: true, charlas: s.charlas };
+    }
+    return item;
+  });
+}
+
+function cardSerie(serie, q) {
+  const primera = serie.charlas[0];
+  const info = extraerSerie(primera.titulo);
+  const baseTitle = info ? highlight(info.base, q) : highlight(primera.titulo, q);
+  const disert = highlight(primera.disertante || "", q);
+
+  const img = primera.imagen
+    ? `<img class="card-img" src="${primera.imagen}" alt="${primera.titulo}" loading="lazy" onerror="this.outerHTML='<div class=\\'card-placeholder\\'>🎬</div>'">`
+    : `<div class="card-placeholder">🎬</div>`;
+
+  const partes = serie.charlas.map(c => {
+    const tEsc = c.titulo.replace(/'/g,"\\'").replace(/"/g,"&quot;");
+    const dEsc = (c.disertante||"").replace(/'/g,"\\'").replace(/"/g,"&quot;");
+    return `<a href="${SITE_CONFIG.formulario}" target="_blank" class="btn-parte"
+      onclick="event.stopPropagation()">Parte ${c._parteNum}</a>`;
+  }).join("");
+
+  const tituloEsc = (info ? info.base : primera.titulo).replace(/'/g,"\\'").replace(/"/g,"&quot;");
+  const disertEsc = (primera.disertante||"").replace(/'/g,"\\'").replace(/"/g,"&quot;");
+
+  return `<div class="card card-serie" data-cat="${primera.categoria}">
+    ${img}
+    <div class="card-body">
+      <div class="card-badges">
+        <span class="badge-serie">📚 ${serie.charlas.length} partes</span>
+        <span class="badge-cat">${nombreCategoria(primera.categoria)}</span>
+        ${primera.subcategoria ? `<span class="badge-subcat">${primera.subcategoria}</span>` : ""}
+      </div>
+      <div class="card-title">${baseTitle}</div>
+      <div class="card-disertante">👤 ${disert}</div>
+      <div class="serie-partes">${partes}</div>
+      <div class="card-meta">
+        <button class="btn-compartir" onclick="compartirCharla('${tituloEsc}','${disertEsc}')">📤 Compartir</button>
+      </div>
+    </div>
+  </div>`;
 }
 
 // Compartir una charla con un colega por WhatsApp
@@ -405,6 +480,10 @@ function renderContenido() {
       `<div class="empty-state"><div class="icon">📭</div>
        <p>${q ? `No se encontraron resultados para "<strong>${q}</strong>"` : "No hay grabaciones en esta sección."}</p>
        </div>`;
+  } else if (ordenActivo === "series") {
+    const agrupadas = agruparSeries(grabFilt);
+    document.getElementById("grid-grabaciones").innerHTML =
+      `<div class="cards-grid">${agrupadas.map(item => item._esSerie ? cardSerie(item, q) : cardGrabacion(item, q)).join("")}</div>`;
   } else if (agrupar) {
     // Agrupar por subcategoría
     const grupos = {};

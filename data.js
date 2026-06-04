@@ -133,6 +133,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Lunes 8 de junio",
     hora: "",
     categoria: "pequeños-animales",
+    imagen: "",
   },
   {
     titulo: "Gingivoestomatitis crónica felina y Calicivirus — Tratamientos Parte 2",
@@ -141,6 +142,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Lunes 15 de junio",
     hora: "",
     categoria: "pequeños-animales",
+    imagen: "img/natalia-luka.jpg",
   },
   {
     titulo: "Histopatología veterinaria: el puente entre la clínica y el diagnóstico definitivo",
@@ -149,6 +151,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Miércoles 17 de junio",
     hora: "",
     categoria: "pequeños-animales",
+    imagen: "img/matias-caverzan.jpg",
   },
   {
     titulo: "Neurología",
@@ -157,6 +160,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Lunes 22 de junio",
     hora: "",
     categoria: "pequeños-animales",
+    imagen: "img/matias-delia.jpg",
   },
   {
     titulo: "Técnica quirúrgica aséptica: Asepsia y antisepsia",
@@ -165,6 +169,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Miércoles 24 de junio",
     hora: "",
     categoria: "pequeños-animales",
+    imagen: "img/georgina-castro.jpg",
   },
   {
     titulo: "Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución",
@@ -173,6 +178,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Lunes 29 de junio",
     hora: "",
     categoria: "pequeños-animales",
+    imagen: "img/damian-baron.jpg",
   },
 ];
 
