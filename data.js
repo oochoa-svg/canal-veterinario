@@ -184,7 +184,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Neurología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/natalia-luka.jpg",
     duracion: "",
   },
   {
@@ -195,7 +195,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Neurología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/natalia-luka.jpg",
     duracion: "",
   },
 
@@ -210,7 +210,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -221,7 +221,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -232,7 +232,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -243,7 +243,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -254,7 +254,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -265,7 +265,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
   {
@@ -276,7 +276,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
 
@@ -291,7 +291,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/alejandro-etchecopaz.jpg",
     duracion: "",
   },
   {
@@ -302,7 +302,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/alejandro-etchecopaz.jpg",
     duracion: "",
   },
 
@@ -328,7 +328,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fabian-moreno.png",
     duracion: "",
   },
   {
@@ -339,7 +339,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fabian-moreno.png",
     duracion: "",
   },
   {
@@ -365,7 +365,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/carlos-fernandez.png",
     duracion: "",
   },
   {
@@ -376,7 +376,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/carlos-fernandez.png",
     duracion: "",
   },
   {
@@ -387,7 +387,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/carlos-fernandez.png",
     duracion: "",
   },
   {
@@ -398,7 +398,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/carlos-fernandez.png",
     duracion: "",
   },
   {
@@ -409,7 +409,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/carlos-fernandez.png",
     duracion: "",
   },
   {
@@ -431,7 +431,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Laboratorio / Diagnóstico",
     descripcion: "",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
 
@@ -446,7 +446,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Cardiología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-porta.png",
     duracion: "",
   },
   {
@@ -457,7 +457,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Cardiología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-porta.png",
     duracion: "",
   },
 
@@ -472,7 +472,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/viviana-ruidiaz.jpg",
     duracion: "",
   },
   {
@@ -483,7 +483,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/viviana-ruidiaz.jpg",
     duracion: "",
   },
 
@@ -590,7 +590,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/ximena-doxandabarat.jpg",
     duracion: "",
   },
   {
@@ -601,7 +601,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Farmacología / Anestesia / Analgesia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/ximena-doxandabarat.jpg",
     duracion: "",
   },
 
@@ -616,7 +616,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -627,7 +627,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -638,7 +638,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -649,7 +649,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -660,7 +660,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
 
@@ -701,7 +701,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oncología / Dermatología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/matias-caverzan.jpg",
     duracion: "",
   },
 
@@ -794,7 +794,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/carlos-blanco.png",
     duracion: "",
   },
   {
@@ -827,7 +827,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/veronica-riveros.jpg",
     duracion: "",
   },
   {
@@ -838,7 +838,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
     descripcion: "",
-    imagen: "",
+    imagen: "img/veronica-riveros.jpg",
     duracion: "",
   },
   {
@@ -864,7 +864,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
     descripcion: "",
-    imagen: "",
+    imagen: "img/valeria-arpon.jpg",
     duracion: "",
   },
   {
@@ -875,7 +875,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
     descripcion: "",
-    imagen: "",
+    imagen: "img/valeria-arpon.jpg",
     duracion: "",
   },
 
@@ -894,7 +894,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -905,7 +905,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -942,7 +942,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Terapias complementarias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -953,7 +953,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Terapias complementarias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
 
@@ -990,7 +990,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fabian-moreno.png",
     duracion: "",
   },
   {
@@ -1031,7 +1031,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Oftalmología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/gustavo-zapata.jpg",
     duracion: "",
   },
 
@@ -1046,7 +1046,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "Odontología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/miguel.png",
     duracion: "",
   },
 
@@ -1109,7 +1109,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
   {
@@ -1120,7 +1120,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Reproducción / Obstetricia",
     descripcion: "",
-    imagen: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
 
@@ -1135,7 +1135,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Medicina interna",
     descripcion: "Rol del Calicivirus en la gingivoestomatitis crónica felina: mecanismos inmunológicos y fisiopatología.",
-    imagen: "",
+    imagen: "img/natalia-luka.jpg",
     duracion: "",
   },
   {
@@ -1157,7 +1157,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Oncología",
     descripcion: "Clasificación, diagnóstico citológico/histológico, estadificación y opciones terapéuticas actuales.",
-    imagen: "",
+    imagen: "img/fernanda-ferreira.jpg",
     duracion: "",
   },
   {
@@ -1168,7 +1168,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Medicina de urgencias",
     descripcion: "Indicaciones, grupos sanguíneos felinos, técnica de transfusión y monitoreo de complicaciones.",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
   {
@@ -1179,7 +1179,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
     descripcion: "Diagnóstico y manejo de las principales carencias minerales y vitamínicas en rodeos de la región central de Argentina.",
-    imagen: "",
+    imagen: "img/german-canton.jpg",
     duracion: "",
   },
   {
@@ -1190,7 +1190,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "Fundamentos virológicos de la DVB: agente, patogenia y estrategias de control.",
-    imagen: "",
+    imagen: "img/dario-malacari.jpg",
     duracion: "",
   },
 
@@ -1249,7 +1249,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
   {
@@ -1260,7 +1260,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
   {
@@ -1282,7 +1282,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
   {
@@ -1319,7 +1319,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Metabolismo / Nutrición / Fisiopatología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/lucio-campora.png",
     duracion: "",
   },
 
@@ -1334,7 +1334,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Generalidades",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1345,7 +1345,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Generalidades",
     descripcion: "",
-    imagen: "",
+    imagen: "img/juan-carlos-troiano.png",
     duracion: "",
   },
   {
@@ -1356,7 +1356,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Generalidades",
     descripcion: "",
-    imagen: "",
+    imagen: "img/juan-carlos-troiano.png",
     duracion: "",
   },
 
@@ -1371,7 +1371,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Pequeños mamíferos",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1382,7 +1382,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Pequeños mamíferos",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1393,7 +1393,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Pequeños mamíferos",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1404,7 +1404,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Pequeños mamíferos",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1415,7 +1415,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Pequeños mamíferos",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1426,7 +1426,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Pequeños mamíferos",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
 
@@ -1441,7 +1441,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Reptiles",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1452,7 +1452,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Reptiles",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
   {
@@ -1463,7 +1463,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Reptiles",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
 
@@ -1478,7 +1478,7 @@ const GRABACIONES = [
     categoria: "no-convencionales",
     subcategoria: "Aves",
     descripcion: "",
-    imagen: "",
+    imagen: "img/nicolas-cohen.png",
     duracion: "",
   },
 
@@ -1515,7 +1515,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Reproducción",
     descripcion: "",
-    imagen: "",
+    imagen: "img/paula-sosa-kardel.jpg",
     duracion: "",
   },
   {
@@ -1537,7 +1537,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/dario-malacari.jpg",
     duracion: "",
   },
   {
@@ -1548,7 +1548,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Cirugía / Traumatología",
     descripcion: "",
-    imagen: "",
+    imagen: "img/jonathan-bolanos.jpg",
     duracion: "",
   },
   {
@@ -1559,7 +1559,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/gabriela-despuys.jpg",
     duracion: "",
   },
 
@@ -1585,7 +1585,7 @@ const GRABACIONES = [
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
     descripcion: "",
-    imagen: "",
+    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
   {
@@ -1596,7 +1596,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
     descripcion: "",
-    imagen: "",
+    imagen: "img/german-canton.jpg",
     duracion: "",
   },
   {
@@ -1607,7 +1607,7 @@ const GRABACIONES = [
     categoria: "bovinos",
     subcategoria: "Enfermedades infecciosas",
     descripcion: "",
-    imagen: "",
+    imagen: "img/dario-malacari.jpg",
     duracion: "",
   },
 
