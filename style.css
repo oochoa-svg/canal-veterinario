@@ -668,7 +668,7 @@ footer a:hover { color:#f0abfc; }
     flex-shrink:0;
     border-radius:0;
     object-fit:cover;
-    object-position:top center;
+    object-position:center 20%;
   }
   .card-placeholder {
     width:72px;
