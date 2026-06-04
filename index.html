@@ -8,13 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="icon" type="image/png" href="img/logo-canal.png" />
+  <link rel="apple-touch-icon" href="img/logo-canal.png" />
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
 <header>
   <div class="header-content">
+    <img id="site-logo" class="site-logo" src="img/logo-canal.png" alt="Canal Veterinario"
+         onerror="this.style.display='none'" />
     <div class="live-pill"><span class="live-dot"></span> Canal activo</div>
     <h1 id="site-nombre">Canal Veterinario</h1>
     <p id="site-subtitulo">Capacitación veterinaria profesional</p>
@@ -155,7 +159,8 @@
   <div class="ad-box">
     <button class="ad-close" id="ad-close" onclick="cerrarAd()" aria-label="Cerrar">✕</button>
     <div class="ad-tag">Espacio publicitario</div>
-    <div class="ad-icon">🔬</div>
+    <img class="ad-logo" src="img/logo-lbsas.png" alt="Logo sponsor"
+         onerror="this.outerHTML='<div class=\'ad-icon\'>🔬</div>'" />
     <h2 class="ad-nombre" id="ad-nombre"></h2>
     <p class="ad-slogan" id="ad-slogan"></p>
     <p class="ad-dir" id="ad-dir"></p>
@@ -181,9 +186,9 @@
   </div>
 </div>
 
-<script src="data.js?v=6"></script>
-<script src="script.js?v=6"></script>
-<script src="analytics.js?v=6"></script>
+<script src="data.js?v=7"></script>
+<script src="script.js?v=7"></script>
+<script src="analytics.js?v=7"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
