@@ -511,7 +511,7 @@ const GRABACIONES = [
   {
     id: 29,
     titulo: "Enfermedad del tracto urinario inferior del gato. Parte 1",
-    disertante: "Esp. Viviana R. Suárez",
+    disertante: "Esp. MV. Viviana H. Ruidiaz",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
@@ -522,7 +522,7 @@ const GRABACIONES = [
   {
     id: 30,
     titulo: "Enfermedades del tracto urinario caudal del gato: ¿Cuál es el mayor desafío, diagnóstico o tratamiento? Segunda parte",
-    disertante: "Esp. Viviana R. Suárez",
+    disertante: "Esp. MV. Viviana H. Ruidiaz",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
@@ -533,7 +533,7 @@ const GRABACIONES = [
   {
     id: 31,
     titulo: "La falla renal aguda en el pequeño felino (confirmar)",
-    disertante: "Esp. Viviana R. Suárez",
+    disertante: "Esp. MV. Viviana H. Ruidiaz",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Urinario / Nefrología",
