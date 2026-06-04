@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="img/logo-canal.png" />
   <link rel="apple-touch-icon" href="img/logo-canal.png" />
-  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="style.css?v=9" />
 </head>
 <body>
 
@@ -51,6 +51,7 @@
 
 <!-- ===== NAV: CATEGORÍAS ===== -->
 <nav class="categories-nav">
+  <button class="cats-search-btn" title="Buscar" aria-label="Buscar" onclick="abrirBuscador()">🔍</button>
   <div class="categories-inner" id="cats-nav"><!-- se renderiza --></div>
 </nav>
 
@@ -117,24 +118,13 @@
     <span id="sponsor-dir" class="banner-muted"></span>
     <button class="banner-close" onclick="this.closest('.bottom-banner').style.display='none'">✕</button>
   </div>
-  <div class="bottom-banner banner-join" id="banner-sponsors-join">
-    <span class="banner-icon">🤝</span>
-    <span class="banner-text">¿Tu empresa quiere llegar a veterinarios? <strong>Sumate como sponsor</strong></span>
-    <a id="banner-sponsor-wa" href="#" target="_blank" class="banner-link">Contactanos por WhatsApp</a>
-    <button class="banner-close" onclick="this.closest('.bottom-banner').style.display='none'">✕</button>
-  </div>
-  <div class="bottom-banner banner-join banner-collab" id="banner-collab">
-    <span class="banner-icon">🎙️</span>
-    <span class="banner-text">¿Querés dar una charla? <strong>Sumate como colaborador</strong></span>
-    <a id="banner-collab-wa" href="#" target="_blank" class="banner-link">Escribinos por WhatsApp</a>
+  <div class="bottom-banner banner-join" id="banner-join-rotativo">
+    <span class="banner-icon" id="join-icon">🤝</span>
+    <span class="banner-text" id="join-text"></span>
+    <a id="join-wa" href="#" target="_blank" class="banner-link" id="join-link">Contactanos</a>
     <button class="banner-close" onclick="this.closest('.bottom-banner').style.display='none'">✕</button>
   </div>
 </div>
-
-<!-- ===== BOTÓN FLOTANTE BÚSQUEDA (lupa) ===== -->
-<button id="search-fab" class="search-fab" title="Buscar charlas" onclick="abrirBuscador()" aria-label="Buscar">
-  🔍
-</button>
 
 <!-- ===== OVERLAY DE BÚSQUEDA ===== -->
 <div class="search-overlay" id="search-overlay">
@@ -186,9 +176,9 @@
   </div>
 </div>
 
-<script src="data.js?v=8"></script>
-<script src="script.js?v=8"></script>
-<script src="analytics.js?v=8"></script>
+<script src="data.js?v=9"></script>
+<script src="script.js?v=9"></script>
+<script src="analytics.js?v=9"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

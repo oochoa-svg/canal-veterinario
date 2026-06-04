@@ -164,9 +164,9 @@ function aplicarOrden(lista) {
   return arr;
 }
 
-// Compartir una charla por WhatsApp
+// Compartir una charla con un colega por WhatsApp
 function compartirCharla(titulo, disertante) {
-  const txt = `📺 Te recomiendo esta charla del Canal Veterinario:\n\n"${titulo}"${disertante ? `\n👤 ${disertante}` : ""}\n\n${location.origin}`;
+  const txt = `👋 ¡Hola! Te comparto esta charla del Canal Veterinario, te puede interesar:\n\n📺 "${titulo}"${disertante ? `\n👤 ${disertante}` : ""}\n\nMirá todas las charlas acá 👉 ${location.origin}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(txt)}`, "_blank");
 }
 
@@ -343,7 +343,7 @@ function cardGrabacion(g, q) {
       <div class="card-meta">
         ${g.fecha ? `<span class="card-date">📅 ${formatFecha(g.fecha)}</span>` : ""}
         ${g.duracion ? `<span class="card-duration">⏱ ${g.duracion}</span>` : ""}
-        <button class="btn-compartir" title="Compartir por WhatsApp" onclick="compartirCharla('${tituloEsc}','${disertEsc}')">📤</button>
+        <button class="btn-compartir" title="Compartir con un colega" onclick="compartirCharla('${tituloEsc}','${disertEsc}')">📤 Compartir</button>
       </div>
       <a href="${SITE_CONFIG.formulario}" target="_blank" class="btn-card">Ver grabación →</a>
     </div>
@@ -542,8 +542,29 @@ function renderBanners() {
   set("sponsor-wa-txt", c.sponsorTel || "");
   set("sponsor-dir", c.sponsorDir || "");
   href("sponsor-wa-link", `https://wa.me/${c.sponsorWA}`);
-  href("banner-sponsor-wa", `https://wa.me/${c.contactoSponsor}?text=${encodeURIComponent("Hola! Me interesa ser sponsor del Canal Veterinario")}`);
-  href("banner-collab-wa", `https://wa.me/${c.contactoColaborador}?text=${encodeURIComponent("Hola! Me gustaría dar una charla en el Canal Veterinario")}`);
+
+  // Banner rotativo: alterna entre "sumate como sponsor" y "dar una charla"
+  const mensajes = [
+    {
+      icono: "🤝",
+      texto: '¿Tu empresa quiere llegar a veterinarios? <strong>Sumate como sponsor</strong>',
+      link: `https://wa.me/${c.contactoSponsor}?text=${encodeURIComponent("Hola! Me interesa ser sponsor del Canal Veterinario")}`,
+    },
+    {
+      icono: "🎙️",
+      texto: '¿Querés dar una charla? <strong>Sumate como colaborador</strong>',
+      link: `https://wa.me/${c.contactoColaborador}?text=${encodeURIComponent("Hola! Me gustaría dar una charla en el Canal Veterinario")}`,
+    },
+  ];
+  let idx = 0;
+  function pintarJoin() {
+    const m = mensajes[idx];
+    set("join-icon", m.icono);
+    const t = document.getElementById("join-text"); if (t) t.innerHTML = m.texto;
+    href("join-wa", m.link);
+  }
+  pintarJoin();
+  setInterval(() => { idx = (idx + 1) % mensajes.length; pintarJoin(); }, 6000);
 }
 
 // ── Init ─────────────────────────────────────────────────────
