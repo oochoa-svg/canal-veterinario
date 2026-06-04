@@ -32,9 +32,9 @@
 //     {
 //       id: 143,
 //       titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 1",
-//       disertante: "Fernando Grippaldi",
+//       disertante: "Med. Vet. Fernando Grippaldi",
 //       fecha: "",
-//       categoria: "pequeños-animales",
+//       categoria: "bovinos",
 //       subcategoria: "Neurología",      // opcional
 //       descripcion: "",
 //       imagen: "",
@@ -323,7 +323,7 @@ const GRABACIONES = [
   {
     id: 16,
     titulo: "Emergencias: Punciones a pericardio, pleura, abdomen y vejiga",
-    disertante: "Vet. Fabián Moreno",
+    disertante: "Vet. Fabián A. Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
@@ -334,7 +334,7 @@ const GRABACIONES = [
   {
     id: 17,
     titulo: "Emergencias: manejando al paciente felino crítico. Parte 2",
-    disertante: "Vet. Fabián Moreno",
+    disertante: "Vet. Fabián A. Moreno",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Clínica general / Emergencias",
@@ -759,7 +759,7 @@ const GRABACIONES = [
   {
     id: 63,
     titulo: "Aproximación a la cirugía gastrointestinal",
-    disertante: "Vet. Leonardo Indriago",
+    disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Cirugía",
@@ -770,7 +770,7 @@ const GRABACIONES = [
   {
     id: 64,
     titulo: "Introducción a la cirugía de tejido blando de tórax y extremidades",
-    disertante: "Vet. Leonardo Indriago",
+    disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Cirugía",
@@ -996,12 +996,12 @@ const GRABACIONES = [
   {
     id: 88,
     titulo: "Endoscopía Gástrica en equinos",
-    disertante: "MV. Tamas Moreno",
+    disertante: "Vet. Fabián A. Moreno",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Vías aéreas / Endoscopía / Laringe",
     descripcion: "",
-    imagen: "",
+    imagen: "img/fabian-moreno.png",
     duracion: "",
   },
 
@@ -1200,7 +1200,7 @@ const GRABACIONES = [
   {
     id: 107,
     titulo: "Sanidad y producción en el feedlot. Parte 1",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1211,7 +1211,7 @@ const GRABACIONES = [
   {
     id: 108,
     titulo: "Sanidad y Recepción en Feedlot — Parte 2",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1222,7 +1222,7 @@ const GRABACIONES = [
   {
     id: 109,
     titulo: "Sanidad y producción en el feedlot. Parte 3",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1288,7 +1288,7 @@ const GRABACIONES = [
   {
     id: 115,
     titulo: "Manejo táctico-dinámico. Parte 1",
-    disertante: "MV. Fernando Arrieta",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Producción del rodeo",
@@ -1488,7 +1488,7 @@ const GRABACIONES = [
   {
     id: 131,
     titulo: "Ingreso inteligente al Feedlot: manejo sanitario y adaptación — Parte 2",
-    disertante: "Fernando Grippaldi",
+    disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Nutrición y metabolismo",
