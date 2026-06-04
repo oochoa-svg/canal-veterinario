@@ -243,7 +243,7 @@ const GRABACIONES = [
   },
   {
     id: 6,
-    titulo: "Avalúo clínico oftalmológico",
+    titulo: "Consulta oftalmológica: ¿cómo la realizamos?",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -254,7 +254,7 @@ const GRABACIONES = [
   },
   {
     id: 7,
-    titulo: "¿Qué pasa cuando mi paciente tiene úlcera de córnea?",
+    titulo: "Ojo rojo como punto de partida de las enfermedades oftalmológicas",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -276,7 +276,7 @@ const GRABACIONES = [
   },
   {
     id: 9,
-    titulo: "Patologías de párpados de córnea",
+    titulo: "Manejo clínico inicial de las úlceras de córnea. Parte 2",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -298,7 +298,7 @@ const GRABACIONES = [
   },
   {
     id: 11,
-    titulo: "Manejo clínico de las úlceras. Parte 2",
+    titulo: "Neurooftalmología para la clínica diaria. Parte 1",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -324,7 +324,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 13,
-    titulo: "Diagnóstico de enfermedades infecciosas: desde la presentación clínica al resultado de laboratorio. Parte 1",
+    titulo: "Esporotricosis zoonótica. Parte 1",
     disertante: "Dr. Alejandro Etchecopaz",
     fecha: "",
     categoria: "pequeños-animales",
@@ -335,7 +335,7 @@ const GRABACIONES = [
   },
   {
     id: 14,
-    titulo: "Diagnóstico de enfermedades infecciosas: desde la presentación clínica al resultado de laboratorio. Parte 2",
+    titulo: "Esporotricosis zoonótica. Parte 2",
     disertante: "Dr. Alejandro Etchecopaz",
     fecha: "",
     categoria: "pequeños-animales",
@@ -350,7 +350,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 15,
-    titulo: "Emergencias: cómo manejar pacientes críticos felinos",
+    titulo: "Uroabdomen: ¿sabemos cómo tratar esta urgencia?",
     disertante: "Vet. Juan Pablo Reina",
     fecha: "",
     categoria: "pequeños-animales",
@@ -394,7 +394,7 @@ const GRABACIONES = [
   },
   {
     id: 19,
-    titulo: "Triage en gatos",
+    titulo: "Ictericia en gatos",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -748,7 +748,7 @@ const GRABACIONES = [
   },
   {
     id: 49,
-    titulo: "Rehabilitación de pequeños animales. Parte 3",
+    titulo: "Uso de ortesis. Parte 1",
     disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "pequeños-animales",
@@ -759,7 +759,7 @@ const GRABACIONES = [
   },
   {
     id: 50,
-    titulo: "Terapias terapéuticas para animales de compañía",
+    titulo: "Carritos ortopédicos",
     disertante: "Vet. Florencia de Priede",
     fecha: "",
     categoria: "pequeños-animales",
@@ -770,7 +770,7 @@ const GRABACIONES = [
   },
   {
     id: 51,
-    titulo: "Clínica ortopédica: elecciones y criterios",
+    titulo: "Lesiones en rodilla: ruptura de ligamento cruzado y luxación patelar",
     disertante: "Dr. Jonatan Bolaños",
     fecha: "",
     categoria: "pequeños-animales",
@@ -781,7 +781,7 @@ const GRABACIONES = [
   },
   {
     id: 52,
-    titulo: "Lesiones articulares: abordaje, pronóstico y resolución en pequeños animales",
+    titulo: "Displasia de codo",
     disertante: "Dr. Jonatan Bolaños",
     fecha: "",
     categoria: "pequeños-animales",
@@ -833,7 +833,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 56,
-    titulo: "Melanoma cutáneo: un desafío en la clínica",
+    titulo: "Mastocitoma canino",
     disertante: "Vet. Matías Caverzan",
     fecha: "",
     categoria: "pequeños-animales",
@@ -859,7 +859,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 58,
-    titulo: "Ecografía de la Cavidad abdominal para los que empiezan. Primera parte",
+    titulo: "Topografía de la cavidad abdominal para ultrasonografía",
     disertante: "Esp. Vet. Sabrina E. Vega",
     fecha: "",
     categoria: "pequeños-animales",
@@ -903,7 +903,7 @@ const GRABACIONES = [
   },
   {
     id: 62,
-    titulo: "Servicio de resonancia magnética",
+    titulo: "Neurodiagnóstico por resonancia magnética",
     disertante: "Ramiro Vidal y Piero Lovecchio",
     fecha: "",
     categoria: "pequeños-animales",
@@ -918,7 +918,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 63,
-    titulo: "Aproximación a la cirugía gastrointestinal",
+    titulo: "Aproximación a la cirugía reconstructiva",
     disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
@@ -929,7 +929,7 @@ const GRABACIONES = [
   },
   {
     id: 64,
-    titulo: "Introducción a la cirugía de tejido blando de tórax y extremidades",
+    titulo: "Colgajos de patrón axial de tronco y extremidades",
     disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
@@ -944,7 +944,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 65,
-    titulo: "Claves para el diagnóstico diferencial",
+    titulo: "Claves para comprender el ViLeF",
     disertante: "Vet. Ximena Doxandabarat",
     fecha: "",
     categoria: "pequeños-animales",
