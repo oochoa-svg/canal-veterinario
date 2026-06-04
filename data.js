@@ -2051,6 +2051,28 @@ const GRABACIONES = [
     imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
+  {
+    id: 206,
+    titulo: "Todo lo que se necesita saber sobre la dermatofitosis felina",
+    disertante: "Dr. Alejandro Etchecopaz",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "dermatología",
+    descripcion: "",
+    imagen: "img/alejandro-etchecopaz.jpg",
+    duracion: "",
+  },
+  {
+    id: 207,
+    titulo: "Prueba de diagnóstico para ehrlichiosis canina",
+    disertante: "MV. Carlos A. Fernández",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "laboratorio",
+    descripcion: "",
+    imagen: "img/carlos-fernandez.png",
+    duracion: "",
+  },
 ];
 
 // ============================================================
