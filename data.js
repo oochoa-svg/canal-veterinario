@@ -1952,6 +1952,28 @@ const GRABACIONES = [
     imagen: "img/lucio-campora.png",
     duracion: "",
   },
+  {
+    id: 196,
+    titulo: "Fármacos para sedación, analgesia y anestesia en equinos. Parte 1",
+    disertante: "MV. Rocío Paola Álvarez",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "anestesia",
+    descripcion: "",
+    imagen: "img/rocio-alvarez.png",
+    duracion: "",
+  },
+  {
+    id: 197,
+    titulo: "Fármacos para sedación, analgesia y anestesia en equinos. Parte 2",
+    disertante: "MV. Rocío Paola Álvarez",
+    fecha: "",
+    categoria: "equinos",
+    subcategoria: "anestesia",
+    descripcion: "",
+    imagen: "img/rocio-alvarez.png",
+    duracion: "",
+  },
 ];
 
 // ============================================================
