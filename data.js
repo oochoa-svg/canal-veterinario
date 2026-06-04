@@ -536,7 +536,7 @@ const GRABACIONES = [
   },
   {
     id: 38,
-    titulo: "Sobrepeso y obesidad en caninos y felinos",
+    titulo: "Intervenciones dietarias en el sobrepeso de pequeños animales",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
