@@ -26,6 +26,13 @@ if (waFloat) waFloat.href = waURL;
 const linkForm = document.getElementById("link-formulario");
 if (linkForm) linkForm.href = SITE_CONFIG.formulario;
 
+// Link "reportar error" (disclaimer del footer)
+const linkReportar = document.getElementById("footer-reportar");
+if (linkReportar) {
+  const numReporte = SITE_CONFIG.whatsapp || SITE_CONFIG.contactoColaborador;
+  linkReportar.href = `https://wa.me/${numReporte}?text=${encodeURIComponent("Hola! Encontré algo para corregir en el Canal Veterinario:")}`;
+}
+
 // ── Helpers ─────────────────────────────────────────────────
 function formatFecha(iso) {
   if (!iso) return "";
@@ -123,6 +130,111 @@ function buscar(q) {
 function limpiarBusqueda() {
   document.getElementById("search-input").value = "";
   buscar("");
+}
+
+// ── Buscador flotante (overlay) ──────────────────────────────
+function contarResultados() {
+  const q = queryBusqueda;
+  const prox = PROXIMAS_CHARLAS.filter(c =>
+    (categoriaActiva === "todas" || c.categoria === categoriaActiva) &&
+    (!q || [c.titulo, c.disertante, c.subcategoria||""].join(" ").toLowerCase().includes(q))
+  ).length;
+  const grab = GRABACIONES.filter(g =>
+    (categoriaActiva === "todas" || g.categoria === categoriaActiva) &&
+    (subcategoriaActiva === "todas" || g.subcategoria === subcategoriaActiva) &&
+    (!q || [g.titulo, g.disertante, g.subcategoria||"", g.descripcion||""].join(" ").toLowerCase().includes(q))
+  ).length;
+  return prox + grab;
+}
+
+function renderOverlayCats() {
+  const counts = {};
+  GRABACIONES.forEach(g => { counts[g.categoria] = (counts[g.categoria]||0)+1; });
+  document.getElementById("search-overlay-cats").innerHTML = CATEGORIAS.map(cat => {
+    const n = cat.id === "todas" ? GRABACIONES.length : (counts[cat.id] || 0);
+    return `<button class="cat-btn${cat.id===categoriaActiva?' active':''}"
+      data-cat="${cat.id}" onclick="filtrarDesdeOverlay('${cat.id}')">
+      ${cat.icono} ${cat.nombre} <span class="cat-count">(${n})</span>
+    </button>`;
+  }).join("");
+}
+
+function actualizarOverlayCount() {
+  const n = contarResultados();
+  document.getElementById("search-overlay-count").textContent =
+    n === 0 ? "Sin resultados" : `${n} resultado${n===1?"":"s"}`;
+}
+
+function abrirBuscador() {
+  renderOverlayCats();
+  actualizarOverlayCount();
+  const ov = document.getElementById("search-overlay");
+  ov.classList.add("show");
+  const input = document.getElementById("search-overlay-input");
+  input.value = queryBusqueda;
+  setTimeout(() => input.focus(), 50);
+}
+
+function cerrarBuscador(verResultados) {
+  document.getElementById("search-overlay").classList.remove("show");
+  if (verResultados) {
+    document.querySelector(".search-section")?.scrollIntoView({ behavior:"smooth", block:"start" });
+  }
+}
+
+function buscarOverlay(q) {
+  // mantener sincronizado con el buscador principal
+  const main = document.getElementById("search-input");
+  if (main) { main.value = q; }
+  buscar(q);
+  actualizarOverlayCount();
+}
+
+function filtrarDesdeOverlay(catId) {
+  filtrar(catId);
+  renderOverlayCats();
+  actualizarOverlayCount();
+}
+
+// Cerrar overlay al clickear fuera o con Escape
+document.getElementById("search-overlay")?.addEventListener("click", e => {
+  if (e.target.id === "search-overlay") cerrarBuscador();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") cerrarBuscador();
+});
+
+// ── Publicidad full-screen (interstitial) ────────────────────
+let adTimer = null;
+function cerrarAd() {
+  const ov = document.getElementById("ad-overlay");
+  if (ov) ov.classList.remove("show");
+  if (adTimer) clearTimeout(adTimer);
+}
+
+function iniciarAd() {
+  const c = SITE_CONFIG;
+  if (!c.sponsorNombre) return;
+  // Mostrar una vez por sesión
+  if (sessionStorage.getItem("adShown")) return;
+
+  const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  set("ad-nombre", c.sponsorNombre);
+  set("ad-slogan", c.sponsorSlogan || "");
+  set("ad-dir", c.sponsorDir || "");
+  const cta = document.getElementById("ad-cta");
+  if (cta && c.sponsorWA) cta.href = `https://wa.me/${c.sponsorWA}`;
+
+  const segundos = c.adSegundos || 6;
+  setTimeout(() => {
+    const ov = document.getElementById("ad-overlay");
+    if (!ov) return;
+    ov.classList.add("show");
+    sessionStorage.setItem("adShown", "1");
+    const bar = document.getElementById("ad-progress-bar");
+    if (bar) { bar.style.animationDuration = segundos + "s"; bar.classList.add("run"); }
+    adTimer = setTimeout(cerrarAd, segundos * 1000);
+  }, 1200);
 }
 
 function highlight(text, q) {
@@ -393,3 +505,4 @@ renderPlanes();
 renderModalBtns();
 renderBanners();
 iniciarPopup();
+iniciarAd();
