@@ -13,6 +13,8 @@
   --text: #f1ecff;
   --text-muted: #a78bfa;
   --radius: 14px;
+  --font-head: 'League Spartan', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
   /* accent por categoría */
   --c-peq: #3b82f6;
   --c-bov: #22c55e;
@@ -21,7 +23,14 @@
 }
 
 html { scroll-behavior: smooth; }
-body { font-family:'League Spartan',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+body { font-family:var(--font-body); background:var(--bg); color:var(--text); line-height:1.6; }
+
+/* Títulos y elementos de marca en League Spartan */
+h1, h2, h3, h4,
+.section-title, .card-title, .live-pill,
+.plan-nombre, .ad-nombre, .modal-box h2, .planes-header h2 {
+  font-family:var(--font-head);
+}
 
 /* ===== HEADER ===== */
 header {

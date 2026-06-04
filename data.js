@@ -61,6 +61,9 @@ const SITE_CONFIG = {
   // ── Cada cuántos segundos reaparece el cartel de suscripción (0 = desactivado) ──
   popupCadaSegundos: 200,
 
+  // ── Personas en la comunidad (veterinarios, especialistas, etc.) ──
+  comunidad: 298,
+
   // ── Sponsor (banner fijo) ──
   sponsorNombre: "Laboratorio Buenos Aires — LBsAs",
   sponsorSlogan: "Diagnóstico Veterinario",

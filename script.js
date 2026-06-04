@@ -80,6 +80,9 @@ function renderStats() {
     PROXIMAS_CHARLAS.length
       ? `<span class="stat-sep"></span><span class="stat-item">🎙️ <strong>${PROXIMAS_CHARLAS.length}</strong> próximas</span>`
       : "",
+    SITE_CONFIG.comunidad
+      ? `<span class="stat-sep"></span><span class="stat-item">👥 <strong>${SITE_CONFIG.comunidad}</strong> en la comunidad</span>`
+      : "",
     `<span class="stat-sep"></span>`,
     ...CATEGORIAS.filter(c => c.id !== "todas" && porCat[c.id]).map(c =>
       `<span class="stat-item">${c.icono} <strong>${porCat[c.id]}</strong> ${c.nombre.toLowerCase()}</span><span class="stat-sep"></span>`
