@@ -2106,6 +2106,28 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
+  {
+    id: 212,
+    titulo: "Manejo nutricional de las hepatopatías",
+    disertante: "Vet. Brenda Viñas",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "nutrición",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
+  {
+    id: 213,
+    titulo: "Antibióticos en heridas: explicado en casos clínicos",
+    disertante: "Vet. Ximena Doxandabarat",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "farmacología",
+    descripcion: "",
+    imagen: "img/ximena-doxandabarat.jpg",
+    duracion: "",
+  },
 ];
 
 // ============================================================
