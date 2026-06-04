@@ -1046,7 +1046,7 @@ const GRABACIONES = [
   {
     id: 74,
     titulo: "Diagnóstico y clasificación patológica del pie equino. Parte 1",
-    disertante: "Dra. Ana Valeria Antún",
+    disertante: "Dra. Valeria Arpón",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
@@ -1057,7 +1057,7 @@ const GRABACIONES = [
   {
     id: 75,
     titulo: "Diagnóstico y clasificación patológica del pie equino. Parte 2",
-    disertante: "Dra. Ana Valeria Antún",
+    disertante: "Dra. Valeria Arpón",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Diagnóstico por imágenes",
@@ -2021,7 +2021,7 @@ const GRABACIONES = [
   {
     id: 180,
     titulo: "Diagnóstico ecográfico de las patologías del pie equino. Parte 1",
-    disertante: "Dra. Ana Valeria Antún",
+    disertante: "Dra. Valeria Arpón",
     fecha: "",
     categoria: "equinos",
     subcategoria: "ecografía",
