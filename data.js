@@ -258,17 +258,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 9,
-    titulo: "Patologías de párpados y de córnea",
-    disertante: "Santiago Parrinello",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Oftalmología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 10,
     titulo: "Importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
     disertante: "Santiago Parrinello",
