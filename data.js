@@ -1974,6 +1974,17 @@ const GRABACIONES = [
     imagen: "img/rocio-alvarez.png",
     duracion: "",
   },
+  {
+    id: 198,
+    titulo: "Punción de médula ósea: indicaciones y técnica",
+    disertante: "MV. Soledad Varela",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "laboratorio",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
 ];
 
 // ============================================================
