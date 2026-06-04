@@ -1008,17 +1008,6 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   // EQUINOS — REPRODUCCIÓN
   // ──────────────────────────────────────────────
-  {
-    id: 89,
-    titulo: "Manejo reproductivo de la yegua",
-    disertante: "MV. Daniel Guzman",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "Reproducción",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // EQUINOS — OFTALMOLOGÍA
@@ -1057,17 +1046,6 @@ const GRABACIONES = [
     id: 92,
     titulo: "Diagnóstico y tratamiento de neumonías y diarreas en terneros",
     disertante: "MV. Juan Duque",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Clínica / Emergencias / Manejo sanitario",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
-    id: 93,
-    titulo: "Principales enfermedades en bovinos, atención clínica (confirmar)",
-    disertante: "MV. Pablo Enamoro",
     fecha: "",
     categoria: "bovinos",
     subcategoria: "Clínica / Emergencias / Manejo sanitario",
