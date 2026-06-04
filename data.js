@@ -2040,6 +2040,17 @@ const GRABACIONES = [
     imagen: "img/eugenio-sosa.jpg",
     duracion: "",
   },
+  {
+    id: 205,
+    titulo: "Actualización en manejo de sepsis en felinos",
+    disertante: "Vet. Celeste Maistruarena",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "medicina interna",
+    descripcion: "",
+    imagen: "img/celeste-maistruarena.jpg",
+    duracion: "",
+  },
 ];
 
 // ============================================================
