@@ -2018,6 +2018,17 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
+  {
+    id: 203,
+    titulo: "Casos quirúrgicos en reptiles. Parte 2",
+    disertante: "MV. Nicolás Cohen",
+    fecha: "",
+    categoria: "no-convencionales",
+    subcategoria: "cirugía",
+    descripcion: "",
+    imagen: "img/nicolas-cohen.png",
+    duracion: "",
+  },
 ];
 
 // ============================================================
