@@ -1611,17 +1611,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 139,
-    titulo: "Linfoma canino: puntos clave",
-    disertante: "Fernanda Ferreira",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Oncología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 140,
     titulo: "Principios del manejo transfusional en felinos",
     disertante: "Celeste Maistruarena",
