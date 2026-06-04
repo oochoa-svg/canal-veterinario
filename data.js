@@ -503,7 +503,7 @@ const GRABACIONES = [
   },
   {
     id: 35,
-    titulo: "Prebióticos y Probióticos en caninos y felinos",
+    titulo: "Prebióticos y Probióticos: claves para el equilibrio del microbioma, su modulación y la salud integral",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
