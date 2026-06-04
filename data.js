@@ -2095,6 +2095,17 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
+  {
+    id: 211,
+    titulo: "Merma tacto-Destete. Parte 1",
+    disertante: "Med. Vet. Fernando Grippaldi",
+    fecha: "",
+    categoria: "bovinos",
+    subcategoria: "reproducción",
+    descripcion: "",
+    imagen: "",
+    duracion: "",
+  },
 ];
 
 // ============================================================
