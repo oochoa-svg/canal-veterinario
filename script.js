@@ -138,7 +138,7 @@ function cardCharla(c, q) {
     : `<span class="badge-proximo">📅 Próxima</span>`;
 
   const img = c.imagen
-    ? `<img class="card-img" src="${c.imagen}" alt="${c.titulo}" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img class="card-img" src="${c.imagen}" alt="${c.titulo}" loading="lazy" onerror="this.outerHTML='<div class=\\'card-placeholder\\'>🎙️</div>'">`
     : `<div class="card-placeholder">🎙️</div>`;
 
   const titulo   = highlight(c.titulo,   q);
@@ -165,7 +165,7 @@ function cardCharla(c, q) {
 
 function cardGrabacion(g, q) {
   const img = g.imagen
-    ? `<img class="card-img" src="${g.imagen}" alt="${g.titulo}" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img class="card-img" src="${g.imagen}" alt="${g.titulo}" loading="lazy" onerror="this.outerHTML='<div class=\\'card-placeholder\\'>🎬</div>'">`
     : `<div class="card-placeholder">🎬</div>`;
 
   const titulo = highlight(g.titulo,    q);

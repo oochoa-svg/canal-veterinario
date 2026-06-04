@@ -1784,7 +1784,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "anatomía",
     descripcion: "",
-    imagen: "img/jose-adrian-iranzo.jpg",
+    imagen: "",
     duracion: "",
   },
   {
@@ -1795,7 +1795,7 @@ const GRABACIONES = [
     categoria: "equinos",
     subcategoria: "anatomía",
     descripcion: "",
-    imagen: "img/jose-adrian-iranzo.jpg",
+    imagen: "",
     duracion: "",
   },
   {
