@@ -774,17 +774,6 @@ const GRABACIONES = [
     imagen: "",
     duracion: "",
   },
-  {
-    id: 62,
-    titulo: "ENNA Neurodiagnóstico",
-    disertante: "Ramiro Vidal y Piero Lovecchio",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Imagenología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // PEQUEÑOS ANIMALES — CIRUGÍA
@@ -2071,6 +2060,28 @@ const GRABACIONES = [
     subcategoria: "laboratorio",
     descripcion: "",
     imagen: "img/carlos-fernandez.png",
+    duracion: "",
+  },
+  {
+    id: 208,
+    titulo: "Diagnóstico temprano de displasia de cadera y sus tratamientos",
+    disertante: "Dr. Jonatan Bolaños",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "ortopedia",
+    descripcion: "",
+    imagen: "img/jonathan-bolanos.jpg",
+    duracion: "",
+  },
+  {
+    id: 209,
+    titulo: "Neuro oftalmología para la clínica diaria",
+    disertante: "Santiago Parrinello",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "oftalmología",
+    descripcion: "",
+    imagen: "img/parrinello.png",
     duracion: "",
   },
 ];
