@@ -241,7 +241,7 @@ const GRABACIONES = [
   },
   {
     id: 6,
-    titulo: "Avalúo clínico oftalmológico",
+    titulo: "Consulta oftalmológica: ¿cómo la realizamos?",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
