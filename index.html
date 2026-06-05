@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="img/logo-canal.png" />
   <link rel="apple-touch-icon" href="img/logo-canal.png" />
-  <link rel="stylesheet" href="style.css?v=14" />
+  <link rel="stylesheet" href="style.css?v=15" />
 </head>
 <body>
 
@@ -79,7 +79,7 @@
   </h2>
   <div class="orden-bar">
     <span class="orden-label">Ordenar:</span>
-    <button class="orden-btn active" data-orden="recientes"  onclick="ordenar('recientes')">🆕 Recientes</button>
+    <button class="orden-btn" data-orden="recientes"  onclick="ordenar('recientes')">🆕 Recientes</button>
     <button class="orden-btn"        data-orden="alfabetico" onclick="ordenar('alfabetico')">🔤 A-Z</button>
     <button class="orden-btn"        data-orden="categoria"  onclick="ordenar('categoria')">🗂️ Categoría</button>
     <button class="orden-btn"        data-orden="series"     onclick="ordenar('series')">📚 Series</button>
@@ -168,7 +168,7 @@
     <button class="ruleta-close" onclick="cerrarRuleta()">✕</button>
     <div class="ruleta-tag">🎰 OFERTA ESPECIAL</div>
     <h2>¡Girá y ganá!</h2>
-    <p>Conseguí <strong>15% OFF</strong> en el Plan Premium<br><small style="opacity:.6">3 meses juntos · pago único</small></p>
+    <p>Conseguí <strong>15% OFF</strong> en el Plan Premium<br><small style="opacity:.6">3 meses juntos · débito automático</small></p>
     <div class="ruleta-wrap" style="display:flex;flex-direction:column;align-items:center;margin:.4rem 0">
       <div class="ruleta-pointer">▼</div>
       <div class="ruleta-canvas-wrap">
@@ -208,9 +208,9 @@
   </div>
 </div>
 
-<script src="data.js?v=14"></script>
-<script src="script.js?v=14"></script>
-<script src="analytics.js?v=14"></script>
+<script src="data.js?v=15"></script>
+<script src="script.js?v=15"></script>
+<script src="analytics.js?v=15"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

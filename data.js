@@ -133,7 +133,7 @@ const PROXIMAS_CHARLAS = [
     dia: "Lunes 8 de junio",
     hora: "",
     categoria: "pequeños-animales",
-    imagen: "",
+    imagen: "img/carolina-vecino.png",
   },
   {
     titulo: "Gingivoestomatitis crónica felina y Calicivirus — Tratamientos Parte 2",

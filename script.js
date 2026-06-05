@@ -2,7 +2,7 @@
 let categoriaActiva   = "todas";
 let subcategoriaActiva = "todas";
 let queryBusqueda     = "";
-let ordenActivo       = "recientes"; // recientes | alfabetico | categoria
+let ordenActivo       = "series"; // recientes | alfabetico | categoria | series
 
 // Quita acentos/ñ y pasa a minúsculas (para buscar "viñas" con "vinas")
 function normalizar(s) {
