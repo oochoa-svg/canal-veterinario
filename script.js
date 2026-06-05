@@ -352,7 +352,7 @@ function iniciarAd() {
     const bar = document.getElementById("ad-progress-bar");
     if (bar) { bar.style.animationDuration = segundos + "s"; bar.classList.add("run"); }
     adTimer = setTimeout(cerrarAd, segundos * 1000);
-  }, 1200);
+  }, 300000);
 }
 
 function highlight(text, q) {
@@ -754,13 +754,13 @@ iniciarAd();
     requestAnimationFrame(frame);
   };
 
-  // Abrir automáticamente una vez por sesión (después de 14 seg)
+  // Abrir automáticamente una vez por sesión (después de 2 min)
   if (!sessionStorage.getItem("ruletaMostrada")) {
     setTimeout(() => {
       if (!sessionStorage.getItem("ruletaMostrada")) {
         sessionStorage.setItem("ruletaMostrada", "1");
         window.abrirRuleta();
       }
-    }, 14000);
+    }, 120000);
   }
 })();
