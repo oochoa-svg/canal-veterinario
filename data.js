@@ -193,7 +193,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 2,
-    titulo: "Aproximación al paciente con crisis convulsivas. Parte 1",
+    titulo: "Aproximación al paciente con crisis cerebrales. Parte 1",
     disertante: "Vet. Matías D'Elia",
     fecha: "",
     categoria: "pequeños-animales",
@@ -204,7 +204,7 @@ const GRABACIONES = [
   },
   {
     id: 3,
-    titulo: "Crisis cerebrales (Parte 2)",
+    titulo: "Aproximación al paciente con crisis cerebrales. Parte 2",
     disertante: "Vet. Matías D'Elia",
     fecha: "",
     categoria: "pequeños-animales",
@@ -263,7 +263,7 @@ const GRABACIONES = [
   },
   {
     id: 8,
-    titulo: "Manejo clínico de las úlceras de córnea. Parte 1",
+    titulo: "Manejo clínico inicial de las úlceras de córnea. Parte 1",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -285,7 +285,7 @@ const GRABACIONES = [
   },
   {
     id: 11,
-    titulo: "Manejo clínico de las úlceras de córnea. Parte 2",
+    titulo: "Manejo clínico inicial de las úlceras de córnea. Parte 2",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -507,7 +507,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 34,
-    titulo: "Alimentación BARF en caninos y felinos",
+    titulo: "Introducción a la nutrición BARF",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -529,7 +529,7 @@ const GRABACIONES = [
   },
   {
     id: 36,
-    titulo: "Diarrea aguda y crónica en caninos",
+    titulo: "Nutrición clínica en diarrea aguda y crónica",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -540,7 +540,7 @@ const GRABACIONES = [
   },
   {
     id: 37,
-    titulo: "Lipidosis hepática felina",
+    titulo: "Manejo nutricional de la lipidosis felina",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -1333,7 +1333,7 @@ const GRABACIONES = [
   {
     id: 119,
     titulo: "Laboratorio en la clínica de exóticos",
-    disertante: "Juan Carlos Trojano",
+    disertante: "Juan Carlos Troiano",
     fecha: "",
     categoria: "no-convencionales",
     subcategoria: "Generalidades",
@@ -1344,7 +1344,7 @@ const GRABACIONES = [
   {
     id: 120,
     titulo: "Toma de muestras sanguíneas en animales no tradicionales",
-    disertante: "Juan Carlos Trojano",
+    disertante: "Juan Carlos Troiano",
     fecha: "",
     categoria: "no-convencionales",
     subcategoria: "Generalidades",
@@ -1465,7 +1465,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 130,
-    titulo: "Actualización en psitácidos",
+    titulo: "Actualización en psitacosis",
     disertante: "MV. Nicolás Cohen",
     fecha: "",
     categoria: "no-convencionales",
@@ -1579,17 +1579,6 @@ const GRABACIONES = [
     subcategoria: "Clínica general / Emergencias",
     descripcion: "",
     imagen: "img/celeste-maistruarena.jpg",
-    duracion: "",
-  },
-  {
-    id: 141,
-    titulo: "Principales enfermedades metabólicas carenciales en bovinos en la región central de Argentina",
-    disertante: "Germán Cantón",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Nutrición y metabolismo",
-    descripcion: "",
-    imagen: "img/german-canton.jpg",
     duracion: "",
   },
   {
