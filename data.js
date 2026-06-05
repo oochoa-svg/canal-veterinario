@@ -274,7 +274,7 @@ const GRABACIONES = [
   },
   {
     id: 10,
-    titulo: "Anatomía clínica del ojo. Parte 3: importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
+    titulo: "Importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
@@ -326,7 +326,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 15,
-    titulo: "Emergencias: cómo manejar pacientes críticos felinos (confirmar)",
+    titulo: "Uroabdomen: ¿sabemos cómo tratar esta urgencia?",
     disertante: "MV. Juan Pablo Reina",
     fecha: "",
     categoria: "pequeños-animales",
@@ -455,7 +455,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 27,
-    titulo: "Cardiopatías frecuentes del paciente canino geronte. La rutina cardiológica: cómo estudiamos al corazón en nuestra consulta diaria",
+    titulo: "Cardiopatías frecuentes del paciente canino geronte",
     disertante: "Vet. Nicolás Porta",
     fecha: "",
     categoria: "pequeños-animales",
@@ -466,7 +466,7 @@ const GRABACIONES = [
   },
   {
     id: 28,
-    titulo: "La Rutina Cardiológica: cómo ordenar el estudio del corazón en consulta diaria",
+    titulo: "La rutina cardiológica",
     disertante: "Vet. Nicolás Porta",
     fecha: "",
     categoria: "pequeños-animales",
@@ -626,7 +626,7 @@ const GRABACIONES = [
   {
     id: 46,
     titulo: "Rehabilitación en pequeños animales",
-    disertante: "Vet. Flor de Prade",
+    disertante: "Vet. Flor de Priede",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
@@ -637,7 +637,7 @@ const GRABACIONES = [
   {
     id: 47,
     titulo: "Rehabilitación de ligamento cruzado en caninos. Parte 1",
-    disertante: "Vet. Flor de Prade",
+    disertante: "Vet. Flor de Priede",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
@@ -648,7 +648,7 @@ const GRABACIONES = [
   {
     id: 48,
     titulo: "Rehabilitación de ligamento cruzado en caninos. Parte 2",
-    disertante: "Vet. Flor de Prade",
+    disertante: "Vet. Flor de Priede",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
@@ -659,7 +659,7 @@ const GRABACIONES = [
   {
     id: 49,
     titulo: "Rehabilitación en pequeños animales. Parte 3",
-    disertante: "Vet. Flor de Prade",
+    disertante: "Vet. Flor de Priede",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
@@ -670,7 +670,7 @@ const GRABACIONES = [
   {
     id: 53,
     titulo: "Carritos ortopédicos",
-    disertante: "Vet. Flor de Prade",
+    disertante: "Vet. Flor de Priede",
     fecha: "",
     categoria: "pequeños-animales",
     subcategoria: "Ortopedia / Rehabilitación",
@@ -725,7 +725,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 58,
-    titulo: "Ecografía de la Cavidad abdominal para los que empiezan. Primera parte",
+    titulo: "Topografía de la cavidad abdominal para ultrasonografía",
     disertante: "Esp. Sabrina Vega",
     fecha: "",
     categoria: "pequeños-animales",
@@ -773,7 +773,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 63,
-    titulo: "Aproximación a la cirugía gastrointestinal",
+    titulo: "Aproximación a la cirugía reconstructiva",
     disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
@@ -784,7 +784,7 @@ const GRABACIONES = [
   },
   {
     id: 64,
-    titulo: "Introducción a la cirugía de tejido blando de tórax y extremidades",
+    titulo: "Colgajos de patrón axial de tronco y extremidades",
     disertante: "Vet. Leonardo Madriaga",
     fecha: "",
     categoria: "pequeños-animales",
@@ -1749,7 +1749,7 @@ const GRABACIONES = [
   },
   {
     id: 183,
-    titulo: "Lesiones en rodillas: ruptura de ligamento cruzado anterior y luxación patelar",
+    titulo: "Lesiones en rodilla: ruptura de ligamento cruzado y luxación patelar",
     disertante: "Dr. Jonatan Bolaños",
     fecha: "",
     categoria: "pequeños-animales",
@@ -1793,7 +1793,7 @@ const GRABACIONES = [
   },
   {
     id: 187,
-    titulo: "Ictericia en felinos",
+    titulo: "Ictericia en gatos",
     disertante: "Vet. Brenda Viñas",
     fecha: "",
     categoria: "pequeños-animales",
@@ -2035,7 +2035,7 @@ const GRABACIONES = [
   },
   {
     id: 209,
-    titulo: "Neuro oftalmología para la clínica diaria",
+    titulo: "Neurooftalmología para la clínica diaria. Parte 1",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
