@@ -154,13 +154,13 @@ const PROXIMAS_CHARLAS = [
     imagen: "img/matias-caverzan.jpg",
   },
   {
-    titulo: "Neurología",
-    disertante: "Matías D'Elia",
+    titulo: "Biomecánica aplicada a las fases del paso en caballos. Parte 1",
+    disertante: "Vet. José Adrián Iranzo",
     fecha: "2026-06-22",
     dia: "Lunes 22 de junio",
     hora: "",
-    categoria: "pequeños-animales",
-    imagen: "img/matias-delia.jpg",
+    categoria: "equinos",
+    imagen: "img/jose-iranzo.jpg",
   },
   {
     titulo: "Técnica quirúrgica aséptica: Asepsia y antisepsia",

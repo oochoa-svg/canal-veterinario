@@ -655,3 +655,112 @@ renderModalBtns();
 renderBanners();
 iniciarPopup();
 iniciarAd();
+
+// ── Ruleta de descuento ──────────────────────────────────────
+(function() {
+  const LINK_PROMO = "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=31d611ed008f472abe503145c9f9333f";
+  const SEGS = [
+    { label:"15% OFF",   color:"#c026d3", texto:"#fff" },
+    { label:"¡Suerte!",  color:"#7e22ce", texto:"#d8b4fe" },
+    { label:"15% OFF",   color:"#a21caf", texto:"#fff" },
+    { label:"¡Girá!",    color:"#6b21a8", texto:"#d8b4fe" },
+    { label:"15% OFF",   color:"#c026d3", texto:"#fff" },
+    { label:"¡Casi!",    color:"#7e22ce", texto:"#d8b4fe" },
+    { label:"15% OFF",   color:"#a21caf", texto:"#fff" },
+    { label:"¡Oh!",      color:"#6b21a8", texto:"#d8b4fe" },
+  ];
+  let rotRad = 0, girando = false;
+
+  function draw(rot) {
+    const canvas = document.getElementById("ruleta-canvas");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    const cx = canvas.width / 2, cy = canvas.height / 2, r = cx - 4;
+    const n = SEGS.length, angSeg = (2 * Math.PI) / n;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(rot);
+    SEGS.forEach((seg, i) => {
+      const a0 = i * angSeg - Math.PI / 2;
+      const a1 = a0 + angSeg;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.arc(0, 0, r, a0, a1);
+      ctx.closePath();
+      ctx.fillStyle = seg.color;
+      ctx.fill();
+      ctx.strokeStyle = "#1a0533";
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      ctx.save();
+      ctx.rotate(a0 + angSeg / 2);
+      ctx.textAlign = "right";
+      ctx.fillStyle = seg.texto;
+      ctx.font = "bold 12px 'League Spartan', sans-serif";
+      ctx.fillText(seg.label, r - 8, 5);
+      ctx.restore();
+    });
+    // centro
+    ctx.beginPath();
+    ctx.arc(0, 0, 16, 0, 2 * Math.PI);
+    ctx.fillStyle = "#fdf4ff"; ctx.fill();
+    ctx.strokeStyle = "#1a0533"; ctx.lineWidth = 2; ctx.stroke();
+    ctx.restore();
+  }
+
+  window.abrirRuleta = function() {
+    const ov = document.getElementById("ruleta-overlay");
+    if (ov) { ov.classList.add("show"); draw(rotRad); }
+  };
+  window.cerrarRuleta = function() {
+    document.getElementById("ruleta-overlay")?.classList.remove("show");
+  };
+  window.cerrarPremio = function() {
+    document.getElementById("ruleta-premio")?.classList.remove("show");
+    // actualizar link en planes también
+  };
+
+  window.girarRuleta = function() {
+    if (girando) return;
+    girando = true;
+    const btn = document.getElementById("ruleta-btn");
+    if (btn) btn.disabled = true;
+    // Siempre aterrizar en segmento 0 (15% OFF)
+    // Centro del seg 0: -90° + 22.5° = -67.5° → necesita que rot final sea 67.5°
+    const targetDeg = 67.5;
+    const spins = 6;
+    const finalDeg = spins * 360 + targetDeg - ((rotRad * 180 / Math.PI) % 360);
+    const finalRad = rotRad + (finalDeg * Math.PI / 180);
+    const start = performance.now();
+    const dur = 4200;
+    const fromRot = rotRad;
+
+    function frame(now) {
+      const t = Math.min((now - start) / dur, 1);
+      const ease = 1 - Math.pow(1 - t, 4);
+      rotRad = fromRot + (finalRad - fromRot) * ease;
+      draw(rotRad);
+      if (t < 1) { requestAnimationFrame(frame); }
+      else {
+        rotRad = finalRad;
+        girando = false;
+        setTimeout(() => {
+          cerrarRuleta();
+          document.getElementById("ruleta-premio")?.classList.add("show");
+        }, 600);
+      }
+    }
+    requestAnimationFrame(frame);
+  };
+
+  // Abrir automáticamente una vez por sesión (después de 14 seg)
+  if (!sessionStorage.getItem("ruletaMostrada")) {
+    setTimeout(() => {
+      if (!sessionStorage.getItem("ruletaMostrada")) {
+        sessionStorage.setItem("ruletaMostrada", "1");
+        window.abrirRuleta();
+      }
+    }, 14000);
+  }
+})();
