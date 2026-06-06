@@ -1693,17 +1693,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 176,
-    titulo: "Castración en equinos: opciones, complicaciones y su manejo",
-    disertante: "Vet. Mauro Verna",
-    fecha: "",
-    categoria: "equinos",
-    subcategoria: "cirugía",
-    descripcion: "",
-    imagen: "img/mauro-verna.png",
-    duracion: "",
-  },
-  {
     id: 177,
     titulo: "Orina felina, un pequeño charco con pistas diagnósticas. Parte 1",
     disertante: "Esp. MV. Viviana H. Ruidiaz",
