@@ -355,19 +355,27 @@ function iniciarAd() {
     adTimer = setTimeout(cerrarAd, segundos * 1000);
   }, 300000);
 
-  // Banners como popups — mostrar una vez por sesión
+  // Banners como popups — mostrar una vez por sesión, espaciados
   if (!sessionStorage.getItem("bannersShown")) {
+    sessionStorage.setItem("bannersShown", "1");
+    const banners = () => document.querySelectorAll("#bottom-banners-wrap .bottom-banner");
+    const wrap = () => document.getElementById("bottom-banners-wrap");
+
+    // Sponsor: aparece a los 45 segundos
     setTimeout(() => {
-      const wrap = document.getElementById("bottom-banners-wrap");
-      if (!wrap) return;
-      wrap.classList.add("popup-visible");
-      sessionStorage.setItem("bannersShown", "1");
-      // Mostrar banners con stagger
-      const banners = wrap.querySelectorAll(".bottom-banner");
-      banners.forEach((b, i) => {
-        setTimeout(() => b.classList.add("banner-shown"), i * 400);
-      });
-    }, 8000);
+      const b = banners()[0]; const w = wrap();
+      if (!b || !w) return;
+      w.classList.add("popup-visible");
+      setTimeout(() => b.classList.add("banner-shown"), 50);
+    }, 45000);
+
+    // Colaborador: aparece 3 minutos después del sponsor (3 min 45s total)
+    setTimeout(() => {
+      const b = banners()[1]; const w = wrap();
+      if (!b || !w) return;
+      w.classList.add("popup-visible");
+      setTimeout(() => b.classList.add("banner-shown"), 50);
+    }, 225000);
   }
 }
 
