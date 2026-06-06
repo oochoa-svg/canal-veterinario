@@ -357,17 +357,6 @@ const GRABACIONES = [
     imagen: "img/fabian-moreno.png",
     duracion: "",
   },
-  {
-    id: 19,
-    titulo: "Triage en felinos",
-    disertante: "Vet. Brenda Viñas",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Clínica general / Emergencias",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
 
   // ──────────────────────────────────────────────
   // PEQUEÑOS ANIMALES — LABORATORIO / DIAGNÓSTICO
@@ -375,28 +364,6 @@ const GRABACIONES = [
   {
     id: 20,
     titulo: "Interpretación de las enzimas hepáticas",
-    disertante: "MV. Carlos A. Fernández",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Laboratorio / Diagnóstico",
-    descripcion: "",
-    imagen: "img/carlos-fernandez.png",
-    duracion: "",
-  },
-  {
-    id: 21,
-    titulo: "Pruebas de laboratorio para el diagnóstico de enfermedades renales. Parte 1",
-    disertante: "MV. Carlos A. Fernández",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Laboratorio / Diagnóstico",
-    descripcion: "",
-    imagen: "img/carlos-fernandez.png",
-    duracion: "",
-  },
-  {
-    id: 22,
-    titulo: "Pruebas de laboratorio para el diagnóstico de enfermedades renales. Parte 2",
     disertante: "MV. Carlos A. Fernández",
     fecha: "",
     categoria: "pequeños-animales",
@@ -481,7 +448,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 29,
-    titulo: "Enfermedad del tracto urinario inferior del gato. Parte 1",
+    titulo: "Enfermedades del tracto urinario caudal del gato. Parte 1",
     disertante: "Esp. MV. Viviana H. Ruidiaz",
     fecha: "",
     categoria: "pequeños-animales",
@@ -492,7 +459,7 @@ const GRABACIONES = [
   },
   {
     id: 30,
-    titulo: "Enfermedades del tracto urinario caudal del gato: ¿Cuál es el mayor desafío, diagnóstico o tratamiento? Segunda parte",
+    titulo: "Enfermedades del tracto urinario caudal del gato. Parte 2",
     disertante: "Esp. MV. Viviana H. Ruidiaz",
     fecha: "",
     categoria: "pequeños-animales",
@@ -657,17 +624,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 49,
-    titulo: "Rehabilitación en pequeños animales. Parte 3",
-    disertante: "Vet. Flor de Priede",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Ortopedia / Rehabilitación",
-    descripcion: "",
-    imagen: "img/florencia-de-priede.png",
-    duracion: "",
-  },
-  {
     id: 53,
     titulo: "Carritos ortopédicos",
     disertante: "Vet. Flor de Priede",
@@ -725,7 +681,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 58,
-    titulo: "Topografía de la cavidad abdominal para ultrasonografía",
+    titulo: "Topografía de la cavidad abdominal para su uso en la ultrasonografía. Parte 1",
     disertante: "Esp. Sabrina Vega",
     fecha: "",
     categoria: "pequeños-animales",
@@ -836,7 +792,7 @@ const GRABACIONES = [
   },
   {
     id: 70,
-    titulo: "Análisis del pie para uso veterinario y herraje. Parte 1",
+    titulo: "Anatomía y biomecánica del aparato locomotor en equinos. Parte 1",
     disertante: "Vet. Verónica Riveros",
     fecha: "",
     categoria: "equinos",
@@ -904,7 +860,7 @@ const GRABACIONES = [
   {
     id: 78,
     titulo: "Fisioterapia en el equino deportivo. Parte 1",
-    disertante: "MV. Florencia de Prade",
+    disertante: "MV. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
@@ -915,7 +871,7 @@ const GRABACIONES = [
   {
     id: 79,
     titulo: "Fisioterapia en el equino deportivo. Parte 2",
-    disertante: "MV. Florencia de Prade",
+    disertante: "MV. Florencia de Priede",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Rehabilitación / Deporte / Terapias",
@@ -1192,7 +1148,7 @@ const GRABACIONES = [
   // ──────────────────────────────────────────────
   {
     id: 107,
-    titulo: "Sanidad y producción en el feedlot. Parte 1",
+    titulo: "Sanidad y recepción en feedlot. Parte 1",
     disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
@@ -1203,18 +1159,7 @@ const GRABACIONES = [
   },
   {
     id: 108,
-    titulo: "Sanidad y Recepción en Feedlot — Parte 2",
-    disertante: "Med. Vet. Fernando Grippaldi",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Producción del rodeo",
-    descripcion: "",
-    imagen: "img/fernando-grippaldi.jpg",
-    duracion: "",
-  },
-  {
-    id: 109,
-    titulo: "Sanidad y producción en el feedlot. Parte 3",
+    titulo: "Sanidad y recepción en feedlot. Parte 2",
     disertante: "Med. Vet. Fernando Grippaldi",
     fecha: "",
     categoria: "bovinos",
@@ -1276,28 +1221,6 @@ const GRABACIONES = [
     subcategoria: "Producción del rodeo",
     descripcion: "",
     imagen: "img/lucio-campora.png",
-    duracion: "",
-  },
-  {
-    id: 115,
-    titulo: "Manejo táctico-dinámico. Parte 1",
-    disertante: "Med. Vet. Fernando Grippaldi",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Producción del rodeo",
-    descripcion: "",
-    imagen: "img/fernando-grippaldi.jpg",
-    duracion: "",
-  },
-  {
-    id: 116,
-    titulo: "Corrección integral en rodeo de cría. Parte 2 (confirmar)",
-    disertante: "MV. Juan Duque",
-    fecha: "",
-    categoria: "bovinos",
-    subcategoria: "Producción del rodeo",
-    descripcion: "",
-    imagen: "",
     duracion: "",
   },
 
@@ -1491,7 +1414,7 @@ const GRABACIONES = [
   },
   {
     id: 132,
-    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía normal — Parte 2",
+    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía normal. Parte 1",
     disertante: "Sabrina Vega",
     fecha: "",
     categoria: "equinos",
@@ -1513,7 +1436,7 @@ const GRABACIONES = [
   },
   {
     id: 134,
-    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía patológica — Parte 3",
+    titulo: "Ultrasonografía de la región ventral del cuello: Ecografía patológica. Parte 2",
     disertante: "Sabrina Vega",
     fecha: "",
     categoria: "equinos",
@@ -1568,17 +1491,6 @@ const GRABACIONES = [
     subcategoria: "Endocrinología",
     descripcion: "",
     imagen: "",
-    duracion: "",
-  },
-  {
-    id: 140,
-    titulo: "Principios del manejo transfusional en felinos",
-    disertante: "Celeste Maistruarena",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Clínica general / Emergencias",
-    descripcion: "",
-    imagen: "img/celeste-maistruarena.jpg",
     duracion: "",
   },
   {
@@ -1770,17 +1682,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 186,
-    titulo: "Manejo del paciente con diabetes. Parte 2",
-    disertante: "Vet. Carolina Vecino",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "endocrinología",
-    descripcion: "",
-    imagen: "",
-    duracion: "",
-  },
-  {
     id: 187,
     titulo: "Ictericia en gatos",
     disertante: "Vet. Brenda Viñas",
@@ -1833,6 +1734,17 @@ const GRABACIONES = [
     subcategoria: "oncología",
     descripcion: "",
     imagen: "img/matias-caverzan.jpg",
+    duracion: "",
+  },
+  {
+    id: 223,
+    titulo: "Uso de ortesis en rehabilitación de pequeños animales. Parte 1",
+    disertante: "Vet. Florencia de Priede",
+    fecha: "",
+    categoria: "pequeños-animales",
+    subcategoria: "rehabilitación",
+    descripcion: "",
+    imagen: "img/florencia-de-priede.png",
     duracion: "",
   },
   {
@@ -2167,7 +2079,7 @@ const GRABACIONES = [
   },
   {
     id: 222,
-    titulo: "Ecografía de la región ventral del cuello",
+    titulo: "¿Cómo y cuándo solicitar una ecografía de la región ventral del cuello?",
     disertante: "Esp. Sabrina Vega",
     fecha: "",
     categoria: "pequeños-animales",
