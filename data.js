@@ -837,7 +837,7 @@ const GRABACIONES = [
   {
     id: 70,
     titulo: "Análisis del pie para uso veterinario y herraje. Parte 1",
-    disertante: "Vet. Verónica Aversa",
+    disertante: "Vet. Verónica Riveros",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
@@ -848,7 +848,7 @@ const GRABACIONES = [
   {
     id: 71,
     titulo: "Anatomía y biomecánica del aparato locomotor en equinos. Parte 2",
-    disertante: "Vet. Verónica Aversa",
+    disertante: "Vet. Verónica Riveros",
     fecha: "",
     categoria: "equinos",
     subcategoria: "Anatomía / Biomecánica / Aparato locomotor",
