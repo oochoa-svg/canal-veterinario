@@ -344,6 +344,7 @@ function iniciarAd() {
   if (cta && c.sponsorWA) cta.href = `https://wa.me/${c.sponsorWA}`;
 
   const segundos = c.adSegundos || 6;
+  // Popup del sponsor (ad-overlay) — se mantiene igual pero con 5 min
   setTimeout(() => {
     const ov = document.getElementById("ad-overlay");
     if (!ov) return;
@@ -353,6 +354,21 @@ function iniciarAd() {
     if (bar) { bar.style.animationDuration = segundos + "s"; bar.classList.add("run"); }
     adTimer = setTimeout(cerrarAd, segundos * 1000);
   }, 300000);
+
+  // Banners como popups — mostrar una vez por sesión
+  if (!sessionStorage.getItem("bannersShown")) {
+    setTimeout(() => {
+      const wrap = document.getElementById("bottom-banners-wrap");
+      if (!wrap) return;
+      wrap.classList.add("popup-visible");
+      sessionStorage.setItem("bannersShown", "1");
+      // Mostrar banners con stagger
+      const banners = wrap.querySelectorAll(".bottom-banner");
+      banners.forEach((b, i) => {
+        setTimeout(() => b.classList.add("banner-shown"), i * 400);
+      });
+    }, 8000);
+  }
 }
 
 function highlight(text, q) {
@@ -545,6 +561,18 @@ function filtrarSubcat(subcat) {
 const markStyle = document.createElement("style");
 markStyle.textContent = "mark { background:#fde047; color:#1a0533; border-radius:2px; padding:0 2px; }";
 document.head.appendChild(markStyle);
+
+function cerrarBanner(btn) {
+  const banner = btn.closest(".bottom-banner");
+  if (banner) { banner.style.opacity = "0"; banner.style.transform = "translateY(20px)"; setTimeout(() => banner.style.display = "none", 350); }
+  const wrap = document.getElementById("bottom-banners-wrap");
+  if (wrap) {
+    setTimeout(() => {
+      const visible = wrap.querySelectorAll(".bottom-banner:not([style*='display: none'])");
+      if (visible.length === 0) wrap.classList.remove("popup-visible");
+    }, 400);
+  }
+}
 
 // ── Planes de suscripción ────────────────────────────────────
 function renderPlanes() {
@@ -754,13 +782,4 @@ iniciarAd();
     requestAnimationFrame(frame);
   };
 
-  // Abrir automáticamente una vez por sesión (después de 2 min)
-  if (!sessionStorage.getItem("ruletaMostrada")) {
-    setTimeout(() => {
-      if (!sessionStorage.getItem("ruletaMostrada")) {
-        sessionStorage.setItem("ruletaMostrada", "1");
-        window.abrirRuleta();
-      }
-    }, 120000);
-  }
 })();

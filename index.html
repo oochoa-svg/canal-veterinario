@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="img/logo-canal.png" />
   <link rel="apple-touch-icon" href="img/logo-canal.png" />
-  <link rel="stylesheet" href="style.css?v=24" />
+  <link rel="stylesheet" href="style.css?v=25" />
 </head>
 <body>
 
@@ -69,6 +69,20 @@
   <div id="grid-charlas" class="cards-grid"></div>
 </section>
 
+<!-- ===== PLANES DE SUSCRIPCIÓN ===== -->
+<section class="planes-section" id="planes">
+  <div class="planes-header">
+    <h2>Elegí tu plan</h2>
+    <p>Formación veterinaria continua, simple y accesible. Cancelás cuando quieras.</p>
+  </div>
+  <div class="planes-grid" id="planes-grid"><!-- se renderiza --></div>
+  <p class="planes-form-link">
+    ¿Preferís inscribirte por formulario?
+    <a id="link-formulario" href="#" target="_blank">Completá este formulario</a>
+    y te llegan los enlaces de pago por mail.
+  </p>
+</section>
+
 <div class="section-divider-wrap"><hr class="section-divider" /></div>
 
 <!-- ===== GRABACIONES ===== -->
@@ -87,20 +101,6 @@
   <div id="grid-grabaciones"></div>
 </section>
 
-<!-- ===== PLANES DE SUSCRIPCIÓN ===== -->
-<section class="planes-section" id="planes">
-  <div class="planes-header">
-    <h2>Elegí tu plan</h2>
-    <p>Formación veterinaria continua, simple y accesible. Cancelás cuando quieras.</p>
-  </div>
-  <div class="planes-grid" id="planes-grid"><!-- se renderiza --></div>
-  <p class="planes-form-link">
-    ¿Preferís inscribirte por formulario?
-    <a id="link-formulario" href="#" target="_blank">Completá este formulario</a>
-    y te llegan los enlaces de pago por mail.
-  </p>
-</section>
-
 <!-- ===== FOOTER ===== -->
 <footer>
   <p><strong id="footer-nombre">Canal Veterinario</strong> — Contenido exclusivo para suscriptores vía <a id="footer-telegram" href="#">Telegram</a></p>
@@ -109,7 +109,7 @@
 </footer>
 
 <!-- ===== BANNERS FIJOS INFERIORES ===== -->
-<div class="bottom-banners">
+<div class="bottom-banners" id="bottom-banners-wrap">
   <div class="bottom-banner banner-sponsor" id="banner-sponsor">
     <span class="banner-icon">🔬</span>
     <span class="banner-text"><strong id="sponsor-nombre"></strong> — <span id="sponsor-slogan"></span></span>
@@ -117,13 +117,13 @@
     <a id="sponsor-wa-link" href="#" target="_blank" class="banner-link">📱 WA <span id="sponsor-wa-txt"></span></a>
     <span class="banner-sep">·</span>
     <span id="sponsor-dir" class="banner-muted"></span>
-    <button class="banner-close" onclick="this.closest('.bottom-banner').style.display='none'">✕</button>
+    <button class="banner-close" onclick="cerrarBanner(this)">✕</button>
   </div>
   <div class="bottom-banner banner-join" id="banner-join-rotativo">
     <span class="banner-icon" id="join-icon">🤝</span>
     <span class="banner-text" id="join-text"></span>
     <a id="join-wa" href="#" target="_blank" class="banner-link" id="join-link">Contactanos</a>
-    <button class="banner-close" onclick="this.closest('.bottom-banner').style.display='none'">✕</button>
+    <button class="banner-close" onclick="cerrarBanner(this)">✕</button>
   </div>
 </div>
 
@@ -208,9 +208,9 @@
   </div>
 </div>
 
-<script src="data.js?v=24"></script>
-<script src="script.js?v=24"></script>
-<script src="analytics.js?v=24"></script>
+<script src="data.js?v=25"></script>
+<script src="script.js?v=25"></script>
+<script src="analytics.js?v=25"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

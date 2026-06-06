@@ -814,7 +814,7 @@ const GRABACIONES = [
   },
   {
     id: 68,
-    titulo: "Anatomía e imagen del aparato locomotor: diagnóstico por imágenes. Parte 1",
+    titulo: "Anatomía del aparato locomotor y neurovascular transrectal. Parte 1",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -825,7 +825,7 @@ const GRABACIONES = [
   },
   {
     id: 69,
-    titulo: "Regiones del sistema musculoesquelético: diagnóstico y tratamiento. Parte 2",
+    titulo: "Anatomía del aparato locomotor y neurovascular transrectal. Parte 2",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
@@ -858,7 +858,7 @@ const GRABACIONES = [
   },
   {
     id: 72,
-    titulo: "Diagnóstico por imágenes: signos radiológicos y ultrasonográficos en la región del pie (confirmar)",
+    titulo: "Síndrome Bursitis Luxación Tendino Calcaneo",
     disertante: "Vet. José Adrián Iranzo",
     fecha: "",
     categoria: "equinos",
