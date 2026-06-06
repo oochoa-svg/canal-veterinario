@@ -395,17 +395,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 25,
-    titulo: "Análisis de orina: fundamentos y aplicaciones",
-    disertante: "MV. Soledad Varela",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Laboratorio / Diagnóstico",
-    descripcion: "",
-    imagen: "img/soledad-varela.jpg",
-    duracion: "",
-  },
-  {
     id: 26,
     titulo: "Manejo de efusiones",
     disertante: "Vet. Celeste Maistruarena",
