@@ -1,0 +1,17 @@
+{
+  "name": "Canal Veterinario",
+  "short_name": "Canal Vet",
+  "description": "Capacitación veterinaria continua — más de 130 charlas con especialistas.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#29083f",
+  "theme_color": "#29083f",
+  "icons": [
+    {
+      "src": "img/logo-canal-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
