@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan de Contenidos Instagram — Julio 2026 — Canal Veterinario</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-dark:      #29083f;
+      --bg-medium:    #3d1258;
+      --bg-light:     #4e1a70;
+      --gold:         #f5c842;
+      --gold-light:   #fde68a;
+      --gold-dark:    #d4a017;
+      --white:        #ffffff;
+      --gray-light:   #e2d9f3;
+      --gray-mid:     #b39dcc;
+      --accent-blue:  #a78bfa;
+      --tag-reel:     #f59e0b;
+      --tag-carrusel: #10b981;
+      --tag-disertante: #3b82f6;
+      --tag-cta:      #ef4444;
+      --tag-comunidad: #8b5cf6;
+      --tag-bts:      #ec4899;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--white);
+      line-height: 1.5;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────────── */
+    .page-header {
+      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-medium) 60%, #5c2080 100%);
+      padding: 48px 40px 40px;
+      border-bottom: 3px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%);
+    }
+    .header-logo {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--bg-dark);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .header-title {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+    .header-title span {
+      color: var(--gold);
+    }
+    .header-subtitle {
+      font-size: 15px;
+      color: var(--gray-light);
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .meta-pill {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(245,200,66,0.3);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    /* ─── PILARES SUMMARY ────────────────────────────────────── */
+    .section {
+      padding: 36px 40px;
+    }
+    .section-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(245,200,66,0.25);
+      text-transform: uppercase;
+    }
+
+    /* ─── LEGEND ─────────────────────────────────────────────── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--gray-light);
+    }
+    .legend-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── WEEK BLOCK ──────────────────────────────────────────── */
+    .week-block {
+      margin-bottom: 36px;
+    }
+    .week-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--bg-dark);
+      background: var(--gold);
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    /* ─── POST CARDS ─────────────────────────────────────────── */
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .post-card {
+      background: var(--bg-medium);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 16px 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .post-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+    .post-card.reel::before      { background: var(--tag-reel); }
+    .post-card.carrusel::before  { background: var(--tag-carrusel); }
+    .post-card.disertante::before{ background: var(--tag-disertante); }
+    .post-card.cta::before       { background: var(--tag-cta); }
+    .post-card.comunidad::before { background: var(--tag-comunidad); }
+    .post-card.bts::before       { background: var(--tag-bts); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .card-date {
+      font-size: 11px;
+      color: var(--gray-mid);
+      font-weight: 500;
+    }
+    .card-weekday {
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .type-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .type-badge.reel       { background: rgba(245,158,11,0.18);  color: var(--tag-reel); }
+    .type-badge.carrusel   { background: rgba(16,185,129,0.18);  color: var(--tag-carrusel); }
+    .type-badge.disertante { background: rgba(59,130,246,0.18);  color: var(--tag-disertante); }
+    .type-badge.cta        { background: rgba(239,68,68,0.18);   color: var(--tag-cta); }
+    .type-badge.comunidad  { background: rgba(139,92,246,0.18);  color: var(--tag-comunidad); }
+    .type-badge.bts        { background: rgba(236,72,153,0.18);  color: var(--tag-bts); }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .card-charla {
+      font-size: 11px;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+    .card-copy {
+      font-size: 12px;
+      color: var(--gray-light);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .card-hashtags {
+      font-size: 10px;
+      color: var(--accent-blue);
+      line-height: 1.6;
+      word-break: break-word;
+    }
+
+    /* ─── FULL TABLE VIEW ────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    thead tr {
+      background: var(--gold);
+      color: var(--bg-dark);
+    }
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.03);
+    }
+    tbody tr:hover {
+      background: rgba(245,200,66,0.05);
+    }
+    tbody td {
+      padding: 10px 14px;
+      vertical-align: top;
+      color: var(--gray-light);
+    }
+    tbody td.fecha-col {
+      white-space: nowrap;
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+    tbody td.tipo-col {
+      white-space: nowrap;
+    }
+    tbody td.copy-col {
+      min-width: 260px;
+      line-height: 1.5;
+    }
+    tbody td.hash-col {
+      color: var(--accent-blue);
+      min-width: 180px;
+    }
+
+    /* ─── PILARES SECTION ────────────────────────────────────── */
+    .pilares-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 4px;
+    }
+    .pilar-card {
+      background: var(--bg-medium);
+      border-radius: 10px;
+      padding: 22px 20px;
+      border: 1px solid rgba(245,200,66,0.2);
+    }
+    .pilar-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .pilar-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .pilar-desc {
+      font-size: 12px;
+      color: var(--gray-light);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .pilar-formats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .pilar-tag {
+      font-size: 10px;
+      font-weight: 600;
+      background: rgba(245,200,66,0.12);
+      color: var(--gold-light);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    .page-footer {
+      padding: 28px 40px;
+      background: rgba(0,0,0,0.2);
+      border-top: 1px solid rgba(245,200,66,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--gray-mid);
+    }
+    .footer-brand {
+      font-weight: 700;
+      color: var(--gold);
+      font-size: 13px;
+    }
+
+    /* ─── PRINT STYLES ───────────────────────────────────────── */
+    @media print {
+      body { background: #29083f; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .week-block { page-break-inside: avoid; }
+      .pilar-card { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header class="page-header">
+    <div class="header-logo">Canal Veterinario</div>
+    <h1 class="header-title">Plan de Contenidos Instagram<br><span>Julio 2026</span></h1>
+    <p class="header-subtitle">Estrategia mensual de redes sociales para captación de nuevos suscriptores</p>
+    <div class="header-meta">
+      <span class="meta-pill">Red: Instagram</span>
+      <span class="meta-pill">Frecuencia: 3–4 posts/semana</span>
+      <span class="meta-pill">Audiencia: Veterinarios clínicos + estudiantes avanzados</span>
+      <span class="meta-pill">Objetivo: Nuevos suscriptores</span>
+      <span class="meta-pill">Herramienta: Canva Pro</span>
+      <span class="meta-pill">canal-veterinario-live.web.app</span>
+    </div>
+  </header>
+
+  <!-- ══════════════════ LEYENDA ══════════════════ -->
+  <div class="section" style="padding-bottom: 0;">
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-reel)"></div>Reels Teaser</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-carrusel)"></div>Carrusel Educativo</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-disertante)"></div>Historia Disertante</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-cta)"></div>CTA Suscripción</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-comunidad)"></div>Comunidad / Interacción</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-bts)"></div>Behind the Scenes</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 1 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 1 — 1 al 4 de julio</div>
+    <div class="posts-grid">
+
+      <div class="post-card reel">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 1/7</div></div>
+          <span class="type-badge reel">Reels Teaser</span>
+        </div>
+        <div class="card-title">Crisis cerebrales — Parte 1</div>
+        <div class="card-charla">Vet. Matías D'Elia — Neurología</div>
+        <div class="card-copy">¿Sabes realmente cómo actuar frente a un paciente con crisis cerebrales? 🧠 Matías D'Elia te guía paso a paso. Disponible en Canal Veterinario. 👉 Suscribite este julio. Link en bio.</div>
+        <div class="card-hashtags">#veterinaria #neurologiaveterinaria #capacitacionveterinaria #vetargentina #canalveterinario #pequeñosanimales #crisiscerebral</div>
+      </div>
+
+      <div class="post-card carrusel">
+        <div class="card-top">
+          <div><div class="card-date">Jueves 2/7</div></div>
+          <span class="type-badge carrusel">Carrusel</span>
+        </div>
+        <div class="card-title">¿Qué es una crisis cerebral en mascotas?</div>
+        <div class="card-charla">Vet. Matías D'Elia — Neurología</div>
+        <div class="card-copy">Una crisis cerebral puede parecer aterradora, pero conocer los fundamentos cambia todo. 🐾 Deslizá para aprender los puntos clave. <strong>5 slides:</strong> Definición · Causas · Signos clínicos · Qué hacer · CTA</div>
+        <div class="card-hashtags">#veterinaria #neurologiaveterinaria #capacitacionveterinaria #vetargentina #educacionveterinaria #canalveterinario</div>
+      </div>
+
+      <div class="post-card disertante">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 3/7</div></div>
+          <span class="type-badge disertante">Disertante</span>
+        </div>
+        <div class="card-title">Conocé a Matías D'Elia</div>
+        <div class="card-charla">Neurología — pequeños animales</div>
+        <div class="card-copy">🎙 Especialista en Neurología de pequeños animales. En Canal Veterinario podés acceder a sus charlas sobre crisis cerebrales y mucho más. Profesionales de primer nivel, desde donde estés, cuando quieras. 📲 Link en bio.</div>
+        <div class="card-hashtags">#veterinaria #disertante #neurologiaveterinaria #capacitacionveterinaria #canalveterinario #vetargentina</div>
+      </div>
+
+      <div class="post-card cta">
+        <div class="card-top">
+          <div><div class="card-date">Sábado 4/7</div></div>
+          <span class="type-badge cta">CTA Suscripción</span>
+        </div>
+        <div class="card-title">Julio arranca — ¿Ya estás suscripto?</div>
+        <div class="card-charla">Propuesta de valor Canal Veterinario</div>
+        <div class="card-copy">📅 Julio arrancó y tenés la excusa perfecta para invertir en tu formación. ✅ Video vía Telegram ✅ Suscripción mensual/trimestral ✅ Acceso desde donde estés 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #canalveterinario #vetargentina #suscripcion #educacionveterinaria</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 2 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 2 — 7 al 10 de julio</div>
+    <div class="posts-grid">
+
+      <div class="post-card reel">
+        <div class="card-top">
+          <div><div class="card-date">Martes 7/7</div></div>
+          <span class="type-badge reel">Reels Teaser</span>
+        </div>
+        <div class="card-title">Crisis cerebrales — Parte 2</div>
+        <div class="card-charla">Vet. Matías D'Elia — Neurología</div>
+        <div class="card-copy">¿Viste la Parte 1? La Parte 2 te lleva al siguiente nivel 🚀 Tratamiento, seguimiento y toma de decisiones. 👇 ¿Cuándo fue la última vez que actualizaste tus conocimientos en neurología?</div>
+        <div class="card-hashtags">#veterinaria #neurologiaveterinaria #capacitacionveterinaria #canalveterinario #vetargentina #tratamientoveterinario</div>
+      </div>
+
+      <div class="post-card carrusel">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 8/7</div></div>
+          <span class="type-badge carrusel">Carrusel</span>
+        </div>
+        <div class="card-title">Manejo del paciente con crisis: claves prácticas</div>
+        <div class="card-charla">Vet. Matías D'Elia — Neurología</div>
+        <div class="card-copy">Del diagnóstico al tratamiento 🧠🐕 Deslizá y guardá para tu práctica diaria. <strong>5 slides:</strong> Diagnóstico diferencial · Fármacos primera línea · Monitoreo · Alta y seguimiento · Recursos Canal Veterinario</div>
+        <div class="card-hashtags">#veterinaria #neurologiaveterinaria #canalveterinario #capacitacionveterinaria #veterinariaclinica #vetargentina</div>
+      </div>
+
+      <div class="post-card comunidad">
+        <div class="card-top">
+          <div><div class="card-date">Jueves 9/7</div></div>
+          <span class="type-badge comunidad">Comunidad</span>
+        </div>
+        <div class="card-title">Encuesta: ¿Qué área te genera más dudas?</div>
+        <div class="card-charla">Interacción con la comunidad</div>
+        <div class="card-copy">¿Cuál de estas áreas te genera más consultas? 🤔 A) Neurología B) Oftalmología C) Medicina interna D) Otra (comentá) Queremos crear el contenido que más te sirva. Compartilo con un colega 🐾</div>
+        <div class="card-hashtags">#veterinaria #vetargentina #capacitacionveterinaria #canalveterinario #comunidadveterinaria</div>
+      </div>
+
+      <div class="post-card bts">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 10/7</div></div>
+          <span class="type-badge bts">Behind the Scenes</span>
+        </div>
+        <div class="card-title">Así se aprende en Canal Veterinario</div>
+        <div class="card-charla">Funcionamiento de la plataforma</div>
+        <div class="card-copy">📱 Así se ve una charla en Canal Veterinario: video HD, audio profesional, disertantes especialistas, desde tu celular o computadora. No necesitás esperar al congreso. ¿Querés probarlo? Escribinos o entrá al link en bio.</div>
+        <div class="card-hashtags">#veterinaria #canalveterinario #capacitacionveterinaria #vetargentina #telegramveterinario #educacionveterinaria</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 3 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 3 — 14 al 17 de julio</div>
+    <div class="posts-grid">
+
+      <div class="post-card reel">
+        <div class="card-top">
+          <div><div class="card-date">Martes 14/7</div></div>
+          <span class="type-badge reel">Reels Teaser</span>
+        </div>
+        <div class="card-title">Anatomía clínica del ojo — Parte 1</div>
+        <div class="card-charla">Santiago Parrinello — Oftalmología</div>
+        <div class="card-copy">¿Podés identificar cada estructura del ojo de tu paciente con confianza? 👁 Santiago Parrinello te lleva por una anatomía clínica que vas a usar en cada consulta. ¡Guardá y compartí con tu equipo!</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #capacitacionveterinaria #canalveterinario #vetargentina #ojosveterinarios</div>
+      </div>
+
+      <div class="post-card carrusel">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 15/7</div></div>
+          <span class="type-badge carrusel">Carrusel</span>
+        </div>
+        <div class="card-title">Anatomía del ojo: guía visual para el clínico</div>
+        <div class="card-charla">Santiago Parrinello — Oftalmología</div>
+        <div class="card-copy">¿Sabés qué está mirando cuando examinás el ojo de un paciente? 👁🔍 <strong>6 slides:</strong> Estructuras externas · Cámara anterior · Cristalino · Retina · Nervio óptico · CTA Canal Veterinario — Guardá y compartí 🐾</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #anatomiavet #canalveterinario #capacitacionveterinaria #vetargentina</div>
+      </div>
+
+      <div class="post-card disertante">
+        <div class="card-top">
+          <div><div class="card-date">Jueves 16/7</div></div>
+          <span class="type-badge disertante">Disertante</span>
+        </div>
+        <div class="card-title">Conocé a Santiago Parrinello</div>
+        <div class="card-charla">Oftalmología — pequeños animales</div>
+        <div class="card-copy">👨‍⚕ Especialista en Oftalmología veterinaria. En Canal Veterinario tenés acceso a 4 de sus charlas: anatomía del ojo, consulta oftalmológica y úlcera de córnea. Formación completa en una de las áreas con más consultas diarias.</div>
+        <div class="card-hashtags">#veterinaria #disertante #oftalmologiaveterinaria #capacitacionveterinaria #canalveterinario #vetargentina</div>
+      </div>
+
+      <div class="post-card cta">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 17/7</div></div>
+          <span class="type-badge cta">CTA Suscripción</span>
+        </div>
+        <div class="card-title">Mitad de julio — No te quedes afuera</div>
+        <div class="card-charla">Propuesta de valor Canal Veterinario</div>
+        <div class="card-copy">¿Todavía no sos suscriptor de Canal Veterinario? 🤔 Este mes: neurología + oftalmología. 📅 Mensual/trimestral 📲 Telegram 💳 MercadoPago ¡Sin excusas! 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #canalveterinario #vetargentina #suscripcion #veterinariaonline</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 4 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 4 — 21 al 24 de julio</div>
+    <div class="posts-grid">
+
+      <div class="post-card reel">
+        <div class="card-top">
+          <div><div class="card-date">Martes 21/7</div></div>
+          <span class="type-badge reel">Reels Teaser</span>
+        </div>
+        <div class="card-title">Anatomía clínica del ojo — Parte 2</div>
+        <div class="card-charla">Santiago Parrinello — Oftalmología</div>
+        <div class="card-copy">¿Viste la Parte 1? La Parte 2 profundiza en detalles que cambian cómo examinás a tus pacientes 🔬👁 Más charlas de oftalmología disponibles. ¿Te gustaría ver un teaser de la consulta oftalmológica? Comentá 👇</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #capacitacionveterinaria #canalveterinario #vetargentina #pequeñosanimales</div>
+      </div>
+
+      <div class="post-card carrusel">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 22/7</div></div>
+          <span class="type-badge carrusel">Carrusel</span>
+        </div>
+        <div class="card-title">La consulta oftalmológica paso a paso</div>
+        <div class="card-charla">Santiago Parrinello — Oftalmología</div>
+        <div class="card-copy">¿Cómo estructurás tu consulta cuando el motivo es ocular? 👁 <strong>6 slides:</strong> Anamnesis dirigida · Evaluación de reflejos · Examen externo · Biomicroscopía · Fondo de ojo · CTA Canal Veterinario — Guardá para tu práctica 🐾</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #consultaveterinaria #canalveterinario #capacitacionveterinaria #vetargentina</div>
+      </div>
+
+      <div class="post-card comunidad">
+        <div class="card-top">
+          <div><div class="card-date">Jueves 23/7</div></div>
+          <span class="type-badge comunidad">Comunidad</span>
+        </div>
+        <div class="card-title">¿Cuántas consultas oftalmológicas atendés por semana?</div>
+        <div class="card-charla">Interacción con la comunidad</div>
+        <div class="card-copy">👁 ¿Cuántas consultas con componente ocular recibís? A) 1 a 2 B) 3 a 5 C) Más de 5 D) Derivación directa al especialista ¿Sentís que tu formación es suficiente? Contanos en comentarios 👇</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #capacitacionveterinaria #canalveterinario #vetargentina #comunidadveterinaria</div>
+      </div>
+
+      <div class="post-card bts">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 24/7</div></div>
+          <span class="type-badge bts">Behind the Scenes</span>
+        </div>
+        <div class="card-title">¿Cómo funciona Canal Veterinario?</div>
+        <div class="card-charla">Mecánica de la plataforma</div>
+        <div class="card-copy">¿Cómo funciona? Te lo contamos en 4 pasos 👇 1️⃣ Suscribite 2️⃣ Pagá por MercadoPago 3️⃣ Accedé al canal de Telegram 4️⃣ Disfrutá charlas cuando quieras, donde quieras. Simple. Efectivo. Profesional. 📲</div>
+        <div class="card-hashtags">#veterinaria #canalveterinario #capacitacionveterinaria #vetargentina #telegram #mercadopago #suscripcion</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 5 — CIERRE ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 5 — 28 al 31 de julio (cierre de mes)</div>
+    <div class="posts-grid">
+
+      <div class="post-card reel">
+        <div class="card-top">
+          <div><div class="card-date">Martes 28/7</div></div>
+          <span class="type-badge reel">Reels Teaser</span>
+        </div>
+        <div class="card-title">Úlcera de córnea — ¿Qué hacemos?</div>
+        <div class="card-charla">Santiago Parrinello — Oftalmología</div>
+        <div class="card-copy">🚨 Úlcera de córnea: una de las urgencias oftalmológicas más frecuentes. ¿Sabés cómo manejarla? Santiago Parrinello te explica todo en esta charla exclusiva. 👇 ¿Alguna vez te enfrentaste a este caso en la guardia?</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #ulceradecornea #capacitacionveterinaria #canalveterinario #vetargentina #urgenciasveterinarias</div>
+      </div>
+
+      <div class="post-card carrusel">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 29/7</div></div>
+          <span class="type-badge carrusel">Carrusel</span>
+        </div>
+        <div class="card-title">Úlcera de córnea: diagnóstico y tratamiento</div>
+        <div class="card-charla">Santiago Parrinello — Oftalmología</div>
+        <div class="card-copy">🔴 Tinción positiva = úlcera de córnea. ¿Y ahora qué? <strong>6 slides:</strong> Tipos de úlcera · Diagnóstico diferencial · Tratamiento médico · Indicaciones quirúrgicas · Seguimiento · CTA Canal Veterinario — Guardá para tu próxima guardia 🐾</div>
+        <div class="card-hashtags">#veterinaria #oftalmologiaveterinaria #ulceradecornea #capacitacionveterinaria #canalveterinario #vetargentina #cornea</div>
+      </div>
+
+      <div class="post-card comunidad">
+        <div class="card-top">
+          <div><div class="card-date">Jueves 30/7</div></div>
+          <span class="type-badge comunidad">Testimonio</span>
+        </div>
+        <div class="card-title">Lo que dicen nuestros suscriptores</div>
+        <div class="card-charla">Prueba social / Comunidad</div>
+        <div class="card-copy">💬 "Canal Veterinario me permite capacitarme sin tener que viajar a un congreso. Las charlas son prácticas y las puedo ver cuando tengo tiempo." 🐾 ¿Vos ya sos parte de la comunidad? Suscribite antes de que termine el mes 👉 link en bio.</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #canalveterinario #testimonio #vetargentina #educacionveterinaria #comunidadveterinaria</div>
+      </div>
+
+      <div class="post-card cta">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 31/7</div></div>
+          <span class="type-badge cta">CTA Cierre de Mes</span>
+        </div>
+        <div class="card-title">Último día para suscribirte en julio</div>
+        <div class="card-charla">Urgencia / Cierre de mes</div>
+        <div class="card-copy">🗓 Hoy es el último día de julio. ✅ Neurología con Matías D'Elia ✅ Oftalmología con Santiago Parrinello ✅ Nuevas charlas cada mes 📲 Telegram | MercadoPago | Acceso inmediato No dejes para mañana la formación de hoy. 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #canalveterinario #vetargentina #suscripcion #ultimodia #educacionveterinaria</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ TABLA RESUMEN ══════════════════ -->
+  <div class="section">
+    <div class="section-title">Resumen mensual — Vista de tabla</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fecha</th>
+            <th>Día</th>
+            <th>Tipo</th>
+            <th>Tema / Charla</th>
+            <th>Copy (resumen)</th>
+            <th>Hashtags principales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td><td class="fecha-col">01/07</td><td>Mié</td><td class="tipo-col"><span class="type-badge reel">Reels Teaser</span></td>
+            <td>Crisis cerebrales Parte 1 — M. D'Elia</td>
+            <td class="copy-col">¿Sabes cómo actuar frente a un paciente con crisis cerebrales? Matías D'Elia te guía.</td>
+            <td class="hash-col">#neurologiaveterinaria #crisiscerebral #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>2</td><td class="fecha-col">02/07</td><td>Jue</td><td class="tipo-col"><span class="type-badge carrusel">Carrusel</span></td>
+            <td>¿Qué es una crisis cerebral?</td>
+            <td class="copy-col">Fundamentos clave: definición, causas, signos clínicos, qué hacer. 5 slides.</td>
+            <td class="hash-col">#neurologiaveterinaria #capacitacionveterinaria #vetargentina</td>
+          </tr>
+          <tr>
+            <td>3</td><td class="fecha-col">03/07</td><td>Vie</td><td class="tipo-col"><span class="type-badge disertante">Disertante</span></td>
+            <td>Conocé a Matías D'Elia</td>
+            <td class="copy-col">Especialista en Neurología. Dos charlas sobre crisis cerebrales en Canal Veterinario.</td>
+            <td class="hash-col">#disertante #neurologiaveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>4</td><td class="fecha-col">04/07</td><td>Sáb</td><td class="tipo-col"><span class="type-badge cta">CTA</span></td>
+            <td>Julio arranca — Suscribite</td>
+            <td class="copy-col">Video vía Telegram, suscripción mensual/trimestral, pago por MercadoPago.</td>
+            <td class="hash-col">#capacitacionveterinaria #suscripcion #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>5</td><td class="fecha-col">07/07</td><td>Mar</td><td class="tipo-col"><span class="type-badge reel">Reels Teaser</span></td>
+            <td>Crisis cerebrales Parte 2 — M. D'Elia</td>
+            <td class="copy-col">Tratamiento, seguimiento y toma de decisiones. El siguiente nivel.</td>
+            <td class="hash-col">#neurologiaveterinaria #tratamientoveterinario #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>6</td><td class="fecha-col">08/07</td><td>Mié</td><td class="tipo-col"><span class="type-badge carrusel">Carrusel</span></td>
+            <td>Manejo del paciente con crisis</td>
+            <td class="copy-col">Diagnóstico diferencial, fármacos, monitoreo, alta y seguimiento. 5 slides.</td>
+            <td class="hash-col">#neurologiaveterinaria #veterinariaclinica #vetargentina</td>
+          </tr>
+          <tr>
+            <td>7</td><td class="fecha-col">09/07</td><td>Jue</td><td class="tipo-col"><span class="type-badge comunidad">Comunidad</span></td>
+            <td>Encuesta: ¿Qué área te genera más dudas?</td>
+            <td class="copy-col">Neurología / Oftalmología / Medicina interna / Otra. Interacción directa.</td>
+            <td class="hash-col">#comunidadveterinaria #capacitacionveterinaria #vetargentina</td>
+          </tr>
+          <tr>
+            <td>8</td><td class="fecha-col">10/07</td><td>Vie</td><td class="tipo-col"><span class="type-badge bts">BTS</span></td>
+            <td>Así se aprende en Canal Veterinario</td>
+            <td class="copy-col">Muestra la experiencia: video HD, audio profesional, desde el celular.</td>
+            <td class="hash-col">#telegramveterinario #educacionveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>9</td><td class="fecha-col">14/07</td><td>Mar</td><td class="tipo-col"><span class="type-badge reel">Reels Teaser</span></td>
+            <td>Anatomía clínica del ojo Parte 1 — Parrinello</td>
+            <td class="copy-col">¿Podés identificar cada estructura del ojo? Santiago Parrinello te lleva de la mano.</td>
+            <td class="hash-col">#oftalmologiaveterinaria #ojosveterinarios #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>10</td><td class="fecha-col">15/07</td><td>Mié</td><td class="tipo-col"><span class="type-badge carrusel">Carrusel</span></td>
+            <td>Anatomía del ojo: guía visual</td>
+            <td class="copy-col">Estructuras externas, cámara anterior, cristalino, retina, nervio óptico. 6 slides.</td>
+            <td class="hash-col">#oftalmologiaveterinaria #anatomiavet #capacitacionveterinaria</td>
+          </tr>
+          <tr>
+            <td>11</td><td class="fecha-col">16/07</td><td>Jue</td><td class="tipo-col"><span class="type-badge disertante">Disertante</span></td>
+            <td>Conocé a Santiago Parrinello</td>
+            <td class="copy-col">4 charlas en Canal Veterinario: anatomía, consulta y úlcera de córnea.</td>
+            <td class="hash-col">#disertante #oftalmologiaveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>12</td><td class="fecha-col">17/07</td><td>Vie</td><td class="tipo-col"><span class="type-badge cta">CTA</span></td>
+            <td>Mitad de julio — No te quedes afuera</td>
+            <td class="copy-col">Neurología + Oftalmología. Telegram, MercadoPago, acceso inmediato.</td>
+            <td class="hash-col">#suscripcion #veterinariaonline #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>13</td><td class="fecha-col">21/07</td><td>Mar</td><td class="tipo-col"><span class="type-badge reel">Reels Teaser</span></td>
+            <td>Anatomía clínica del ojo Parte 2 — Parrinello</td>
+            <td class="copy-col">Segmentos posteriores y su relevancia clínica. El siguiente nivel de la Parte 1.</td>
+            <td class="hash-col">#oftalmologiaveterinaria #capacitacionveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>14</td><td class="fecha-col">22/07</td><td>Mié</td><td class="tipo-col"><span class="type-badge carrusel">Carrusel</span></td>
+            <td>La consulta oftalmológica paso a paso</td>
+            <td class="copy-col">Anamnesis, reflejos, examen externo, biomicroscopía, fondo de ojo. 6 slides.</td>
+            <td class="hash-col">#oftalmologiaveterinaria #consultaveterinaria #vetargentina</td>
+          </tr>
+          <tr>
+            <td>15</td><td class="fecha-col">23/07</td><td>Jue</td><td class="tipo-col"><span class="type-badge comunidad">Comunidad</span></td>
+            <td>¿Cuántas consultas oftalmológicas por semana?</td>
+            <td class="copy-col">1 a 2 / 3 a 5 / Más de 5 / Derivación. ¿Es suficiente tu formación?</td>
+            <td class="hash-col">#oftalmologiaveterinaria #comunidadveterinaria #vetargentina</td>
+          </tr>
+          <tr>
+            <td>16</td><td class="fecha-col">24/07</td><td>Vie</td><td class="tipo-col"><span class="type-badge bts">BTS</span></td>
+            <td>¿Cómo funciona Canal Veterinario?</td>
+            <td class="copy-col">4 pasos: suscripción, MercadoPago, Telegram, charlas disponibles cuando quieras.</td>
+            <td class="hash-col">#telegram #mercadopago #suscripcion #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>17</td><td class="fecha-col">28/07</td><td>Mar</td><td class="tipo-col"><span class="type-badge reel">Reels Teaser</span></td>
+            <td>Úlcera de córnea — Parrinello</td>
+            <td class="copy-col">Urgencia oftalmológica frecuente. ¿Sabés cómo manejarla? ¿Alguna vez en la guardia?</td>
+            <td class="hash-col">#ulceradecornea #urgenciasveterinarias #oftalmologiaveterinaria</td>
+          </tr>
+          <tr>
+            <td>18</td><td class="fecha-col">29/07</td><td>Mié</td><td class="tipo-col"><span class="type-badge carrusel">Carrusel</span></td>
+            <td>Úlcera de córnea: diagnóstico y tratamiento</td>
+            <td class="copy-col">Tipos, diagnóstico, tratamiento médico, indicaciones quirúrgicas, seguimiento. 6 slides.</td>
+            <td class="hash-col">#ulceradecornea #cornea #oftalmologiaveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>19</td><td class="fecha-col">30/07</td><td>Jue</td><td class="tipo-col"><span class="type-badge comunidad">Testimonio</span></td>
+            <td>Lo que dicen nuestros suscriptores</td>
+            <td class="copy-col">Prueba social: capacitación sin viajar, charlas prácticas, flexibilidad horaria.</td>
+            <td class="hash-col">#testimonio #comunidadveterinaria #educacionveterinaria</td>
+          </tr>
+          <tr>
+            <td>20</td><td class="fecha-col">31/07</td><td>Vie</td><td class="tipo-col"><span class="type-badge cta">CTA</span></td>
+            <td>Último día de julio — ¡Suscribite!</td>
+            <td class="copy-col">Neurología + Oftalmología + más charlas cada mes. Acceso inmediato. Urgencia.</td>
+            <td class="hash-col">#ultimodia #suscripcion #capacitacionveterinaria #canalveterinario</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════ PILARES DE CONTENIDO ══════════════════ -->
+  <div class="section">
+    <div class="section-title">Pilares de Contenido</div>
+    <div class="pilares-grid">
+
+      <div class="pilar-card">
+        <span class="pilar-icon">🎓</span>
+        <div class="pilar-name">1. Educativo</div>
+        <div class="pilar-desc">Contenido de valor directo para el veterinario clínico. Extractos y resúmenes de las charlas del catálogo. El principal pilar de credibilidad y autoridad del canal.</div>
+        <div class="pilar-formats">
+          <span class="pilar-tag">Carrusel educativo</span>
+          <span class="pilar-tag">Reels teaser</span>
+          <span class="pilar-tag">Infografía</span>
+        </div>
+      </div>
+
+      <div class="pilar-card">
+        <span class="pilar-icon">📣</span>
+        <div class="pilar-name">2. Promocional</div>
+        <div class="pilar-desc">Posts orientados directamente a la conversión: suscripción, beneficios del plan, urgencia temporal y llamadas a la acción claras. Máximo 1 post por semana para no saturar.</div>
+        <div class="pilar-formats">
+          <span class="pilar-tag">CTA suscripción</span>
+          <span class="pilar-tag">Beneficios</span>
+          <span class="pilar-tag">Cierre de mes</span>
+        </div>
+      </div>
+
+      <div class="pilar-card">
+        <span class="pilar-icon">🤝</span>
+        <div class="pilar-name">3. Comunidad</div>
+        <div class="pilar-desc">Fomenta la interacción y construye relación con la audiencia. Encuestas, preguntas abiertas, testimonios y frases que reflejen la identidad del veterinario en ejercicio.</div>
+        <div class="pilar-formats">
+          <span class="pilar-tag">Encuesta</span>
+          <span class="pilar-tag">Pregunta abierta</span>
+          <span class="pilar-tag">Testimonio</span>
+          <span class="pilar-tag">Frase motivacional</span>
+        </div>
+      </div>
+
+      <div class="pilar-card">
+        <span class="pilar-icon">🎬</span>
+        <div class="pilar-name">4. Behind the Scenes</div>
+        <div class="pilar-desc">Humaniza la marca y genera confianza. Muestra cómo funciona la plataforma, quiénes son los disertantes y cómo es la experiencia de suscribirse. Clave para reducir la fricción de nuevos suscriptores.</div>
+        <div class="pilar-formats">
+          <span class="pilar-tag">Cómo funciona</span>
+          <span class="pilar-tag">Presentación disertante</span>
+          <span class="pilar-tag">Demo de plataforma</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ NOTAS PARA LA CM ══════════════════ -->
+  <div class="section" style="padding-top: 0;">
+    <div class="section-title">Notas para la Community Manager / Diseñadora</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px;">
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--gold);">
+        <div style="font-size:13px; font-weight:700; color:var(--gold); margin-bottom:8px;">Paleta de colores</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Fondo oscuro: <strong style="color:#fff">#29083f</strong><br>
+          Acento dorado: <strong style="color:var(--gold)">#f5c842</strong><br>
+          Texto principal: <strong style="color:#fff">#ffffff</strong><br>
+          Usar contraste fuerte. Evitar fondos claros.
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-reel);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-reel); margin-bottom:8px;">Reels Teaser</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Duración: 15–30 segundos<br>
+          Mostrar fragmento real de la charla o animación del tema<br>
+          Texto en pantalla con la pregunta del copy<br>
+          Audio llamativo / música veterinaria/profesional
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-carrusel);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-carrusel); margin-bottom:8px;">Carruseles</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          5–6 slides. Slide 1 = portada impactante con pregunta<br>
+          Slides intermedios = info breve y visual<br>
+          Último slide siempre = CTA con logo Canal Veterinario<br>
+          Usar iconos y poco texto por slide
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-disertante);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-disertante); margin-bottom:8px;">Posts de Disertante</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Foto profesional del disertante (fondo oscuro del canal)<br>
+          Nombre + especialidad destacados<br>
+          Breve bio en el copy<br>
+          Mencionar cantidad de charlas disponibles
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-cta);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-cta); margin-bottom:8px;">CTAs de Suscripción</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Siempre incluir URL: canal-veterinario-live.web.app<br>
+          Mencionar MercadoPago (genera confianza local)<br>
+          Mostrar beneficios concretos, no solo "suscribite"<br>
+          Máximo 1 CTA directo por semana
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-bts);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-bts); margin-bottom:8px;">Hashtags recomendados</div>
+        <div style="font-size:12px; color:var(--accent-blue); line-height:1.8;">
+          #veterinaria #vetargentina #canalveterinario<br>
+          #capacitacionveterinaria #educacionveterinaria<br>
+          #neurologiaveterinaria #oftalmologiaveterinaria<br>
+          #pequeñosanimales #veterinariaclinica #vetlife
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="page-footer">
+    <div>
+      <span class="footer-brand">Canal Veterinario</span>
+      <span> — canal-veterinario-live.web.app</span>
+    </div>
+    <div>Plan de Contenidos Instagram — Julio 2026 — Uso interno</div>
+    <div>20 publicaciones · 5 semanas · 4 pilares de contenido</div>
+  </footer>
+
+</body>
+</html>
