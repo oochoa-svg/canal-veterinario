@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan de Contenidos Instagram — Junio 2026 — Charlas en Vivo — Canal Veterinario</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-dark:      #29083f;
+      --bg-medium:    #3d1258;
+      --bg-light:     #4e1a70;
+      --gold:         #f5c842;
+      --gold-light:   #fde68a;
+      --gold-dark:    #d4a017;
+      --white:        #ffffff;
+      --gray-light:   #e2d9f3;
+      --gray-mid:     #b39dcc;
+      --accent-blue:  #a78bfa;
+      --tag-anuncio:    #3b82f6;
+      --tag-recordatorio: #f59e0b;
+      --tag-envivo:     #ef4444;
+      --tag-grabada:    #10b981;
+      --tag-comunidad:  #8b5cf6;
+      --tag-valor:      #f5c842;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--white);
+      line-height: 1.5;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────────── */
+    .page-header {
+      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-medium) 60%, #5c2080 100%);
+      padding: 48px 40px 40px;
+      border-bottom: 3px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%);
+    }
+    .header-logo {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--bg-dark);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .header-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+    .header-title span {
+      color: var(--gold);
+    }
+    .header-subtitle {
+      font-size: 15px;
+      color: var(--gray-light);
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .meta-pill {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(245,200,66,0.3);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    /* ─── SECTIONS ───────────────────────────────────────────── */
+    .section {
+      padding: 36px 40px;
+    }
+    .section-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(245,200,66,0.25);
+      text-transform: uppercase;
+    }
+
+    /* ─── CALENDARIO DE CHARLAS ──────────────────────────────── */
+    .charlas-highlight {
+      background: linear-gradient(135deg, var(--bg-medium) 0%, #4a1668 100%);
+      border-top: 1px solid rgba(245,200,66,0.3);
+      border-bottom: 1px solid rgba(245,200,66,0.3);
+    }
+    .charlas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 14px;
+    }
+    .charla-card {
+      background: rgba(0,0,0,0.22);
+      border: 1px solid rgba(245,200,66,0.25);
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .charla-num {
+      flex-shrink: 0;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--bg-dark);
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .charla-fecha {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .charla-tema {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.35;
+      margin-bottom: 5px;
+    }
+    .charla-diser {
+      font-size: 12px;
+      color: var(--gold-light);
+    }
+    .charla-area {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 10px;
+      font-weight: 600;
+      background: rgba(245,200,66,0.12);
+      color: var(--gold-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* ─── LEGEND ─────────────────────────────────────────────── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--gray-light);
+    }
+    .legend-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── WEEK BLOCK ──────────────────────────────────────────── */
+    .week-block {
+      margin-bottom: 36px;
+    }
+    .week-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--bg-dark);
+      background: var(--gold);
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    /* ─── POST CARDS ─────────────────────────────────────────── */
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .post-card {
+      background: var(--bg-medium);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 16px 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .post-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+    .post-card.anuncio::before      { background: var(--tag-anuncio); }
+    .post-card.recordatorio::before { background: var(--tag-recordatorio); }
+    .post-card.envivo::before       { background: var(--tag-envivo); }
+    .post-card.grabada::before      { background: var(--tag-grabada); }
+    .post-card.comunidad::before    { background: var(--tag-comunidad); }
+    .post-card.valor::before        { background: var(--tag-valor); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .card-date {
+      font-size: 11px;
+      color: var(--gray-mid);
+      font-weight: 500;
+    }
+    .type-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .type-badge.anuncio      { background: rgba(59,130,246,0.18);  color: var(--tag-anuncio); }
+    .type-badge.recordatorio { background: rgba(245,158,11,0.18);  color: var(--tag-recordatorio); }
+    .type-badge.envivo       { background: rgba(239,68,68,0.18);   color: var(--tag-envivo); }
+    .type-badge.grabada      { background: rgba(16,185,129,0.18);  color: var(--tag-grabada); }
+    .type-badge.comunidad    { background: rgba(139,92,246,0.18);  color: var(--tag-comunidad); }
+    .type-badge.valor        { background: rgba(245,200,66,0.18);  color: var(--gold); }
+
+    .card-format {
+      font-size: 10px;
+      color: var(--gray-mid);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .card-charla {
+      font-size: 11px;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+    .card-copy {
+      font-size: 12px;
+      color: var(--gray-light);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .card-hashtags {
+      font-size: 10px;
+      color: var(--accent-blue);
+      line-height: 1.6;
+      word-break: break-word;
+    }
+
+    /* ─── FULL TABLE VIEW ────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    thead tr {
+      background: var(--gold);
+      color: var(--bg-dark);
+    }
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.03);
+    }
+    tbody tr:hover {
+      background: rgba(245,200,66,0.05);
+    }
+    tbody td {
+      padding: 10px 14px;
+      vertical-align: top;
+      color: var(--gray-light);
+    }
+    tbody td.fecha-col {
+      white-space: nowrap;
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+    tbody td.tipo-col {
+      white-space: nowrap;
+    }
+    tbody td.copy-col {
+      min-width: 260px;
+      line-height: 1.5;
+    }
+    tbody td.hash-col {
+      color: var(--accent-blue);
+      min-width: 180px;
+    }
+
+    /* ─── SECUENCIA / EMBUDO ─────────────────────────────────── */
+    .funnel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 4px;
+    }
+    .funnel-step {
+      background: var(--bg-medium);
+      border-radius: 10px;
+      padding: 20px 18px;
+      position: relative;
+      border-top: 4px solid;
+    }
+    .funnel-step.s1 { border-color: var(--tag-anuncio); }
+    .funnel-step.s2 { border-color: var(--tag-recordatorio); }
+    .funnel-step.s3 { border-color: var(--tag-envivo); }
+    .funnel-step.s4 { border-color: var(--tag-grabada); }
+    .funnel-when {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--gray-mid);
+      margin-bottom: 6px;
+    }
+    .funnel-name {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .funnel-step.s1 .funnel-name { color: var(--tag-anuncio); }
+    .funnel-step.s2 .funnel-name { color: var(--tag-recordatorio); }
+    .funnel-step.s3 .funnel-name { color: var(--tag-envivo); }
+    .funnel-step.s4 .funnel-name { color: var(--tag-grabada); }
+    .funnel-desc {
+      font-size: 12px;
+      color: var(--gray-light);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .funnel-cta {
+      font-size: 11px;
+      color: var(--gold-light);
+      font-style: italic;
+      border-top: 1px dashed rgba(245,200,66,0.25);
+      padding-top: 8px;
+    }
+    .funnel-arrow {
+      text-align: center;
+      color: var(--gold);
+      font-size: 22px;
+      margin: 14px 0 4px;
+      letter-spacing: 6px;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    .page-footer {
+      padding: 28px 40px;
+      background: rgba(0,0,0,0.2);
+      border-top: 1px solid rgba(245,200,66,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--gray-mid);
+    }
+    .footer-brand {
+      font-weight: 700;
+      color: var(--gold);
+      font-size: 13px;
+    }
+
+    /* ─── PRINT STYLES ───────────────────────────────────────── */
+    @media print {
+      body { background: #29083f; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .week-block { page-break-inside: avoid; }
+      .charla-card { page-break-inside: avoid; }
+      .funnel-step { page-break-inside: avoid; }
+      .post-card { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header class="page-header">
+    <div class="header-logo">Canal Veterinario</div>
+    <h1 class="header-title">Plan de Contenidos Instagram<br><span>Junio 2026 — Charlas en Vivo</span></h1>
+    <p class="header-subtitle">Estrategia de promoción de las 6 charlas EN VIVO del mes para captar nuevos suscriptores aprovechando la urgencia del evento</p>
+    <div class="header-meta">
+      <span class="meta-pill">Objetivo: Nuevos suscriptores</span>
+      <span class="meta-pill">Red: Instagram</span>
+      <span class="meta-pill">Audiencia: Veterinarios clínicos + estudiantes avanzados</span>
+      <span class="meta-pill">Frecuencia: 3–4 posts/semana</span>
+      <span class="meta-pill">Herramienta: Canva Pro</span>
+      <span class="meta-pill">canal-veterinario-live.web.app</span>
+    </div>
+  </header>
+
+  <!-- ══════════════════ CALENDARIO DE CHARLAS EN VIVO ══════════════════ -->
+  <div class="section charlas-highlight">
+    <div class="section-title">📆 Calendario de Charlas en Vivo de Junio</div>
+    <div class="charlas-grid">
+
+      <div class="charla-card">
+        <div class="charla-num">1</div>
+        <div>
+          <div class="charla-fecha">Lunes 8 de junio</div>
+          <div class="charla-tema">Hipotiroidismo — Parte 2</div>
+          <div class="charla-diser">🎙 Carolina Vecino</div>
+          <span class="charla-area">Pequeños animales · Endocrinología</span>
+        </div>
+      </div>
+
+      <div class="charla-card">
+        <div class="charla-num">2</div>
+        <div>
+          <div class="charla-fecha">Lunes 15 de junio</div>
+          <div class="charla-tema">Gingivoestomatitis crónica felina y Calicivirus — Tratamientos Parte 2</div>
+          <div class="charla-diser">🎙 Natalia Luka</div>
+          <span class="charla-area">Felinos · Odontología</span>
+        </div>
+      </div>
+
+      <div class="charla-card">
+        <div class="charla-num">3</div>
+        <div>
+          <div class="charla-fecha">Miércoles 17 de junio</div>
+          <div class="charla-tema">Histopatología veterinaria: el puente entre la clínica y el diagnóstico definitivo</div>
+          <div class="charla-diser">🎙 Matías Caverzan</div>
+          <span class="charla-area">Pequeños animales · Patología</span>
+        </div>
+      </div>
+
+      <div class="charla-card">
+        <div class="charla-num">4</div>
+        <div>
+          <div class="charla-fecha">Lunes 22 de junio</div>
+          <div class="charla-tema">Biomecánica aplicada a las fases del paso en caballos. Parte 1</div>
+          <div class="charla-diser">🎙 Vet. José Adrián Iranzo</div>
+          <span class="charla-area">Equinos · Biomecánica</span>
+        </div>
+      </div>
+
+      <div class="charla-card">
+        <div class="charla-num">5</div>
+        <div>
+          <div class="charla-fecha">Miércoles 24 de junio</div>
+          <div class="charla-tema">Técnica quirúrgica aséptica: Asepsia y antisepsia</div>
+          <div class="charla-diser">🎙 Georgina Soledad Castro</div>
+          <span class="charla-area">Pequeños animales · Cirugía</span>
+        </div>
+      </div>
+
+      <div class="charla-card">
+        <div class="charla-num">6</div>
+        <div>
+          <div class="charla-fecha">Lunes 29 de junio</div>
+          <div class="charla-tema">Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución</div>
+          <div class="charla-diser">🎙 Damián Barón</div>
+          <span class="charla-area">Pequeños animales · Cirugía</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ LEYENDA DE FASES ══════════════════ -->
+  <div class="section" style="padding-bottom: 0;">
+    <div class="section-title" style="margin-bottom:16px;">Fases de cada post</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-anuncio)"></div>📢 Anuncio / Save the date</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-recordatorio)"></div>⏰ Recordatorio / Cuenta regresiva</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-envivo)"></div>🔴 Hoy en Vivo</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-grabada)"></div>🎥 Ya Grabada</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-comunidad)"></div>🤝 Comunidad / Encuesta</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tag-valor)"></div>⭐ Propuesta de valor</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 1 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 1 — 8 al 12 de junio</div>
+    <div class="posts-grid">
+
+      <div class="post-card envivo">
+        <div class="card-top">
+          <div><div class="card-date">Lunes 8/6</div></div>
+          <span class="type-badge envivo">🔴 Hoy en Vivo</span>
+        </div>
+        <div class="card-format">Historia · sticker recordatorio + link</div>
+        <div class="card-title">HOY EN VIVO — Hipotiroidismo P2</div>
+        <div class="card-charla">Carolina Vecino — Endocrinología</div>
+        <div class="card-copy">🔴 HOY EN VIVO 21 hs | Hipotiroidismo Parte 2 con Carolina Vecino. Diagnóstico, interpretación de laboratorio y manejo terapéutico. ¿Te la vas a perder? Suscribite y entrá al vivo por Telegram. Después queda grabada 🎥 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #endocrinologiaveterinaria #hipotiroidismo #canalveterinario</div>
+      </div>
+
+      <div class="post-card grabada">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 10/6</div></div>
+          <span class="type-badge grabada">🎥 Ya Grabada</span>
+        </div>
+        <div class="card-format">Post · placa / carrusel</div>
+        <div class="card-title">Ya disponible grabada — Hipotiroidismo P2</div>
+        <div class="card-charla">Carolina Vecino — Endocrinología</div>
+        <div class="card-copy">¿Te perdiste el vivo de Hipotiroidismo Parte 2 con Carolina Vecino? 🎥 Ya está grabada en Canal Veterinario. Mirala cuando quieras, las veces que quieras. Suscribite y accedé ahora 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #endocrinologiaveterinaria #hipotiroidismo #canalveterinario</div>
+      </div>
+
+      <div class="post-card anuncio">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 12/6</div></div>
+          <span class="type-badge anuncio">📢 Anuncio</span>
+        </div>
+        <div class="card-format">Reel o carrusel · Save the date</div>
+        <div class="card-title">Save the date — Gingivoestomatitis felina</div>
+        <div class="card-charla">Natalia Luka — Felinos · Lunes 15/6</div>
+        <div class="card-copy">📆 SAVE THE DATE | Lunes 15/6 EN VIVO: Gingivoestomatitis crónica felina y Calicivirus — Tratamientos Parte 2, con Natalia Luka 🐱 Abordajes terapéuticos actualizados de una de las patologías felinas más desafiantes. 👉 Suscribite para no perdértela en vivo: canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #felinos #odontologiaveterinaria #calicivirus #canalveterinario</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 2 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 2 — 14 al 19 de junio</div>
+    <div class="posts-grid">
+
+      <div class="post-card recordatorio">
+        <div class="card-top">
+          <div><div class="card-date">Domingo 14/6</div></div>
+          <span class="type-badge recordatorio">⏰ Recordatorio</span>
+        </div>
+        <div class="card-format">Historia · cuenta regresiva</div>
+        <div class="card-title">MAÑANA EN VIVO — Gingivoestomatitis felina</div>
+        <div class="card-charla">Natalia Luka — Felinos</div>
+        <div class="card-copy">⏰ MAÑANA EN VIVO | Lunes 15/6 21 hs: Gingivoestomatitis crónica felina y Calicivirus (Tratamientos Parte 2) con Natalia Luka 🐱 ¿Ya estás suscripto? Activá el recordatorio y sumate al vivo por Telegram 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #felinos #odontologiaveterinaria #canalveterinario</div>
+      </div>
+
+      <div class="post-card envivo">
+        <div class="card-top">
+          <div><div class="card-date">Lunes 15/6</div></div>
+          <span class="type-badge envivo">🔴 Hoy en Vivo</span>
+        </div>
+        <div class="card-format">Historia · sticker recordatorio + link</div>
+        <div class="card-title">HOY EN VIVO — Gingivoestomatitis felina</div>
+        <div class="card-charla">Natalia Luka — Felinos</div>
+        <div class="card-copy">🔴 HOY EN VIVO 21 hs | Gingivoestomatitis crónica felina y Calicivirus — Tratamientos Parte 2 con Natalia Luka 🐱 Última oportunidad de verla en directo y hacer tus preguntas. Suscribite y entrá por Telegram 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #felinos #gingivoestomatitis #calicivirus #canalveterinario</div>
+      </div>
+
+      <div class="post-card anuncio">
+        <div class="card-top">
+          <div><div class="card-date">Lunes 15/6</div></div>
+          <span class="type-badge anuncio">📢 Anuncio</span>
+        </div>
+        <div class="card-format">Reel o carrusel · Save the date</div>
+        <div class="card-title">Save the date — Histopatología</div>
+        <div class="card-charla">Matías Caverzan — Patología · Miércoles 17/6</div>
+        <div class="card-copy">📆 SAVE THE DATE | Miércoles 17/6 EN VIVO: Histopatología veterinaria: el puente entre la clínica y el diagnóstico definitivo, con Matías Caverzan 🔬 Cómo transformar una sospecha clínica en un diagnóstico certero. 👉 Suscribite para no perdértela en vivo: canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #histopatologiaveterinaria #patologiaveterinaria #diagnosticoveterinario #canalveterinario</div>
+      </div>
+
+      <div class="post-card envivo">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 17/6</div></div>
+          <span class="type-badge envivo">🔴 Hoy en Vivo</span>
+        </div>
+        <div class="card-format">Historia · sticker recordatorio + link</div>
+        <div class="card-title">HOY EN VIVO — Histopatología</div>
+        <div class="card-charla">Matías Caverzan — Patología</div>
+        <div class="card-copy">🔴 HOY EN VIVO 21 hs | Histopatología veterinaria: el puente entre la clínica y el diagnóstico definitivo, con Matías Caverzan 🔬 El vivo es HOY. Suscribite y entrá por Telegram para verla en directo 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #histopatologiaveterinaria #patologiaveterinaria #canalveterinario</div>
+      </div>
+
+      <div class="post-card grabada">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 19/6</div></div>
+          <span class="type-badge grabada">🎥 Ya Grabada</span>
+        </div>
+        <div class="card-format">Post · placa / carrusel</div>
+        <div class="card-title">Ya disponible grabada — Histopatología</div>
+        <div class="card-charla">Matías Caverzan — Patología</div>
+        <div class="card-copy">¿Te la perdiste en vivo? 🔬 Histopatología veterinaria: el puente entre la clínica y el diagnóstico definitivo, con Matías Caverzan, ya está GRABADA en Canal Veterinario. Mirala cuando quieras. Suscribite y accedé 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #histopatologiaveterinaria #patologiaveterinaria #diagnosticoveterinario #canalveterinario</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 3 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 3 — 20 al 26 de junio</div>
+    <div class="posts-grid">
+
+      <div class="post-card comunidad">
+        <div class="card-top">
+          <div><div class="card-date">Sábado 20/6</div></div>
+          <span class="type-badge comunidad">🤝 Comunidad</span>
+        </div>
+        <div class="card-format">Post / historia · encuesta</div>
+        <div class="card-title">Encuesta — ¿Qué paciente atendés más?</div>
+        <div class="card-charla">Interacción con la comunidad</div>
+        <div class="card-copy">Contanos 🐾 ¿Qué tipo de paciente atendés más en tu día a día? A) Caninos B) Felinos C) Mixto D) Equinos / grandes animales 👇 Tu respuesta nos ayuda a elegir las próximas charlas en vivo. Compartí con un colega.</div>
+        <div class="card-hashtags">#veterinaria #vetargentina #capacitacionveterinaria #medicinaveterinaria #comunidadveterinaria #canalveterinario</div>
+      </div>
+
+      <div class="post-card anuncio">
+        <div class="card-top">
+          <div><div class="card-date">Sábado 20/6</div></div>
+          <span class="type-badge anuncio">📢 Anuncio</span>
+        </div>
+        <div class="card-format">Reel o carrusel · Save the date</div>
+        <div class="card-title">Save the date — Biomecánica equina</div>
+        <div class="card-charla">Vet. José Adrián Iranzo — Equinos · Lunes 22/6</div>
+        <div class="card-copy">📆 SAVE THE DATE | Lunes 22/6 EN VIVO: Biomecánica aplicada a las fases del paso en caballos — Parte 1, con el Vet. José Adrián Iranzo 🐴 Entender la biomecánica del paso para mejorar tu evaluación locomotora del equino. 👉 Suscribite para no perdértela en vivo: canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #equinos #medicinaequina #biomecanica #caballos #canalveterinario</div>
+      </div>
+
+      <div class="post-card envivo">
+        <div class="card-top">
+          <div><div class="card-date">Lunes 22/6</div></div>
+          <span class="type-badge envivo">🔴 Hoy en Vivo</span>
+        </div>
+        <div class="card-format">Historia · sticker recordatorio + link</div>
+        <div class="card-title">HOY EN VIVO — Biomecánica equina</div>
+        <div class="card-charla">Vet. José Adrián Iranzo — Equinos</div>
+        <div class="card-copy">🔴 HOY EN VIVO 21 hs | Biomecánica aplicada a las fases del paso en caballos (Parte 1) con el Vet. José Adrián Iranzo 🐴 El vivo es HOY. Suscribite y entrá por Telegram 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #equinos #medicinaequina #biomecanica #canalveterinario</div>
+      </div>
+
+      <div class="post-card anuncio">
+        <div class="card-top">
+          <div><div class="card-date">Lunes 22/6</div></div>
+          <span class="type-badge anuncio">📢 Anuncio</span>
+        </div>
+        <div class="card-format">Reel o carrusel · Save the date</div>
+        <div class="card-title">Save the date — Técnica quirúrgica aséptica</div>
+        <div class="card-charla">Georgina Soledad Castro — Cirugía · Miércoles 24/6</div>
+        <div class="card-copy">📆 SAVE THE DATE | Miércoles 24/6 EN VIVO: Técnica quirúrgica aséptica: Asepsia y antisepsia, con Georgina Soledad Castro 🧤 Los fundamentos que separan una cirugía segura de una complicación evitable. 👉 Suscribite para no perdértela en vivo: canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #cirugiaveterinaria #asepsia #antisepsia #canalveterinario</div>
+      </div>
+
+      <div class="post-card envivo">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 24/6</div></div>
+          <span class="type-badge envivo">🔴 Hoy en Vivo</span>
+        </div>
+        <div class="card-format">Historia · sticker recordatorio + link</div>
+        <div class="card-title">HOY EN VIVO — Técnica quirúrgica aséptica</div>
+        <div class="card-charla">Georgina Soledad Castro — Cirugía</div>
+        <div class="card-copy">🔴 HOY EN VIVO 21 hs | Técnica quirúrgica aséptica: Asepsia y antisepsia con Georgina Soledad Castro 🧤 El vivo es HOY. Suscribite y entrá por Telegram para verla en directo 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #cirugiaveterinaria #asepsia #antisepsia #canalveterinario</div>
+      </div>
+
+      <div class="post-card grabada">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 24/6</div></div>
+          <span class="type-badge grabada">🎥 Ya Grabada</span>
+        </div>
+        <div class="card-format">Post · placa / carrusel</div>
+        <div class="card-title">Ya disponible grabada — Biomecánica equina</div>
+        <div class="card-charla">Vet. José Adrián Iranzo — Equinos</div>
+        <div class="card-copy">¿Te la perdiste en vivo? 🐴 Biomecánica aplicada a las fases del paso en caballos — Parte 1, con el Vet. José Adrián Iranzo, ya está GRABADA en Canal Veterinario. Mirala cuando quieras y preparate para la Parte 2. Suscribite y accedé 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #equinos #medicinaequina #biomecanica #caballos #canalveterinario</div>
+      </div>
+
+      <div class="post-card anuncio">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 26/6</div></div>
+          <span class="type-badge anuncio">📢 Anuncio</span>
+        </div>
+        <div class="card-format">Reel o carrusel · Save the date</div>
+        <div class="card-title">Save the date — Mastectomía</div>
+        <div class="card-charla">Damián Barón — Cirugía · Lunes 29/6</div>
+        <div class="card-copy">📆 SAVE THE DATE | Lunes 29/6 EN VIVO: Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución, con Damián Barón 🔪 Qué evitar y cómo resolver las complicaciones quirúrgicas más comunes. 👉 Suscribite para no perdértela en vivo: canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #cirugiaveterinaria #mastectomia #oncologiaveterinaria #canalveterinario</div>
+      </div>
+
+      <div class="post-card grabada">
+        <div class="card-top">
+          <div><div class="card-date">Viernes 26/6</div></div>
+          <span class="type-badge grabada">🎥 Ya Grabada</span>
+        </div>
+        <div class="card-format">Post · placa / carrusel</div>
+        <div class="card-title">Ya disponible grabada — Técnica aséptica</div>
+        <div class="card-charla">Georgina Soledad Castro — Cirugía</div>
+        <div class="card-copy">¿Te la perdiste en vivo? 🧤 Técnica quirúrgica aséptica: Asepsia y antisepsia, con Georgina Soledad Castro, ya está GRABADA en Canal Veterinario. Repasá los fundamentos de la cirugía segura cuando quieras. Suscribite y accedé 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #cirugiaveterinaria #asepsia #antisepsia #canalveterinario</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ SEMANA 4 ══════════════════ -->
+  <div class="section">
+    <div class="week-label">Semana 4 — 28 de junio al 1 de julio (cierre de mes)</div>
+    <div class="posts-grid">
+
+      <div class="post-card recordatorio">
+        <div class="card-top">
+          <div><div class="card-date">Domingo 28/6</div></div>
+          <span class="type-badge recordatorio">⏰ Recordatorio</span>
+        </div>
+        <div class="card-format">Historia · cuenta regresiva</div>
+        <div class="card-title">MAÑANA EN VIVO — Mastectomía</div>
+        <div class="card-charla">Damián Barón — Cirugía</div>
+        <div class="card-copy">⏰ MAÑANA EN VIVO | Lunes 29/6 21 hs: Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución, con Damián Barón 🔪 Activá el recordatorio. Suscribite y sumate al vivo por Telegram 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #cirugiaveterinaria #mastectomia #canalveterinario</div>
+      </div>
+
+      <div class="post-card envivo">
+        <div class="card-top">
+          <div><div class="card-date">Lunes 29/6</div></div>
+          <span class="type-badge envivo">🔴 Hoy en Vivo</span>
+        </div>
+        <div class="card-format">Historia · sticker recordatorio + link</div>
+        <div class="card-title">HOY EN VIVO — Mastectomía</div>
+        <div class="card-charla">Damián Barón — Cirugía</div>
+        <div class="card-copy">🔴 HOY EN VIVO 21 hs | Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución, con Damián Barón 🔪 El vivo es HOY. Suscribite y entrá por Telegram 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #cirugiaveterinaria #mastectomia #oncologiaveterinaria #canalveterinario</div>
+      </div>
+
+      <div class="post-card valor">
+        <div class="card-top">
+          <div><div class="card-date">Martes 30/6</div></div>
+          <span class="type-badge valor">⭐ Propuesta de valor</span>
+        </div>
+        <div class="card-format">Post · carrusel · cierre de mes</div>
+        <div class="card-title">Junio cerró con 6 charlas en vivo</div>
+        <div class="card-charla">Propuesta de valor Canal Veterinario</div>
+        <div class="card-copy">Junio cerró con 6 charlas EN VIVO 🔥 Hipotiroidismo · Gingivoestomatitis felina · Histopatología · Biomecánica equina · Técnica aséptica · Mastectomía. ¿Te perdiste alguna? TODAS quedaron grabadas. ✅ En vivo por Telegram ✅ Quedan grabadas ✅ Pago simple por MercadoPago. Suscribite 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #educacionveterinaria #cirugiaveterinaria #felinos #equinos #canalveterinario</div>
+      </div>
+
+      <div class="post-card grabada">
+        <div class="card-top">
+          <div><div class="card-date">Miércoles 1/7</div></div>
+          <span class="type-badge grabada">🎥 Ya Grabada</span>
+        </div>
+        <div class="card-format">Post · placa / carrusel</div>
+        <div class="card-title">Ya disponible grabada — Mastectomía</div>
+        <div class="card-charla">Damián Barón — Cirugía</div>
+        <div class="card-copy">¿Te la perdiste en vivo? 🔪 Mastectomía: Errores más frecuentes y conceptos quirúrgicos de resolución, con Damián Barón, ya está GRABADA en Canal Veterinario. Mirala cuando quieras y evitá los errores más comunes en tu próxima cirugía. Suscribite y accedé 👉 canal-veterinario-live.web.app</div>
+        <div class="card-hashtags">#veterinaria #capacitacionveterinaria #vetargentina #medicinaveterinaria #cirugiaveterinaria #mastectomia #oncologiaveterinaria #canalveterinario</div>
+      </div>
+
+    </div>
+    <p style="font-size:11px; color:var(--gray-mid); margin-top:8px;">* La fase "Ya Grabada" de Mastectomía cae el 1/7 para respetar la secuencia (1–2 días post-evento) y abre el plan de julio.</p>
+  </div>
+
+  <!-- ══════════════════ SECUENCIA DE PROMOCIÓN ══════════════════ -->
+  <div class="section">
+    <div class="section-title">Secuencia de Promoción de Evento (el embudo)</div>
+    <p style="font-size:13px; color:var(--gray-light); margin-bottom:22px; max-width:760px;">Cada una de las 6 charlas en vivo se promociona con la misma secuencia de 4 fases. El objetivo es generar urgencia con el evento en vivo y capturar también a quienes no llegan al directo, ofreciéndoles la grabación a cambio de suscribirse.</p>
+    <div class="funnel">
+      <div class="funnel-step s1">
+        <div class="funnel-when">2–3 días antes</div>
+        <div class="funnel-name">📢 Anuncio</div>
+        <div class="funnel-desc">Reel o carrusel presentando al disertante y el tema. "Save the date". Genera awareness y agenda mental del evento.</div>
+        <div class="funnel-cta">CTA: "Suscribite para no perdértela en vivo"</div>
+      </div>
+      <div class="funnel-step s2">
+        <div class="funnel-when">Día anterior / misma mañana</div>
+        <div class="funnel-name">⏰ Recordatorio</div>
+        <div class="funnel-desc">Historia con sticker de cuenta regresiva. Reactiva a los interesados y presiona la decisión de suscribirse.</div>
+        <div class="funnel-cta">CTA: "MAÑANA / HOY en vivo — activá el recordatorio"</div>
+      </div>
+      <div class="funnel-step s3">
+        <div class="funnel-when">Día del evento</div>
+        <div class="funnel-name">🔴 Hoy en Vivo</div>
+        <div class="funnel-desc">Historia con sticker de recordatorio + link de suscripción. Máxima urgencia: última chance de verla en directo.</div>
+        <div class="funnel-cta">CTA: "Suscribite y entrá ahora por Telegram"</div>
+      </div>
+      <div class="funnel-step s4">
+        <div class="funnel-when">1–2 días después</div>
+        <div class="funnel-name">🎥 Ya Grabada</div>
+        <div class="funnel-desc">Post avisando que la charla quedó grabada en la plataforma. Recupera a quienes no llegaron al vivo.</div>
+        <div class="funnel-cta">CTA: "¿Te la perdiste? Ya está grabada, suscribite y miralá cuando quieras"</div>
+      </div>
+    </div>
+    <div class="funnel-arrow">→ → →</div>
+    <p style="font-size:12px; color:var(--gray-mid); text-align:center;">Anuncio → Recordatorio → En Vivo → Grabada · cada charla recorre el embudo completo</p>
+  </div>
+
+  <!-- ══════════════════ TABLA RESUMEN ══════════════════ -->
+  <div class="section">
+    <div class="section-title">Resumen mensual — Vista de tabla</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fecha</th>
+            <th>Día</th>
+            <th>Fase</th>
+            <th>Charla / Disertante</th>
+            <th>Copy (resumen)</th>
+            <th>Hashtags principales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td><td class="fecha-col">08/06</td><td>Lun</td><td class="tipo-col"><span class="type-badge envivo">🔴 En Vivo</span></td>
+            <td>Hipotiroidismo P2 — Vecino</td>
+            <td class="copy-col">HOY EN VIVO. Diagnóstico, laboratorio y manejo terapéutico. Después queda grabada.</td>
+            <td class="hash-col">#endocrinologiaveterinaria #hipotiroidismo #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>2</td><td class="fecha-col">10/06</td><td>Mié</td><td class="tipo-col"><span class="type-badge grabada">🎥 Grabada</span></td>
+            <td>Hipotiroidismo P2 — Vecino</td>
+            <td class="copy-col">¿Te perdiste el vivo? Ya está grabada. Mirala cuando quieras. Suscribite.</td>
+            <td class="hash-col">#endocrinologiaveterinaria #hipotiroidismo #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>3</td><td class="fecha-col">12/06</td><td>Vie</td><td class="tipo-col"><span class="type-badge anuncio">📢 Anuncio</span></td>
+            <td>Gingivoestomatitis felina — Luka</td>
+            <td class="copy-col">Save the date 15/6. Tratamientos P2. Suscribite para no perdértela en vivo.</td>
+            <td class="hash-col">#felinos #odontologiaveterinaria #calicivirus #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>4</td><td class="fecha-col">14/06</td><td>Dom</td><td class="tipo-col"><span class="type-badge recordatorio">⏰ Recordatorio</span></td>
+            <td>Gingivoestomatitis felina — Luka</td>
+            <td class="copy-col">MAÑANA EN VIVO. Activá el recordatorio. Suscribite y sumate por Telegram.</td>
+            <td class="hash-col">#felinos #odontologiaveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>5</td><td class="fecha-col">15/06</td><td>Lun</td><td class="tipo-col"><span class="type-badge envivo">🔴 En Vivo</span></td>
+            <td>Gingivoestomatitis felina — Luka</td>
+            <td class="copy-col">HOY EN VIVO. Última chance de verla en directo y preguntar.</td>
+            <td class="hash-col">#felinos #gingivoestomatitis #calicivirus #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>6</td><td class="fecha-col">15/06</td><td>Lun</td><td class="tipo-col"><span class="type-badge anuncio">📢 Anuncio</span></td>
+            <td>Histopatología — Caverzan</td>
+            <td class="copy-col">Save the date 17/6. De la sospecha clínica al diagnóstico definitivo.</td>
+            <td class="hash-col">#histopatologiaveterinaria #patologiaveterinaria #diagnosticoveterinario</td>
+          </tr>
+          <tr>
+            <td>7</td><td class="fecha-col">17/06</td><td>Mié</td><td class="tipo-col"><span class="type-badge envivo">🔴 En Vivo</span></td>
+            <td>Histopatología — Caverzan</td>
+            <td class="copy-col">HOY EN VIVO. El puente entre la clínica y el diagnóstico definitivo.</td>
+            <td class="hash-col">#histopatologiaveterinaria #patologiaveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>8</td><td class="fecha-col">19/06</td><td>Vie</td><td class="tipo-col"><span class="type-badge grabada">🎥 Grabada</span></td>
+            <td>Histopatología — Caverzan</td>
+            <td class="copy-col">¿Te la perdiste? Ya está grabada. Mirala cuando quieras. Suscribite.</td>
+            <td class="hash-col">#histopatologiaveterinaria #diagnosticoveterinario #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>9</td><td class="fecha-col">20/06</td><td>Sáb</td><td class="tipo-col"><span class="type-badge comunidad">🤝 Comunidad</span></td>
+            <td>Encuesta — ¿Qué paciente atendés más?</td>
+            <td class="copy-col">Caninos / Felinos / Mixto / Equinos. Ayuda a elegir próximas charlas.</td>
+            <td class="hash-col">#comunidadveterinaria #vetargentina #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>10</td><td class="fecha-col">20/06</td><td>Sáb</td><td class="tipo-col"><span class="type-badge anuncio">📢 Anuncio</span></td>
+            <td>Biomecánica equina — Iranzo</td>
+            <td class="copy-col">Save the date 22/6. Biomecánica del paso para evaluar al equino.</td>
+            <td class="hash-col">#equinos #medicinaequina #biomecanica #caballos</td>
+          </tr>
+          <tr>
+            <td>11</td><td class="fecha-col">22/06</td><td>Lun</td><td class="tipo-col"><span class="type-badge envivo">🔴 En Vivo</span></td>
+            <td>Biomecánica equina — Iranzo</td>
+            <td class="copy-col">HOY EN VIVO. Fases del paso en caballos, Parte 1.</td>
+            <td class="hash-col">#equinos #medicinaequina #biomecanica #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>12</td><td class="fecha-col">22/06</td><td>Lun</td><td class="tipo-col"><span class="type-badge anuncio">📢 Anuncio</span></td>
+            <td>Técnica aséptica — Castro</td>
+            <td class="copy-col">Save the date 24/6. Asepsia y antisepsia: base de la cirugía segura.</td>
+            <td class="hash-col">#cirugiaveterinaria #asepsia #antisepsia #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>13</td><td class="fecha-col">24/06</td><td>Mié</td><td class="tipo-col"><span class="type-badge envivo">🔴 En Vivo</span></td>
+            <td>Técnica aséptica — Castro</td>
+            <td class="copy-col">HOY EN VIVO. Asepsia y antisepsia en quirófano.</td>
+            <td class="hash-col">#cirugiaveterinaria #asepsia #antisepsia #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>14</td><td class="fecha-col">24/06</td><td>Mié</td><td class="tipo-col"><span class="type-badge grabada">🎥 Grabada</span></td>
+            <td>Biomecánica equina — Iranzo</td>
+            <td class="copy-col">¿Te la perdiste? Ya está grabada. Preparate para la Parte 2. Suscribite.</td>
+            <td class="hash-col">#equinos #medicinaequina #biomecanica #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>15</td><td class="fecha-col">26/06</td><td>Vie</td><td class="tipo-col"><span class="type-badge grabada">🎥 Grabada</span></td>
+            <td>Técnica aséptica — Castro</td>
+            <td class="copy-col">¿Te la perdiste? Ya está grabada. Repasá la cirugía segura. Suscribite.</td>
+            <td class="hash-col">#cirugiaveterinaria #asepsia #antisepsia #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>16</td><td class="fecha-col">26/06</td><td>Vie</td><td class="tipo-col"><span class="type-badge anuncio">📢 Anuncio</span></td>
+            <td>Mastectomía — Barón</td>
+            <td class="copy-col">Save the date 29/6. Errores frecuentes y conceptos de resolución.</td>
+            <td class="hash-col">#cirugiaveterinaria #mastectomia #oncologiaveterinaria</td>
+          </tr>
+          <tr>
+            <td>17</td><td class="fecha-col">28/06</td><td>Dom</td><td class="tipo-col"><span class="type-badge recordatorio">⏰ Recordatorio</span></td>
+            <td>Mastectomía — Barón</td>
+            <td class="copy-col">MAÑANA EN VIVO. Activá el recordatorio. Suscribite por Telegram.</td>
+            <td class="hash-col">#cirugiaveterinaria #mastectomia #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>18</td><td class="fecha-col">29/06</td><td>Lun</td><td class="tipo-col"><span class="type-badge envivo">🔴 En Vivo</span></td>
+            <td>Mastectomía — Barón</td>
+            <td class="copy-col">HOY EN VIVO. Errores frecuentes y resolución quirúrgica.</td>
+            <td class="hash-col">#cirugiaveterinaria #mastectomia #oncologiaveterinaria</td>
+          </tr>
+          <tr>
+            <td>19</td><td class="fecha-col">30/06</td><td>Mar</td><td class="tipo-col"><span class="type-badge valor">⭐ Valor</span></td>
+            <td>Cierre de junio — propuesta de valor</td>
+            <td class="copy-col">6 charlas en vivo, todas grabadas. En vivo + grabadas + MercadoPago.</td>
+            <td class="hash-col">#educacionveterinaria #capacitacionveterinaria #canalveterinario</td>
+          </tr>
+          <tr>
+            <td>20</td><td class="fecha-col">01/07</td><td>Mié</td><td class="tipo-col"><span class="type-badge grabada">🎥 Grabada</span></td>
+            <td>Mastectomía — Barón</td>
+            <td class="copy-col">¿Te la perdiste? Ya está grabada. Evitá los errores comunes. Suscribite.</td>
+            <td class="hash-col">#cirugiaveterinaria #mastectomia #oncologiaveterinaria</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════ NOTAS PARA LA CM ══════════════════ -->
+  <div class="section">
+    <div class="section-title">Notas para la Community Manager / Diseñadora</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px;">
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--gold);">
+        <div style="font-size:13px; font-weight:700; color:var(--gold); margin-bottom:8px;">Paleta de colores</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Fondo oscuro: <strong style="color:#fff">#29083f</strong><br>
+          Acento dorado: <strong style="color:var(--gold)">#f5c842</strong><br>
+          Texto principal: <strong style="color:#fff">#ffffff</strong><br>
+          Usar contraste fuerte. Evitar fondos claros.
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-anuncio);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-anuncio); margin-bottom:8px;">📢 Anuncios / Save the date</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Foto del disertante + nombre destacado<br>
+          Fecha y día EN VIVO bien grandes<br>
+          Plantilla reutilizable por charla (cambiar solo tema/foto/fecha)<br>
+          Reel de 15–30s o carrusel de 3–4 slides
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-recordatorio);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-recordatorio); margin-bottom:8px;">⏰ Recordatorios (Historias)</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Sticker de cuenta regresiva de Instagram<br>
+          "MAÑANA" / "HOY" como protagonista<br>
+          Indicar hora del vivo (21 hs sugerido — confirmar)<br>
+          Link de suscripción en la historia
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-envivo);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-envivo); margin-bottom:8px;">🔴 Hoy en Vivo (Historias)</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Máxima urgencia: rojo, "EN VIVO HOY"<br>
+          Sticker de recordatorio + link directo<br>
+          Publicar a la mañana y reforzar 1–2 hs antes del vivo<br>
+          Recordar que después queda grabada (reduce el "no llego")
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-grabada);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-grabada); margin-bottom:8px;">🎥 Ya Grabada (Feed)</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Placa o carrusel con badge "GRABADA"<br>
+          Ángulo de rescate: "¿Te la perdiste en vivo?"<br>
+          CTA fuerte de suscripción + URL<br>
+          Captura al que no llegó al directo
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-envivo);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-envivo); margin-bottom:8px;">CTAs de Suscripción</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          Siempre incluir URL: canal-veterinario-live.web.app<br>
+          Mencionar MercadoPago (confianza local)<br>
+          Mantener actualizado el "link en bio"<br>
+          Cada post de la secuencia empuja a suscribirse
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--tag-comunidad);">
+        <div style="font-size:13px; font-weight:700; color:var(--tag-comunidad); margin-bottom:8px;">Ritmo y producción</div>
+        <div style="font-size:12px; color:var(--gray-light); line-height:1.7;">
+          3–4 posts/semana en feed + historias diarias en días de vivo<br>
+          Confirmar el horario real de cada vivo (placeholder: 21 hs)<br>
+          Las historias no figuran en el feed: programá recordatorios<br>
+          Dejá las placas "Grabada" listas antes del vivo
+        </div>
+      </div>
+      <div style="background: var(--bg-medium); border-radius: 10px; padding: 18px 20px; border-left: 4px solid var(--accent-blue);">
+        <div style="font-size:13px; font-weight:700; color:var(--accent-blue); margin-bottom:8px;">Hashtags recomendados</div>
+        <div style="font-size:12px; color:var(--accent-blue); line-height:1.8;">
+          #veterinaria #vetargentina #canalveterinario<br>
+          #capacitacionveterinaria #medicinaveterinaria<br>
+          #felinos #equinos #cirugiaveterinaria<br>
+          #histopatologiaveterinaria #endocrinologiaveterinaria
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="page-footer">
+    <div>
+      <span class="footer-brand">Canal Veterinario</span>
+      <span> — canal-veterinario-live.web.app</span>
+    </div>
+    <div>Plan de Contenidos Instagram — Junio 2026 — Charlas en Vivo — Uso interno</div>
+    <div>20 publicaciones · 6 charlas en vivo · embudo Anuncio → Recordatorio → En Vivo → Grabada</div>
+  </footer>
+
+</body>
+</html>
