@@ -251,17 +251,6 @@ const GRABACIONES = [
     duracion: "",
   },
   {
-    id: 7,
-    titulo: "¿Qué pasa cuando mi paciente tiene úlcera de córnea?",
-    disertante: "Santiago Parrinello",
-    fecha: "",
-    categoria: "pequeños-animales",
-    subcategoria: "Oftalmología",
-    descripcion: "",
-    imagen: "img/parrinello.png",
-    duracion: "",
-  },
-  {
     id: 8,
     titulo: "Manejo clínico inicial de las úlceras de córnea. Parte 1",
     disertante: "Santiago Parrinello",
@@ -274,7 +263,7 @@ const GRABACIONES = [
   },
   {
     id: 10,
-    titulo: "Importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
+    titulo: "Anatomía clínica del ojo (Parte 3): importancia clínica de la irrigación e inervación del globo ocular y sus anexos",
     disertante: "Santiago Parrinello",
     fecha: "",
     categoria: "pequeños-animales",
